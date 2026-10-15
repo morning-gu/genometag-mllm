@@ -3941,7 +3941,7 @@ def modality_heatmap(rows: pd.DataFrame, out_png: Path) -> None:
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_png, dpi=150)
     plt.close(fig)
-
+```
 
 report.py 顶部 import（最终版，覆盖 Step 3 开头给出的 import 块）：
 
