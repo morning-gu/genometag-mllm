@@ -1,5 +1,6 @@
 """基线：确定性、防泄露、手算值。"""
 import importlib
+import importlib.util
 
 import pandas as pd
 import pytest
@@ -49,6 +50,8 @@ def test_genre_baseline_hand_computed():
     assert got[6] == pytest.approx(1.6 / 3)             # 无 genre → 全局均值
 
 
+@pytest.mark.skipif(importlib.util.find_spec("torch") is not None,
+                    reason="torch 存在时（无论能否加载）'缺 torch 优雅跳过'路径无法测试")
 def test_bert_branch_skips_gracefully_without_torch(tmp_path):
     """回归：懒导入下模块自身可导入，缺 torch 在调用点抛 ImportError——
     05 的 bert 分支须捕获并优雅跳过（report["bert"]=="skipped"），
