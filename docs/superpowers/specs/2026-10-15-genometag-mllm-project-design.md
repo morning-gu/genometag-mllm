@@ -169,7 +169,7 @@ class MovieMultimodal:
 
 - 将 1,128 个 genome tag 按语义聚类为 ~20 组（视觉风格、情绪氛围、叙事主题、角色特征、制作要素等）。
 - **实现**：脚本用 MLLM 离线分组（分批输入 tag 列表，走缓存，一次性成本），同时为每个 tag 标注 `tag_type: content-driven | preference-driven`（论文核心分析维度，如 "dark atmosphere" vs "overrated"）。
-- **产物**：`data/processed/tag_groups.json`，格式 `{tag_id, tag, group, tag_type}[]`，**checked into git**（gitignore 例外）——复现论文不需重跑分组，且支持手工修正个别分组错误后入库。
+- **产物**：`data/processed/tag_groups.json`，格式 `{tag_id, tag, group, tag_type, definition}[]`（`definition` 为该 tag 的一句话定义，供 §4.4 的 prompt 使用，分组时一并生成），**checked into git**（gitignore 例外）——复现论文不需重跑分组，且支持手工修正个别分组错误后入库。
 - 手工修正方式：直接编辑该 JSON 文件提交，文件头注释注明生成模型与修正记录。
 
 ### 4.2 客户端（`genometag/annotate/client.py`）
