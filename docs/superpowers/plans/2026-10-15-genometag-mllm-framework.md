@@ -3258,7 +3258,7 @@ def test_temporal_split():
 def test_cold_start_subset():
     user_tags = pd.DataFrame({"movie_id": [1, 1, 2], "tag": ["a", "b", "c"]})
     cold = cold_start_subset(_dataset(), user_tags, max_tags=0)
-    assert set(cold) == {2, 3, 4}     # 1 有 2 条标签；2 只有 1 条(>0)；3、4 无标签
+    assert set(cold) == {3, 4}         # 1 有 2 条、2 有 1 条（均 >0，非冷启动）；3、4 无标签
 
 
 def test_tag_type_breakdown():
