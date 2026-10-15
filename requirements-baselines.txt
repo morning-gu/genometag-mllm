@@ -1,0 +1,3 @@
+# 可选：BERT 基线依赖（scripts/05 未安装时自动跳过该基线）
+torch>=2.2
+transformers>=4.40

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/raw/
+data/interim/
+data/synthetic/
+data/processed/*
+!data/processed/tag_groups.json
+results/
+.cache/
+notebooks/.ipynb_checkpoints/
