@@ -22,6 +22,13 @@
 - 每个 TDD 任务顺序：写失败测试 → 运行确认失败 → 最小实现 → 运行确认通过 → 提交
 - 主键约定：全管道以 MovieLens `movie_id`（int）为主键；MovieNet 侧 `movienet_id`（str）仅在适配层出现
 - 所有命令在仓库根目录执行（脚本默认路径 `configs/...` 依赖 cwd）
+- **脚本 sys.path 自举**（Task 3 执行时发现）：包未 pip 安装，直接 `python scripts/xx.py` 时仓库根不在 sys.path——每个 scripts/ 下的脚本在导入 genometag 之前须加入：
+  ```python
+  import sys
+  from pathlib import Path
+  sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+  ```
+  （pytest 不受影响——rootdir 已在 sys.path；run_smoke 经 importlib 加载同目录脚本时继承 pytest 的 sys.path）
 
 ## Review Focus
 
