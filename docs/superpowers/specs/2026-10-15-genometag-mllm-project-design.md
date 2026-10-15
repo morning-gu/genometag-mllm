@@ -279,9 +279,8 @@ protocol:
   relevance_threshold: 0.5
   top_k: 10
   cold_start_max_tags: 0
-consistency:                     # 独立实验配置项，非主跑默认
-  n_runs: 5
-  movie_limit: 100
+consistency:                     # 已移除（终审裁决）：独立实验直接设 annotation.n_runs / data.movie_limit，
+                                 # README"一致性实验"节记载该流程；死配置块会静默误导 spec 遵循者
 mock: false                      # true = mock 客户端
 ```
 
