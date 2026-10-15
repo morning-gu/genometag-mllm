@@ -1,0 +1,5 @@
+exp_name: baselines
+data: {source: real, seed: 42}
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+baselines: {run: [random, mean, genre, bert]}
+mock: false
