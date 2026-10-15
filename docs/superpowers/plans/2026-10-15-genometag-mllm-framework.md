@@ -3527,13 +3527,14 @@ def run_baselines(config, paths) -> tuple[pd.DataFrame, dict]:
         elif name == "bert":
             try:
                 mod = importlib.import_module("genometag.baselines.bert_baseline")
+                frames.append(mod.bert_baseline(config, paths, dataset, scores,
+                                                train_ids, test_ids))
             except ImportError:
+                # 懒导入：模块自身无 torch 也能导入，缺依赖在调用点才抛出
                 print("[05] torch/transformers 未安装，跳过 BERT 基线"
                       "（pip install -r requirements-baselines.txt）")
                 report["bert"] = "skipped"
                 continue
-            frames.append(mod.bert_baseline(config, paths, dataset, scores,
-                                            train_ids, test_ids))
         else:
             raise ValueError(f"未知基线: {name}")
         report[name] = "ok"
@@ -3638,7 +3639,8 @@ Expected: 1 skipped
 """剧本 + BERT 多标签回归基线（可选依赖 torch/transformers）。
 
 只用时序训练参考集训练（防泄露），在全部电影上输出预测。
-懒导入：torch 未安装时 import 本模块即 ImportError，05 脚本捕获后跳过。
+懒导入：torch/transformers 只在训练函数内部导入——本模块自身无 torch 也可导入；
+缺依赖时在调用点抛 ImportError，由 05 脚本的 except 捕获后优雅跳过。
 """
 from __future__ import annotations
 
