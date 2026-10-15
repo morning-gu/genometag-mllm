@@ -85,3 +85,22 @@ def test_build_dataset_from_synthetic(tmp_path):
     assert len(ds) == 5
     assert ds.loc[0, "keyframes"][0].startswith("keyframes")   # 相对路径
     assert (paths.interim / "align_report.md").exists()
+
+
+def test_build_dataset_zero_matches(tmp_path):
+    """零匹配：build_dataset 写空产物 + 报告 0%，而非崩溃（对齐报告正是为诊断此场景而生）。"""
+    from genometag.data.align import build_dataset
+    from genometag.data.sample import make_synthetic_dataset
+    make_synthetic_dataset(tmp_path)
+    # 覆写 MovieNet 元数据：标题/年份/IMDb 均与合成 MovieLens 对不上
+    pd.DataFrame([{"movie_id": "mnZ9", "title": "Unrelated Film",
+                   "year": 1999, "imdb_id": "tt9999999"}]).to_csv(
+        tmp_path / "raw" / "movienet" / "movies.csv", index=False)
+    paths = _synthetic_paths(tmp_path)
+    stats = build_dataset(paths)
+    assert stats == {"movies": 0, "genome_rows": 0}
+    assert len(pd.read_parquet(paths.aligned)) == 0
+    assert len(pd.read_parquet(paths.dataset)) == 0
+    assert len(pd.read_parquet(paths.genome_scores)) == 0
+    report = (paths.interim / "align_report.md").read_text(encoding="utf-8")
+    assert "0.0%" in report

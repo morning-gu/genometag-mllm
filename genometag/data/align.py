@@ -43,6 +43,8 @@ class AlignResult:
 
 ALIGNED_COLUMNS = ["movie_id", "title", "year", "genres", "imdb_id",
                    "movienet_id", "match_method"]
+DATASET_COLUMNS = ["movie_id", "title", "year", "genres", "imdb_id",
+                   "movienet_id", "keyframes", "script_path", "subtitles_path"]
 
 
 def align(movies_ml: pd.DataFrame, links: pd.DataFrame,
@@ -136,7 +138,8 @@ def build_dataset(paths: Paths) -> dict[str, int]:
             "script_path": f'scripts/{m.movienet_id}.txt' if m.script else None,
             "subtitles_path": f'subtitles/{m.movienet_id}.srt' if m.subtitles else None,
         })
-    dataset = pd.DataFrame(dataset_rows)
+    # 显式列名：零匹配时也要有完整 schema（空表可被下游按列访问，见 DATASET_COLUMNS）
+    dataset = pd.DataFrame(dataset_rows, columns=DATASET_COLUMNS)
     dataset.to_parquet(paths.dataset, index=False)
 
     scores = load_genome_scores(paths.movielens / "genome-scores.csv")
