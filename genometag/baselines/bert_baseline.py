@@ -1,7 +1,8 @@
 """剧本 + BERT 多标签回归基线（可选依赖 torch/transformers）。
 
 只用时序训练参考集训练（防泄露），在全部电影上输出预测。
-懒导入：torch 未安装时 import 本模块即 ImportError，05 脚本捕获后跳过。
+懒导入：torch/transformers 只在训练函数内部导入——本模块自身无 torch 也可导入；
+缺依赖时在调用点抛 ImportError，由 05 脚本的 except 捕获后优雅跳过。
 """
 from __future__ import annotations
 

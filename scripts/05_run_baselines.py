@@ -40,13 +40,14 @@ def run_baselines(config, paths) -> tuple[pd.DataFrame, dict]:
         elif name == "bert":
             try:
                 mod = importlib.import_module("genometag.baselines.bert_baseline")
+                frames.append(mod.bert_baseline(config, paths, dataset, scores,
+                                                train_ids, test_ids))
             except ImportError:
+                # 懒导入：模块自身无 torch 也能导入，缺依赖在调用点才抛出
                 print("[05] torch/transformers 未安装，跳过 BERT 基线"
                       "（pip install -r requirements-baselines.txt）")
                 report["bert"] = "skipped"
                 continue
-            frames.append(mod.bert_baseline(config, paths, dataset, scores,
-                                            train_ids, test_ids))
         else:
             raise ValueError(f"未知基线: {name}")
         report[name] = "ok"

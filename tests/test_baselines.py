@@ -1,4 +1,6 @@
 """基线：确定性、防泄露、手算值。"""
+import importlib
+
 import pandas as pd
 import pytest
 
@@ -45,3 +47,35 @@ def test_genre_baseline_hand_computed():
     assert got[4] == pytest.approx(0.7)                 # [A]
     assert got[5] == pytest.approx(0.55)                # [A, B] → (0.7+0.4)/2
     assert got[6] == pytest.approx(1.6 / 3)             # 无 genre → 全局均值
+
+
+def test_bert_branch_skips_gracefully_without_torch(tmp_path):
+    """回归：懒导入下模块自身可导入，缺 torch 在调用点抛 ImportError——
+    05 的 bert 分支须捕获并优雅跳过（report["bert"]=="skipped"），
+    其余基线照常产出，整个 run_baselines 不抛异常。"""
+    from genometag.config import AppConfig, Paths
+    from genometag.data.align import build_dataset
+    from genometag.data.sample import make_synthetic_dataset
+
+    make_synthetic_dataset(tmp_path)
+    paths = Paths(  # 同 tests/test_pipeline.py 的 _paths_for 模式
+        root=tmp_path,
+        movienet=tmp_path / "raw" / "movienet",
+        movielens=tmp_path / "raw" / "movielens",
+        interim=tmp_path / "interim", processed=tmp_path / "processed",
+        cache=tmp_path / ".cache", results=tmp_path / "results" / "smoke",
+        tag_groups=tmp_path / "processed" / "tag_groups.json",
+        dataset=tmp_path / "processed" / "dataset.parquet",
+        genome_scores=tmp_path / "processed" / "genome_scores.parquet",
+        genome_tags=tmp_path / "processed" / "genome_tags.parquet",
+        aligned=tmp_path / "interim" / "aligned.parquet")
+    build_dataset(paths)                      # 产出 dataset/genome_scores
+    cfg = AppConfig()
+    cfg.baselines.run = ["random", "mean", "genre", "bert"]  # 默认已含 bert，显式声明意图
+
+    script_05 = importlib.import_module("scripts.05_run_baselines")
+    df, report = script_05.run_baselines(cfg, paths)  # 本 venv 无 torch → 真实走跳过路径
+
+    assert report["bert"] == "skipped"
+    assert set(df["method"]) == {"random", "mean", "genre"}   # 其余基线照常产出
+    assert len(df) > 0
