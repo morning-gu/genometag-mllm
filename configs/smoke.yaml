@@ -1,0 +1,22 @@
+exp_name: smoke
+data:
+  source: synthetic
+  seed: 42
+model:
+  model: mock-1
+  temperature: 0.7
+  max_frames: 6
+  script_token_budget: 500
+  dialogue_token_budget: 300
+annotation:
+  n_runs: 2
+  modalities: [video, script, dialogue]
+  few_shot_examples: 1
+protocol:
+  temporal_split_year: 2022
+  relevance_threshold: 0.5
+  top_k: 5
+  cold_start_max_tags: 0
+baselines:
+  run: [random, mean, genre]
+mock: true

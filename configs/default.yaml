@@ -1,0 +1,29 @@
+exp_name: default
+data:
+  source: real
+  movie_limit: null
+  seed: 42
+model:
+  base_url_env: OPENAI_BASE_URL
+  api_key_env: OPENAI_API_KEY
+  model: gpt-4o
+  temperature: 0.7
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
+  request_interval: 0.5
+annotation:
+  n_runs: 3
+  modalities: [video, script, dialogue]
+  few_shot_examples: 2
+protocol:
+  temporal_split_year: 2022
+  relevance_threshold: 0.5
+  top_k: 10
+  cold_start_max_tags: 0
+consistency:
+  n_runs: 5
+  movie_limit: 100
+baselines:
+  run: [random, mean, genre, bert]
+mock: false
