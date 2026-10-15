@@ -103,7 +103,15 @@ def write_report(exp_dirs: list[Path], baseline_dir: Path | None, out_dir: Path,
                  truth: pd.DataFrame, tag_groups: pd.DataFrame | None,
                  user_tags: pd.DataFrame | None) -> Path:
     """汇总多实验 + 基线 → evaluation/ 目录（metrics.csv、report.md、
-    consistency.json、heatmap.png）。"""
+    consistency.json、heatmap.png）。
+
+    metrics.csv 的 subset 视图：
+    - 全部 / 时序训练(<year) / 时序测试(≥year)：推理（训练集）vs 回忆（测试集）
+      的对比是论文核心论证（论文 §"推理vs回忆"）；
+    - 冷启动（有 user_tags 时）；
+    - tag:<类型>（有 tag_groups 时）：内容型 vs 偏好型标签的逐类型对比，
+      单实验也产出（不依赖热力图路径）。
+    """
     predictions: dict[str, pd.DataFrame] = {}
     for exp in exp_dirs:
         ann = pd.read_parquet(exp / "annotations.parquet")
@@ -123,8 +131,11 @@ def write_report(exp_dirs: list[Path], baseline_dir: Path | None, out_dir: Path,
 
     sections: list[pd.DataFrame] = [metrics_table(
         predictions, truth, dataset, cfg, tag_groups, movie_ids).assign(subset="全部")]
-    # 时序测试子集
-    _, test_ids = temporal_split(dataset, cfg.temporal_split_year)
+    # 时序训练/测试子集：train 上近记忆式复述、test 上才见真泛化
+    train_ids, test_ids = temporal_split(dataset, cfg.temporal_split_year)
+    sections.append(metrics_table(predictions, truth, dataset, cfg, tag_groups,
+                                  [m for m in movie_ids if m in set(train_ids)]
+                                  ).assign(subset=f"时序训练(<{cfg.temporal_split_year})"))
     sections.append(metrics_table(predictions, truth, dataset, cfg, tag_groups,
                                   [m for m in movie_ids if m in set(test_ids)]
                                   ).assign(subset=f"时序测试(≥{cfg.temporal_split_year})"))
@@ -134,6 +145,15 @@ def write_report(exp_dirs: list[Path], baseline_dir: Path | None, out_dir: Path,
         sections.append(metrics_table(predictions, truth, dataset, cfg, tag_groups,
                                       [m for m in movie_ids if m in set(cold)]
                                       ).assign(subset="冷启动"))
+    # 逐 tag 类型子集：内容型 vs 偏好型（单实验也产出，不依赖热力图路径）
+    if tag_groups is not None:
+        for tag_type, tids in tag_type_breakdown(tag_groups).items():
+            keep_tags = set(tids)
+            sub_preds = {name: p[p["tag_id"].isin(keep_tags)]
+                         for name, p in predictions.items()}
+            sections.append(metrics_table(
+                sub_preds, truth, dataset, cfg, tag_groups, movie_ids
+            ).assign(subset=f"tag:{tag_type}"))
 
     table = pd.concat(sections, ignore_index=True)
     table.to_csv(out_dir / "metrics.csv", index=False)

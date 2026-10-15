@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import shutil
 import sys
 from pathlib import Path
 
@@ -20,6 +21,11 @@ def main(config_path: str = "configs/default.yaml", dry_run: bool = False) -> in
     client = make_client(config)
     cache = None if config.mock else ResponseCache(paths.cache)
     out = run_annotation(config, paths, client, cache, dry_run=dry_run)
+    # 配置快照随结果落盘（spec §2/§5.4/§6）：结果目录自包含、可复现。
+    # dry-run 承诺"不调用、不写文件"，故不快照。
+    if out is not None and Path(config_path).exists():
+        paths.results.mkdir(parents=True, exist_ok=True)
+        shutil.copy(config_path, paths.results / "config.yaml")
     if out is None:
         print("[04] dry-run 完成（未调用、未写文件）")
     else:

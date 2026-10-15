@@ -64,6 +64,22 @@ def select_few_shots(dataset: pd.DataFrame, genome_scores: pd.DataFrame,
     return shots
 
 
+def _read_jsonl_lines(jsonl_path: Path) -> tuple[list[dict], int]:
+    """逐行解析 jsonl，容忍中断残留的截断/损坏行（跳过并计数）。"""
+    good: list[dict] = []
+    bad = 0
+    for line in jsonl_path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            good.append(json.loads(line))
+        except json.JSONDecodeError:
+            bad += 1
+    if bad:
+        print(f"[04] 跳过损坏的 jsonl 行: {bad}（上次运行中断残留，相关任务将重跑）")
+    return good, bad
+
+
 def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None,
                    dry_run: bool = False) -> Path | None:
     dataset = pd.read_parquet(paths.dataset)
@@ -109,9 +125,8 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
     jsonl_path = paths.results / "annotations.jsonl"
     done_keys: set[str] = set()
     if jsonl_path.exists():
-        for line in jsonl_path.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                done_keys.add(json.loads(line)["task_key"])
+        records, _ = _read_jsonl_lines(jsonl_path)
+        done_keys = {r["task_key"] for r in records}
 
     cost = {"total_calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
     counts = {"done": 0, "parse_failed": 0, "no_content": 0}
@@ -173,11 +188,11 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
             sink.write(json.dumps({"task_key": task_key, "status": status,
                                    "rows": rows, "usage": usage}, ensure_ascii=False) + "\n")
 
-    # 压缩 jsonl → parquet（含历史行，防丢）
+    # 压缩 jsonl → parquet（含历史行，防丢；损坏行跳过，不阻塞续跑）
+    records, _ = _read_jsonl_lines(jsonl_path)
     all_rows: list[dict] = []
-    for line in jsonl_path.read_text(encoding="utf-8").splitlines():
-        if line.strip():
-            all_rows.extend(json.loads(line)["rows"])
+    for r in records:
+        all_rows.extend(r["rows"])
     parquet_path = paths.results / "annotations.parquet"
     pd.DataFrame(all_rows,
                  columns=["movie_id", "tag_id", "group", "modality_set", "run_id", "score"]

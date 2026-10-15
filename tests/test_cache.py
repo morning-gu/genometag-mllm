@@ -29,3 +29,19 @@ def test_put_get_roundtrip(tmp_path):
     resp = {"choices": [{"message": {"content": "{\"a\": 1}"}}], "usage": {"prompt_tokens": 3}}
     cache.put("k1", resp)
     assert cache.get("k1") == resp
+
+
+def test_truncated_file_treated_as_miss(tmp_path):
+    """终审 I3：崩溃残留的截断 JSON 按未命中处理（管道重调自愈），不永久抛错。"""
+    cache = ResponseCache(tmp_path)
+    (tmp_path / "broken.json").write_text('{"choices": [{"mess', encoding="utf-8")
+    assert cache.get("broken") is None
+
+
+def test_put_leaves_no_tmp_leftover(tmp_path):
+    """终审 I3：put 走 tmp + os.replace 原子替换，不留 .json.tmp 残留。"""
+    cache = ResponseCache(tmp_path)
+    resp = {"a": 1}
+    cache.put("k2", resp)
+    assert cache.get("k2") == resp
+    assert not (tmp_path / "k2.json.tmp").exists()

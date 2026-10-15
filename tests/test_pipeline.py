@@ -98,6 +98,20 @@ def test_run_annotation_resume_skips_done(synthetic_env):
     assert 0 < calls["n"] < full_calls            # 只补了缺失部分
 
 
+def test_run_annotation_tolerates_malformed_jsonl_line(synthetic_env, capsys):
+    """终审 I3：崩溃残留的截断 jsonl 行被跳过并计数，续跑不崩、结果完整。"""
+    cfg, paths = synthetic_env
+    run_annotation(cfg, paths, MockClient(), cache=None)
+    jsonl = paths.results / "annotations.jsonl"
+    with jsonl.open("a", encoding="utf-8") as f:
+        f.write('{"task_key": "999|G|run-0", "rows": [{"movie_id"')  # 模拟写一半崩溃
+    out2 = run_annotation(cfg, paths, MockClient(), cache=None)
+    df = pd.read_parquet(out2)
+    assert len(df) == 5 * 24 * 2            # 坏行未影响结果完整性
+    out_text = capsys.readouterr().out
+    assert "跳过损坏的 jsonl 行: 1" in out_text
+
+
 def test_parse_failure_records_null(synthetic_env):
     """Review Focus #2：解析重试后仍失败 → null 分数 + manifest 记 parse_failed。"""
     cfg, paths = synthetic_env

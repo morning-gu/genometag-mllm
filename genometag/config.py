@@ -48,14 +48,16 @@ class ProtocolConfig:
 
 
 @dataclass
-class ConsistencyConfig:
-    n_runs: int = 5
-    movie_limit: int = 100
-
-
-@dataclass
 class BaselinesConfig:
     run: list[str] = field(default_factory=lambda: ["random", "mean", "genre", "bert"])
+
+
+# 顶层合法键：未知键一律报错（防止拼错/过时配置被静默忽略）。
+# 说明：旧 consistency 块已移除（原为死配置，会被静默忽略）——
+# 其意图用 annotation.n_runs / data.movie_limit 表达即可。
+KNOWN_TOP_LEVEL_KEYS = {
+    "exp_name", "data", "model", "annotation", "protocol", "baselines", "mock",
+}
 
 
 @dataclass
@@ -65,7 +67,6 @@ class AppConfig:
     model: ModelConfig = field(default_factory=ModelConfig)
     annotation: AnnotationConfig = field(default_factory=AnnotationConfig)
     protocol: ProtocolConfig = field(default_factory=ProtocolConfig)
-    consistency: ConsistencyConfig = field(default_factory=ConsistencyConfig)
     baselines: BaselinesConfig = field(default_factory=BaselinesConfig)
     mock: bool = False
 
@@ -137,13 +138,17 @@ def validate_config(cfg: AppConfig) -> None:
 
 def load_config(path: str | Path) -> AppConfig:
     raw = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
+    unknown = set(raw) - KNOWN_TOP_LEVEL_KEYS
+    if unknown:
+        raise ValueError(
+            f"配置含未知顶层键: {sorted(unknown)}（合法键: {sorted(KNOWN_TOP_LEVEL_KEYS)}）。"
+            "已移除的 consistency 块用 annotation.n_runs / data.movie_limit 替代")
     cfg = AppConfig(
         exp_name=raw.get("exp_name", "default"),
         data=DataConfig(**raw.get("data", {})),
         model=ModelConfig(**raw.get("model", {})),
         annotation=AnnotationConfig(**raw.get("annotation", {})),
         protocol=ProtocolConfig(**raw.get("protocol", {})),
-        consistency=ConsistencyConfig(**raw.get("consistency", {})),
         baselines=BaselinesConfig(**raw.get("baselines", {})),
         mock=bool(raw.get("mock", False)),
     )

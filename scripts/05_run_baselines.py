@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import importlib
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -61,6 +62,9 @@ def main(config_path: str = "configs/default.yaml") -> int:
     df, report = run_baselines(config, paths)
     out_dir = paths.root / "results" / "baselines"
     out_dir.mkdir(parents=True, exist_ok=True)
+    # 配置快照随结果落盘（spec §2/§5.4/§6）：结果目录自包含、可复现
+    if Path(config_path).exists():
+        shutil.copy(config_path, out_dir / "config.yaml")
     df.to_parquet(out_dir / "baselines.parquet", index=False)
     (out_dir / "fit_report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

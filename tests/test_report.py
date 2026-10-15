@@ -84,3 +84,41 @@ def test_write_report_and_consistency(tmp_path):
     assert consistency["mean_std"] == pytest.approx(0.025)  # 每项两轮差 0.05 → std=0.025
     # 单一实验 → 无热力图
     assert not (out / "heatmap.png").exists()
+
+
+def test_write_report_train_and_tag_type_subsets(tmp_path):
+    """终审 I2：metrics.csv 必含 时序训练(<y) 与 tag:<类型> 视图——单实验也产出，
+    不依赖热力图路径（content vs preference 对比是论文核心论证）。"""
+    from genometag.eval.report import write_report
+
+    dataset = pd.DataFrame({"movie_id": [1, 2], "year": [2020, 2023],
+                            "genres": [["A"], ["A"]]})
+    truth = pd.DataFrame({"movie_id": [1, 1, 2, 2], "tag_id": [1, 2, 1, 2],
+                          "relevance": [0.9, 0.1, 0.8, 0.2]})
+    rows = [{"movie_id": r["movie_id"], "tag_id": r["tag_id"],
+             "group": "G", "modality_set": "video|script", "run_id": run,
+             "score": float(r["relevance"])}
+            for run in ("run-0", "run-1") for _, r in truth.iterrows()]
+    exp = tmp_path / "exp"
+    exp.mkdir()
+    pd.DataFrame(rows).to_parquet(exp / "annotations.parquet", index=False)
+    tag_groups = pd.DataFrame([
+        {"tag_id": 1, "tag": "visual", "group": "G1", "tag_type": "content",
+         "definition": "d"},
+        {"tag_id": 2, "tag": "overrated", "group": "G2", "tag_type": "preference",
+         "definition": "d"},
+    ])
+
+    out = write_report([exp], None, tmp_path / "evaluation", ProtocolConfig(top_k=2),
+                       dataset, truth, tag_groups=tag_groups, user_tags=None)
+    table = pd.read_csv(out / "metrics.csv")
+    subsets = set(table["subset"])
+    assert "全部" in subsets
+    assert "时序训练(<2022)" in subsets
+    assert "时序测试(≥2022)" in subsets
+    assert "tag:content" in subsets
+    assert "tag:preference" in subsets
+    # 每个视图下方法集合与全集一致（预测未被过滤丢失）
+    all_methods = set(table[table["subset"] == "全部"]["method"])
+    for sub in ("tag:content", "tag:preference", "时序训练(<2022)"):
+        assert set(table[table["subset"] == sub]["method"]) == all_methods

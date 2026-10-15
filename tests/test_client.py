@@ -6,7 +6,6 @@ from genometag.annotate.client import LLMResponse, OpenAIClient
 
 def _ok_transport(content='{"a": 1}'):
     def transport(model, messages, temperature, response_format):
-        assert response_format is not None or True  # 降级路径会传 None
         return {"choices": [{"message": {"content": content}}],
                 "usage": {"prompt_tokens": 10, "completion_tokens": 5}}
     return transport
@@ -67,3 +66,17 @@ def test_missing_env_raises():
     client = OpenAIClient(model="m", base_url_env="NO_SUCH_ENV_XYZ")
     with pytest.raises(RuntimeError, match="NO_SUCH_ENV_XYZ"):
         client._build_transport()  # 环境变量缺失时构建即失败（不静默）
+
+
+def test_make_client_loads_dotenv(monkeypatch):
+    """终审 C2：make_client 负责加载 .env——README 的文档化步骤不再是空操作。"""
+    from types import SimpleNamespace
+
+    import dotenv
+
+    from genometag.annotate.client import make_client
+
+    calls = []
+    monkeypatch.setattr(dotenv, "load_dotenv", lambda *a, **k: calls.append(1))
+    make_client(SimpleNamespace(mock=True))   # mock 分支也先加载 .env，无需真实 env
+    assert calls == [1]

@@ -62,3 +62,24 @@ def test_validate_rejects_bad_threshold():
     bad = AppConfig(protocol=ProtocolConfig(relevance_threshold=1.5))
     with pytest.raises(ValueError, match="relevance_threshold"):
         validate_config(bad)
+
+
+def test_unknown_top_level_key_rejected(tmp_path):
+    """终审 I4：未知顶层键必须报错，不得静默忽略（consistency 曾是被无视的死配置）。"""
+    bad = {**MINIMAL, "consistency": {"n_runs": 5}}
+    with pytest.raises(ValueError, match="consistency"):
+        load_config(_write(tmp_path, bad))
+
+
+def test_unknown_top_level_key_message_mentions_replacement(tmp_path):
+    """报错信息要指出 consistency 块的替代写法。"""
+    bad = {**MINIMAL, "consistency": {"n_runs": 5}}
+    with pytest.raises(ValueError, match="annotation.n_runs"):
+        load_config(_write(tmp_path, bad))
+
+
+def test_default_yaml_still_loads():
+    """default.yaml 的 consistency 块移除后仍可加载且无该字段。"""
+    cfg = load_config("configs/default.yaml")
+    assert cfg.exp_name == "default"
+    assert not hasattr(cfg, "consistency")

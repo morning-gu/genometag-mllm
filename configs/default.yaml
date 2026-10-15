@@ -21,9 +21,6 @@ protocol:
   relevance_threshold: 0.5
   top_k: 10
   cold_start_max_tags: 0
-consistency:
-  n_runs: 5
-  movie_limit: 100
 baselines:
   run: [random, mean, genre, bert]
 mock: false

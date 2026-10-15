@@ -29,10 +29,12 @@ def main(config_path: str = "configs/default.yaml") -> int:
         from genometag.annotate.cache import ResponseCache
         from genometag.annotate.client import make_client
         from genometag.tags.grouping import group_tags_via_llm
+        # mock 不读不写缓存：mock:true + 真实源的组合也不得把 mock 信封写进真实缓存
+        cache = None if config.mock else ResponseCache(paths.cache)
         df = group_tags_via_llm(
             tags=genome_tags["tag"].tolist(),
             client=make_client(config),
-            cache=ResponseCache(paths.cache),
+            cache=cache,
             model=config.model.model)
         id_map = dict(zip(genome_tags["tag"], genome_tags["tag_id"]))
         rows = [{"tag_id": id_map[r["tag"]], **r}

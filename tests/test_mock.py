@@ -37,6 +37,8 @@ def test_deterministic_same_run():
 def test_run_noise_varies_but_small():
     a = json.loads(MockClient().complete(PROMPT, "run-0").content)
     b = json.loads(MockClient().complete(PROMPT, "run-1").content)
+    # 噪声若被回归移除，两轮应全等——此断言钉住"确实变化"
+    assert any(a[t] != b[t] for t in a)
     for tag in a:
         assert abs(a[tag] - b[tag]) <= 0.1  # correlation_noise=0.05 → |diff| ≤ 0.1
 

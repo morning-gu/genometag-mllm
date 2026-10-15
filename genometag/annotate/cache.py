@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 
 
@@ -30,8 +31,15 @@ class ResponseCache:
         p = self._path(key)
         if not p.exists():
             return None
-        return json.loads(p.read_text(encoding="utf-8"))
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            # 中断残留的截断文件按未命中处理——管道会重新调用并重写，自愈
+            return None
 
     def put(self, key: str, response: dict) -> None:
-        self._path(key).write_text(
+        # 先写临时文件再原子替换：崩溃/断电不会留下截断的 JSON 卡死续跑
+        tmp = self.root / f"{key}.json.tmp"
+        tmp.write_text(
             json.dumps(response, ensure_ascii=False, indent=1), encoding="utf-8")
+        os.replace(tmp, self._path(key))

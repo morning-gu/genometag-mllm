@@ -61,12 +61,16 @@ def _train_predict(train_texts: dict[int, str], train_matrix: pd.DataFrame,
                     max_length=max_length, padding=True, return_tensors="pt")
     X = {"ids": enc["input_ids"], "mask": enc["attention_mask"]}
     Y = torch.from_numpy(mat)
+    n = len(movies)
     model.train()
     for _ in range(epochs):
-        opt.zero_grad()
-        loss = loss_fn(model(X["ids"], X["mask"]), Y)
-        loss.backward()
-        opt.step()
+        # 小批量训练：全量 forward 一次吃下整个训练集，真实规模（数千电影）显存不可行
+        for lo in range(0, n, batch_size):
+            hi = min(lo + batch_size, n)
+            opt.zero_grad()
+            loss = loss_fn(model(X["ids"][lo:hi], X["mask"][lo:hi]), Y[lo:hi])
+            loss.backward()
+            opt.step()
 
     model.eval()
     with torch.no_grad():

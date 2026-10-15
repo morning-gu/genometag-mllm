@@ -20,6 +20,10 @@ STEPS = ["00_make_synthetic", "01_verify_data", "02_build_dataset", "03_group_ta
 
 
 def main() -> int:
+    # Windows 中文控制台默认 GBK(CP936)，本脚本的 ✓ (U+2713) 无法编码会直接
+    # UnicodeEncodeError 崩溃；降级为 replace 后中文仍可读，✓ 显示为 ?。
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="replace")
     cfg_path = "configs/smoke.yaml"
     config = load_config(cfg_path)
     paths = paths_for(config)
@@ -39,8 +43,10 @@ def main() -> int:
         paths.dataset,
         paths.tag_groups,
         paths.results / "annotations.parquet",
+        paths.results / "config.yaml",                      # 配置快照（I1）
         paths.results / "run_manifest.json",
         paths.root / "results" / "baselines" / "baselines.parquet",
+        paths.root / "results" / "baselines" / "config.yaml",  # 基线配置快照（I1）
         paths.results / "evaluation" / "metrics.csv",
         paths.results / "evaluation" / "consistency.json",   # smoke n_runs=2 → 一致性产出
     ]
