@@ -3805,9 +3805,11 @@ def test_metrics_table_movie_subset():
     """限定电影集合（如仅被标注的子集）时 truth 也被过滤。"""
     dataset, truth, perfect, wrong = _data()
     cfg = ProtocolConfig(top_k=2)
-    table = metrics_table({"perfect": perfect[["movie_id", "tag_id", "score"]]},
+    table = metrics_table({"wrong": wrong[["movie_id", "tag_id", "score"]]},
                           truth, dataset, cfg, tag_groups=None, movie_ids=[2])
     assert len(table) == 1
+    # movie-2-only mae = 0.6（全集为 0.7）——真正钉住 movie_ids 过滤
+    assert table["mae"].iloc[0] == pytest.approx(0.6)
 
 
 def test_modality_heatmap_writes_png(tmp_path):
