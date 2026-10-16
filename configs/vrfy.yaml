@@ -1,0 +1,18 @@
+# 端到端验证：2 部 × 1 轮——换模型/端点后的快速冒烟 + 与 4B 首跑的可控对照。
+# 预算刻意保持 4/400/250、temporal_split_year 刻意保持 2022（均与 qwen3.5-4b 首跑一致），
+# 使 few-shot 池与 prompt 逐字节相同——隔离"模型能力"单一变量（2015 分割点用于正式实验配置）。
+exp_name: vrfy
+data: {source: real, movie_limit: 2, seed: 42}
+model:
+  model: qwen3.7-plus
+  temperature: 0.7
+  max_frames: 4
+  script_token_budget: 400
+  dialogue_token_budget: 250
+  request_interval: 0.1
+annotation:
+  n_runs: 1
+  modalities: [video, script, dialogue]
+  few_shot_examples: 2
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+mock: false

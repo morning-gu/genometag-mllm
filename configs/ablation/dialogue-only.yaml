@@ -1,14 +1,14 @@
 exp_name: ablation-dialogue-only
 data: {source: real, seed: 42}
 model:
-  model: qwen3.5-4b
+  model: qwen3.7-plus
   temperature: 0.7
-  max_frames: 4
-  script_token_budget: 400
-  dialogue_token_budget: 250
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
 annotation:
   n_runs: 3
   modalities: [dialogue]
   few_shot_examples: 2
-protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+protocol: {temporal_split_year: 2015, relevance_threshold: 0.5, top_k: 10}
 mock: false

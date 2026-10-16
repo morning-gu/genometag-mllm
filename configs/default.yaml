@@ -6,18 +6,19 @@ data:
 model:
   base_url_env: OPENAI_BASE_URL
   api_key_env: OPENAI_API_KEY
-  model: qwen3.5-4b
+  model: qwen3.7-plus
   temperature: 0.7
-  max_frames: 4
-  script_token_budget: 400
-  dialogue_token_budget: 250
+  # 内容预算恢复设计值（DashScope 大上下文；此前 4/400/250 是自部署 4B max_model_len=3072 的压缩 workaround）
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
   request_interval: 0.1
 annotation:
   n_runs: 3
   modalities: [video, script, dialogue]
   few_shot_examples: 2
 protocol:
-  temporal_split_year: 2022
+  temporal_split_year: 2015   # 数据止于 2018：≥2015 测试视图非空（~95 部），<2015 为训练参考池
   relevance_threshold: 0.5
   top_k: 10
   cold_start_max_tags: 0
