@@ -179,3 +179,22 @@ def test_title_only_empty_modalities_runs(synthetic_env):
     assert df["score"].notna().all()                  # mock 仍从标题解析打分
     manifest = json.loads((paths.results / "run_manifest.json").read_text(encoding="utf-8"))
     assert manifest["tasks"]["no_content"] == 0
+
+
+def test_mixed_missing_script_paths_survive_parquet_roundtrip(synthetic_env):
+    """真实数据 bug 回归：混合 str/NaN 列（部分电影有剧本）经 pandas3 string dtype
+    + parquet 往返后缺失为 NaN（float，且为真值）——不得 Path/NaN 崩溃，
+    无剧本电影凭其余模态正常标注。"""
+    import numpy as np
+
+    cfg, paths = synthetic_env
+    dataset = pd.read_parquet(paths.dataset)
+    # 造混合列：仅电影 1、3 保留剧本路径，其余置 NaN（模拟真实 479/1035 有剧本）
+    dataset["script_path"] = [dataset.loc[i, "script_path"] if i in (0, 2) else np.nan
+                              for i in range(len(dataset))]
+    dataset.to_parquet(paths.dataset, index=False)
+
+    out = run_annotation(cfg, paths, MockClient(), cache=None)
+    df = pd.read_parquet(out)
+    assert len(df) == 5 * 24 * 2          # 无 no_content：其他模态仍可用
+    assert df["score"].notna().all()

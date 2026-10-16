@@ -219,13 +219,15 @@ def _available_modalities(mm: MovieMultimodal, wanted: list[str]) -> list[str]:
 
 
 def _to_multimodal(row, movienet_root: Path) -> MovieMultimodal:
+    # 注意：混合 str/缺失列经 pandas3 string dtype + parquet 往返后缺失为 NaN（float）
+    # —— NaN 为真值，必须用 pd.notna 守卫（真实数据 479/1035 有剧本的混合列实测触发）
     frames = [movienet_root / k for k in row["keyframes"]]
     script = None
-    if row["script_path"]:
+    if pd.notna(row["script_path"]) and row["script_path"]:
         p = movienet_root / row["script_path"]
         script = p.read_text(encoding="utf-8", errors="replace") if p.exists() else None
     subtitles = None
-    if row["subtitles_path"]:
+    if pd.notna(row["subtitles_path"]) and row["subtitles_path"]:
         p = movienet_root / row["subtitles_path"]
         subtitles = p.read_text(encoding="utf-8", errors="replace") if p.exists() else None
     return MovieMultimodal(str(row["movienet_id"]), str(row["title"]),

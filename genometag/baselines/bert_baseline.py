@@ -13,11 +13,12 @@ import pandas as pd
 def _movie_texts(dataset: pd.DataFrame, paths) -> dict[int, str]:
     texts = {}
     for _, r in dataset.iterrows():
+        # 混合 str/缺失列经 parquet 往返后缺失为 NaN（float，为真值）——pd.notna 守卫
         text = None
-        if r["script_path"]:
+        if pd.notna(r["script_path"]) and r["script_path"]:
             p = paths.movienet / r["script_path"]
             text = p.read_text(encoding="utf-8", errors="replace") if p.exists() else None
-        if not text and r["subtitles_path"]:
+        if not text and pd.notna(r["subtitles_path"]) and r["subtitles_path"]:
             p = paths.movienet / r["subtitles_path"]
             text = p.read_text(encoding="utf-8", errors="replace") if p.exists() else None
         texts[int(r["movie_id"])] = (text or "")[:2000]
