@@ -1,0 +1,15 @@
+# 记忆探针 1：无内容盲测——prompt 仅含标题+年份（spec 2026-10-16 修订）
+exp_name: probe-title-only
+data: {source: real, seed: 42}
+model:
+  model: gpt-4o
+  temperature: 0.7
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
+annotation:
+  n_runs: 3
+  modalities: []              # title-only：零内容块
+  few_shot_examples: 2
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+mock: false

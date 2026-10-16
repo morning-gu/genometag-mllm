@@ -96,7 +96,8 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
         config.protocol.temporal_split_year, config.protocol.top_k, tag_names)
 
     tasks = build_task_matrix(movie_ids, tag_groups, config.annotation.n_runs)
-    modality_set = "|".join(config.annotation.modalities)
+    # 记忆探针 1（spec 2026-10-16 修订）：modalities=[] 是显式的 title-only 臂
+    modality_set = "|".join(config.annotation.modalities) or "title-only"
     groups_df = {g: df for g, df in tag_groups.groupby("group")}
 
     if dry_run:
@@ -140,7 +141,8 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
             mm = _to_multimodal(movie_row, paths.movienet)
             group_tags = groups_df[task.group]
             available = _available_modalities(mm, config.annotation.modalities)
-            if not available:
+            # 仅当"请求了内容模态但均不可得"才跳过；modalities=[] 是 title-only 探针的显式意图
+            if not available and config.annotation.modalities:
                 counts["no_content"] += 1
                 sink.write(json.dumps({"task_key": task_key, "status": "no_content",
                                        "rows": [], "usage": {}}) + "\n")

@@ -1,0 +1,16 @@
+# 记忆探针 2：错配内容——A 标题 + B 内容，同类型/跨类型双对照（spec 2026-10-16 修订）
+exp_name: probe-mismatch
+data: {source: real, seed: 42}
+model:
+  model: gpt-4o
+  temperature: 0.7
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
+annotation:
+  n_runs: 1                # 探针单轮即可（成本 ~n_pairs × 组数）
+  modalities: [video, script, dialogue]
+  few_shot_examples: 2
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+probes: {n_pairs: 150}
+mock: false

@@ -52,11 +52,18 @@ class BaselinesConfig:
     run: list[str] = field(default_factory=lambda: ["random", "mean", "genre", "bert"])
 
 
+@dataclass
+class ProbesConfig:
+    """记忆探针 2（错配内容）参数——spec 2026-10-16 修订。"""
+    n_pairs: int = 150          # 电影对总数（同类型/跨类型各半）
+
+
 # 顶层合法键：未知键一律报错（防止拼错/过时配置被静默忽略）。
 # 说明：旧 consistency 块已移除（原为死配置，会被静默忽略）——
 # 其意图用 annotation.n_runs / data.movie_limit 表达即可。
 KNOWN_TOP_LEVEL_KEYS = {
-    "exp_name", "data", "model", "annotation", "protocol", "baselines", "mock",
+    "exp_name", "data", "model", "annotation", "protocol", "baselines", "probes",
+    "mock",
 }
 
 
@@ -68,6 +75,7 @@ class AppConfig:
     annotation: AnnotationConfig = field(default_factory=AnnotationConfig)
     protocol: ProtocolConfig = field(default_factory=ProtocolConfig)
     baselines: BaselinesConfig = field(default_factory=BaselinesConfig)
+    probes: ProbesConfig = field(default_factory=ProbesConfig)
     mock: bool = False
 
 
@@ -150,6 +158,7 @@ def load_config(path: str | Path) -> AppConfig:
         annotation=AnnotationConfig(**raw.get("annotation", {})),
         protocol=ProtocolConfig(**raw.get("protocol", {})),
         baselines=BaselinesConfig(**raw.get("baselines", {})),
+        probes=ProbesConfig(**raw.get("probes", {})),
         mock=bool(raw.get("mock", False)),
     )
     validate_config(cfg)

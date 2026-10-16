@@ -1,8 +1,19 @@
 # GenomeTag-MLLM 项目设计文档（实验框架）
 
 > 日期：2026-10-15
-> 状态：待用户审阅
+> 状态：已实现并合入 main（2026-10-16）；同日按真实数据核实结果修订评估协议（见下）
 > 上游文档：`docs/research-plan.md`（方向 A 研究计划，构建项目时复制自上级目录）
+
+---
+
+## 设计修订（2026-10-16）：评估协议
+
+数据核实结论：movie1K 年份 1939–2018（≥2019=0，时序分割不可承载核心论证）；冷启动子集逻辑上不可能非空（genome 由用户标签训练）。修订：
+
+1. **探针 1 · 无内容盲测**：`modalities: []`（title-only）成为合法实验配置——prompt 仅含标题+年份+few-shot+标签块，零内容 section。作为消融矩阵一臂（`MLLM[title-only]` 行）。管道改动：空模态列表是显式意图，不判 `no_content`。
+2. **探针 2 · 错配内容**：新模块 `genometag/probes/mismatch.py` + `scripts/07_mismatch_probe.py`——采样同类型/跨类型电影对 (A,B)，prompt = A 标题 + B 内容，评估 corr(pred, truth_A) vs corr(pred, truth_B) 的相对迁移（按条件分组）。预测钉住 A → 记忆；移向 B → 内容使用。
+3. **时序分割**：代码保留（`temporal_split_year`），论文中降级为按年代分桶的描述性分析。
+4. **冷启动**：`cold_start_subset` 代码保留但不再作为实验协议；论文中转为方法属性（输入纯内容驱动、天然冷启动可用）+ limitation 说明设定边界。
 
 ---
 

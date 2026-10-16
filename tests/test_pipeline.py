@@ -165,3 +165,17 @@ def test_dry_run_prints_prompts_without_calls(synthetic_env, capsys):
     out_text = capsys.readouterr().out
     assert "[dry-run]" in out_text
     assert "电影：《" in out_text
+
+
+def test_title_only_empty_modalities_runs(synthetic_env):
+    """记忆探针 1（spec 2026-10-16 修订）：modalities=[] 是显式意图（title-only 臂），
+    不判 no_content，产出标注且 modality_set 标记为 title-only。"""
+    cfg, paths = synthetic_env
+    cfg.annotation.modalities = []
+    out = run_annotation(cfg, paths, MockClient(), cache=None)
+    df = pd.read_parquet(out)
+    assert len(df) == 5 * 24 * 2                      # 全部任务执行，无一 no_content
+    assert (df["modality_set"] == "title-only").all()
+    assert df["score"].notna().all()                  # mock 仍从标题解析打分
+    manifest = json.loads((paths.results / "run_manifest.json").read_text(encoding="utf-8"))
+    assert manifest["tasks"]["no_content"] == 0
