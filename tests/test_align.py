@@ -104,3 +104,25 @@ def test_build_dataset_zero_matches(tmp_path):
     assert len(pd.read_parquet(paths.genome_scores)) == 0
     report = (paths.interim / "align_report.md").read_text(encoding="utf-8")
     assert "0.0%" in report
+
+
+def test_build_dataset_drops_movies_without_genome(tmp_path):
+    """实验集的诚实定义：对齐且可评估——无 genome 覆盖的电影不进 dataset（省标注成本）。"""
+    import pandas as pd
+
+    from genometag.data.align import build_dataset
+    from genometag.data.sample import make_synthetic_dataset
+
+    make_synthetic_dataset(tmp_path)
+    # 电影 5（Paper Skies）没有 genome 行——模拟 49 部无覆盖的真实场景
+    scores_csv = tmp_path / "raw" / "movielens" / "genome-scores.csv"
+    df = pd.read_csv(scores_csv)
+    df = df[df["movieId"] != 5]
+    df.to_csv(scores_csv, index=False)
+
+    paths = _synthetic_paths(tmp_path)
+    stats = build_dataset(paths)
+    ds = pd.read_parquet(paths.dataset)
+    assert stats["movies"] == 4                       # 无覆盖电影被剔除
+    assert 5 not in set(ds["movie_id"])
+    assert stats["genome_rows"] == 4 * 24

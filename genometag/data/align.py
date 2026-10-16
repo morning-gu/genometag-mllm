@@ -140,9 +140,14 @@ def build_dataset(paths: Paths) -> dict[str, int]:
         })
     # 显式列名：零匹配时也要有完整 schema（空表可被下游按列访问，见 DATASET_COLUMNS）
     dataset = pd.DataFrame(dataset_rows, columns=DATASET_COLUMNS)
-    dataset.to_parquet(paths.dataset, index=False)
 
     scores = load_genome_scores(paths.movielens / "genome-scores.csv")
+    # 实验集的诚实定义：对齐且可评估——无 genome 覆盖的电影不进 dataset
+    # （真实数据 1,084 对齐中 49 部无覆盖，剔除省 ~4.5% 标注成本）
+    covered = set(scores["movie_id"])
+    dataset = dataset[dataset["movie_id"].isin(covered)]
+    dataset.to_parquet(paths.dataset, index=False)
+
     scores = scores[scores["movie_id"].isin(set(dataset["movie_id"]))]
     scores.to_parquet(paths.genome_scores, index=False)
     load_genome_tags(paths.movielens / "genome-tags.csv").to_parquet(
