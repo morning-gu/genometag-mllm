@@ -21,6 +21,7 @@ import numpy as np
 import pandas as pd
 
 from genometag.annotate.cache import cache_key
+from genometag.annotate.client import sampling_params
 from genometag.annotate.pipeline import _to_multimodal, select_few_shots
 from genometag.annotate.prompts import TagDef, build_messages, parse_scores
 from genometag.data.movienet import MovieMultimodal
@@ -114,7 +115,7 @@ def run_mismatch_probe(config, paths, client, cache) -> Path:
             content = None
             if cache is not None and not config.mock:
                 key = cache_key(messages, config.model.model,
-                                {"temperature": config.model.temperature}, run_id)
+                                sampling_params(config.model), run_id)
                 raw = cache.get(key)
                 if raw is not None:          # 缓存命中：从原始响应信封提取
                     content = raw.get("choices", [{}])[0].get(

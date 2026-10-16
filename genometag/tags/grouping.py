@@ -98,8 +98,10 @@ def _parse_entries(text: str) -> dict[str, dict]:
 
 
 def group_tags_via_llm(tags: list[str], client, cache, model: str,
-                       batch_size: int = 150) -> pd.DataFrame:
+                       batch_size: int = 150, params: dict | None = None) -> pd.DataFrame:
     """分批调用 LLM 分组：宽松接受 + 缺失补漏（不静默丢 tag）。
+
+    params: 采样参数指纹（sampling_params 产物），进缓存键。
 
     实测教训（qwen3.5-4b，2026-10-16）：40/批的输出可能合法但漏 1-2 个 tag
     （39/40 keys、finish=stop）——全有或全无校验会报废整批。改为：接受已解析
@@ -110,7 +112,7 @@ def group_tags_via_llm(tags: list[str], client, cache, model: str,
     def call(batch: list[str], attempt: int) -> str:
         messages = build_grouping_messages(batch, known_groups)
         run_id = "grouping" if attempt == 0 else f"grouping#r{attempt}"
-        key = cache_key(messages, model, {}, run_id)
+        key = cache_key(messages, model, params or {}, run_id)
         raw = cache.get(key) if cache else None
         if raw is None:
             resp = client.complete(messages, run_id=run_id)

@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import pandas as pd  # noqa: E402
 
 from genometag.config import load_config, paths_for  # noqa: E402
+from genometag.annotate.client import sampling_params  # noqa: E402
 
 
 def main(config_path: str = "configs/default.yaml", batch_size: int = 150) -> int:
@@ -38,7 +39,8 @@ def main(config_path: str = "configs/default.yaml", batch_size: int = 150) -> in
             client=make_client(config),
             cache=cache,
             model=config.model.model,
-            batch_size=batch_size)
+            batch_size=batch_size,
+            params=sampling_params(config.model))
         id_map = dict(zip(genome_tags["tag"], genome_tags["tag_id"]))
         rows = [{"tag_id": id_map[r["tag"]], **r}
                 for _, r in df.iterrows()]

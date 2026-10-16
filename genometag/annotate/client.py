@@ -10,7 +10,17 @@ import time
 from dataclasses import dataclass
 from typing import Callable
 
-Transport = Callable[[str, list[dict], float, dict | None], dict]
+Transport = Callable[[str, list[dict], float, dict | None, dict | None], dict]
+
+
+def sampling_params(model_cfg) -> dict:
+    """采样参数指纹：进缓存键，保证换参数（temperature/extra_body）即换键。
+    模型无关：未设置 extra_body 的配置得到与旧版逐字节相同的键（存量缓存不失效）。
+    """
+    params: dict = {"temperature": model_cfg.temperature}
+    if getattr(model_cfg, "extra_body", None):
+        params["extra_body"] = dict(model_cfg.extra_body)
+    return params
 
 
 @dataclass
@@ -25,13 +35,14 @@ class OpenAIClient:
     def __init__(self, model: str, base_url_env: str,
                  api_key_env: str = "OPENAI_API_KEY", temperature: float = 0.7,
                  request_interval: float = 0.5, transport: Transport | None = None,
-                 max_retries: int = 3):
+                 max_retries: int = 3, extra_body: dict | None = None):
         self.model = model
         self.base_url_env = base_url_env
         self.api_key_env = api_key_env
         self.temperature = temperature
         self.request_interval = request_interval
         self.max_retries = max_retries
+        self.extra_body = dict(extra_body) if extra_body else {}
         self._transport = transport
 
     def _build_transport(self) -> Transport:
@@ -46,11 +57,13 @@ class OpenAIClient:
         sdk = OpenAI(base_url=base_url, api_key=api_key)
 
         def transport(model: str, messages: list[dict], temperature: float,
-                      response_format: dict | None) -> dict:
+                      response_format: dict | None, extra_body: dict | None) -> dict:
             kwargs: dict = {"model": model, "messages": messages,
                             "temperature": temperature}
             if response_format is not None:
                 kwargs["response_format"] = response_format
+            if extra_body:
+                kwargs["extra_body"] = extra_body
             return sdk.chat.completions.create(**kwargs).model_dump()
 
         return transport
@@ -81,7 +94,8 @@ class OpenAIClient:
     def _call(self, transport: Transport, messages: list[dict],
               allow_json: bool) -> LLMResponse:
         rf = {"type": "json_object"} if allow_json else None
-        raw = transport(self.model, messages, self.temperature, rf)
+        raw = transport(self.model, messages, self.temperature, rf,
+                        self.extra_body or None)
         content = raw.get("choices", [{}])[0].get("message", {}).get("content", "")
         return LLMResponse(content=content or "", usage=raw.get("usage", {}),
                            raw=raw, ok=True)
@@ -105,4 +119,5 @@ def make_client(config):
     return OpenAIClient(
         model=config.model.model, base_url_env=config.model.base_url_env,
         api_key_env=config.model.api_key_env, temperature=config.model.temperature,
-        request_interval=config.model.request_interval)
+        request_interval=config.model.request_interval,
+        extra_body=config.model.extra_body)

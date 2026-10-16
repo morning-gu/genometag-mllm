@@ -30,6 +30,7 @@ class ModelConfig:
     script_token_budget: int = 4000
     dialogue_token_budget: int = 3000
     request_interval: float = 0.5   # 两次请求间隔秒数（简单限速）
+    extra_body: dict = field(default_factory=dict)  # 端点专有参数透传（如 DashScope {enable_thinking: false}）
 
 
 @dataclass
@@ -142,6 +143,8 @@ def validate_config(cfg: AppConfig) -> None:
         raise ValueError("protocol.top_k 必须 ≥ 1")
     if cfg.data.movie_limit is not None and cfg.data.movie_limit < 1:
         raise ValueError("data.movie_limit 为 None 或 ≥ 1")
+    if not isinstance(cfg.model.extra_body, dict):
+        raise ValueError("model.extra_body 必须是字典，如 {enable_thinking: false}")
 
 
 def load_config(path: str | Path) -> AppConfig:

@@ -78,6 +78,19 @@ def test_unknown_top_level_key_message_mentions_replacement(tmp_path):
         load_config(_write(tmp_path, bad))
 
 
+def test_extra_body_type_validated(tmp_path):
+    """extra_body 必须是字典（端点专有参数透传，如 DashScope enable_thinking）。"""
+    bad = {**MINIMAL, "model": {"extra_body": ["not", "a", "dict"]}}
+    with pytest.raises(ValueError, match="extra_body"):
+        load_config(_write(tmp_path, bad))
+
+
+def test_extra_body_loads_from_yaml(tmp_path):
+    cfg_data = {**MINIMAL, "model": {"extra_body": {"enable_thinking": False}}}
+    cfg = load_config(_write(tmp_path, cfg_data))
+    assert cfg.model.extra_body == {"enable_thinking": False}
+
+
 def test_default_yaml_still_loads():
     """default.yaml 的 consistency 块移除后仍可加载且无该字段。"""
     cfg = load_config("configs/default.yaml")

@@ -14,6 +14,7 @@ from pathlib import Path
 import pandas as pd
 
 from genometag.annotate.cache import ResponseCache, cache_key
+from genometag.annotate.client import sampling_params
 from genometag.annotate.prompts import (
     FewShot, TagDef, build_messages, parse_scores_lenient,
 )
@@ -163,7 +164,7 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
                 raw = None
                 if cache is not None and not config.mock:
                     key = cache_key(messages, config.model.model,
-                                    {"temperature": config.model.temperature}, eff_run)
+                                    sampling_params(config.model), eff_run)
                     raw = cache.get(key)
                 if raw is None:
                     resp = client.complete(messages, run_id=eff_run)
