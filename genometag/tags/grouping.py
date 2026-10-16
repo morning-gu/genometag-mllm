@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -37,7 +38,14 @@ def parse_grouping_response(text: str, expected: list[str]) -> dict[str, dict] |
     try:
         data = json.loads(text)
     except json.JSONDecodeError:
-        return None
+        # 与 parse_scores 一致的降级：模型可能用 ```json 围栏或前后缀文本包裹
+        m = re.search(r"\{.*\}", text, re.DOTALL)
+        if not m:
+            return None
+        try:
+            data = json.loads(m.group())
+        except json.JSONDecodeError:
+            return None
     if not isinstance(data, dict):
         return None
     out: dict[str, dict] = {}
