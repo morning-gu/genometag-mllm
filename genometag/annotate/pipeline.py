@@ -15,7 +15,7 @@ import pandas as pd
 
 from genometag.annotate.cache import ResponseCache, cache_key
 from genometag.annotate.prompts import (
-    FewShot, TagDef, build_messages, parse_scores,
+    FewShot, TagDef, build_messages, parse_scores_lenient,
 )
 from genometag.config import AppConfig, paths_for
 from genometag.data.movienet import MovieMultimodal
@@ -130,7 +130,7 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
         done_keys = {r["task_key"] for r in records}
 
     cost = {"total_calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
-    counts = {"done": 0, "parse_failed": 0, "no_content": 0}
+    counts = {"done": 0, "parse_failed": 0, "no_content": 0, "null_scores": 0}
 
     with jsonl_path.open("a", encoding="utf-8") as sink:
         for task in tasks:
@@ -153,7 +153,9 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
             messages = build_messages(mm, tag_defs, available, few_shots, config.model)
             expected = [t.tag for t in tag_defs]
 
-            scores: dict[str, float] | None = None
+            # 宽松解析（服务器实测：完整 JSON 偶尔漏 1-2 tag 或输出字符串数值——
+            # 全有或全无会报废 58/60 的好结果；缺失记 null 并计数，仅全空才重试）
+            scores: dict[str, float] = {}
             usage: dict = {}
             content = ""
             for attempt in range(3):
@@ -176,16 +178,17 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
                 else:
                     # 缓存命中：存的是完整原始响应信封，从信封还原文本
                     content = raw.get("choices", [{}])[0].get("message", {}).get("content", "")
-                scores = parse_scores(content, expected)
-                if scores is not None:
+                scores = parse_scores_lenient(content, expected)
+                if scores:
                     break
 
-            status = "done" if scores is not None else "parse_failed"
+            status = "done" if scores else "parse_failed"
             counts[status] += 1
+            counts["null_scores"] += len(expected) - len(scores)
             rows = [{"movie_id": task.movie_id, "tag_id": int(td.tag_id),
                      "group": task.group, "modality_set": modality_set,
                      "run_id": task.run_id,
-                     "score": scores.get(td.tag) if scores else None}
+                     "score": scores.get(td.tag)}
                     for td in tag_defs]
             sink.write(json.dumps({"task_key": task_key, "status": status,
                                    "rows": rows, "usage": usage}, ensure_ascii=False) + "\n")

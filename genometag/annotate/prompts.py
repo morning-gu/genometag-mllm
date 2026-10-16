@@ -99,26 +99,61 @@ _JSON_RE = re.compile(r"\{.*\}", re.DOTALL)
 
 def parse_scores(text: str, expected_tags: list[str]) -> dict[str, float] | None:
     """解析模型输出。任一 tag 缺失/非数值/越界/不可解析 → None（调用方决定重试）。"""
-    try:
-        data = json.loads(text)
-    except json.JSONDecodeError:
-        m = _JSON_RE.search(text)
-        if not m:
-            return None
-        try:
-            data = json.loads(m.group())
-        except json.JSONDecodeError:
-            return None
+    data = _extract_json_object(text)
     if not isinstance(data, dict):
         return None
     scores: dict[str, float] = {}
     for tag in expected_tags:
         if tag not in data:
             return None
-        v = data[tag]
-        if isinstance(v, bool) or not isinstance(v, (int, float)):
+        v = _coerce_score(data[tag])
+        if v is None:
             return None
-        if not 0.0 <= float(v) <= 1.0:
-            return None
-        scores[tag] = float(v)
+        scores[tag] = v
     return scores
+
+
+def parse_scores_lenient(text: str, expected_tags: list[str]) -> dict[str, float]:
+    """宽松解析：返回全部合法条目，缺失/非法条目跳过（数值字符串如 "0.18" 可转）。
+
+    服务器实测（qwen3.5-4b）：完整 JSON 偶尔漏 1-2 个 tag 或输出字符串数值——
+    全有或全无会把 58/60 的好结果整任务报废。缺失 tag 由调用方记 null 并统计。
+    """
+    data = _extract_json_object(text)
+    if not isinstance(data, dict):
+        return {}
+    out: dict[str, float] = {}
+    for tag in expected_tags:
+        if tag in data:
+            v = _coerce_score(data[tag])
+            if v is not None:
+                out[tag] = v
+    return out
+
+
+def _extract_json_object(text: str):
+    """直接 json.loads；失败则正则截取首个 {...}（模型可能加围栏/前后缀）。"""
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        m = _JSON_RE.search(text)
+        if not m:
+            return None
+        try:
+            return json.loads(m.group())
+        except json.JSONDecodeError:
+            return None
+
+
+def _coerce_score(v) -> float | None:
+    """数值校验/转换：bool 拒绝；数值字符串可转；范围 [0,1]；否则 None。"""
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, str):
+        try:
+            v = float(v)
+        except ValueError:
+            return None
+    if not isinstance(v, (int, float)):
+        return None
+    return float(v) if 0.0 <= float(v) <= 1.0 else None

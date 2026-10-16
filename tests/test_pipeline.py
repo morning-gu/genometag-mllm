@@ -198,3 +198,29 @@ def test_mixed_missing_script_paths_survive_parquet_roundtrip(synthetic_env):
     df = pd.read_parquet(out)
     assert len(df) == 5 * 24 * 2          # 无 no_content：其他模态仍可用
     assert df["score"].notna().all()
+
+
+def test_lenient_parse_records_null_not_task_failure(synthetic_env):
+    """宽松评分解析：响应漏 1 个 tag → 任务仍 done、该 tag 记 null、manifest 计数。"""
+    import json as _json
+
+    cfg, paths = synthetic_env
+
+    class DroppyMock(MockClient):
+        """每次响应丢弃一个 tag 的键——模拟真实小模型漏 tag。"""
+
+        def complete(self, messages, run_id):
+            resp = super().complete(messages, run_id)
+            scores = _json.loads(resp.content)
+            scores.pop(next(iter(scores)))
+            resp.content = _json.dumps(scores)
+            return resp
+
+    out = run_annotation(cfg, paths, DroppyMock(), cache=None)
+    df = pd.read_parquet(out)
+    assert len(df) == 5 * 24 * 2                    # 任务未报废，行数完整
+    assert df["score"].isna().sum() > 0             # 缺失 tag 记 null
+    manifest = _json.loads((paths.results / "run_manifest.json")
+                           .read_text(encoding="utf-8"))
+    assert manifest["tasks"]["done"] == 5 * 4 * 2   # 全部任务 done
+    assert manifest["tasks"]["null_scores"] == df["score"].isna().sum()
