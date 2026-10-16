@@ -6,12 +6,12 @@ data:
 model:
   base_url_env: OPENAI_BASE_URL
   api_key_env: OPENAI_API_KEY
-  model: gpt-4o
+  model: qwen3.5-4b
   temperature: 0.7
-  max_frames: 12
-  script_token_budget: 4000
-  dialogue_token_budget: 3000
-  request_interval: 0.5
+  max_frames: 4
+  script_token_budget: 400
+  dialogue_token_budget: 250
+  request_interval: 0.1
 annotation:
   n_runs: 3
   modalities: [video, script, dialogue]

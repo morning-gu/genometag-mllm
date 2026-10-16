@@ -14,7 +14,7 @@ import pandas as pd  # noqa: E402
 from genometag.config import load_config, paths_for  # noqa: E402
 
 
-def main(config_path: str = "configs/default.yaml") -> int:
+def main(config_path: str = "configs/default.yaml", batch_size: int = 150) -> int:
     config = load_config(config_path)
     paths = paths_for(config)
     if paths.tag_groups.exists():
@@ -31,11 +31,14 @@ def main(config_path: str = "configs/default.yaml") -> int:
         from genometag.tags.grouping import group_tags_via_llm
         # mock 不读不写缓存：mock:true + 真实源的组合也不得把 mock 信封写进真实缓存
         cache = None if config.mock else ResponseCache(paths.cache)
+        # batch_size 受端点上下文约束：每批输出约 batch×35 token（组名+类型+定义），
+        # 小上下文端点（如 max_model_len=3072 的 vLLM 部署）需调小（如 60）
         df = group_tags_via_llm(
             tags=genome_tags["tag"].tolist(),
             client=make_client(config),
             cache=cache,
-            model=config.model.model)
+            model=config.model.model,
+            batch_size=batch_size)
         id_map = dict(zip(genome_tags["tag"], genome_tags["tag_id"]))
         rows = [{"tag_id": id_map[r["tag"]], **r}
                 for _, r in df.iterrows()]
@@ -50,4 +53,6 @@ def main(config_path: str = "configs/default.yaml") -> int:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/default.yaml")
-    raise SystemExit(main(parser.parse_args().config))
+    parser.add_argument("--batch-size", type=int, default=150,
+                        help="每批分组标签数（小上下文端点需调小，如 60）")
+    raise SystemExit(main(parser.parse_args().config, parser.parse_args().batch_size))

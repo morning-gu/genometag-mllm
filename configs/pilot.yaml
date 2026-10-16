@@ -1,0 +1,16 @@
+# 首次真实试跑：50 部电影 × 3 轮——验证 prompt 有效性与成本后再放量
+exp_name: pilot
+data: {source: real, movie_limit: 50, seed: 42}
+model:
+  model: qwen3.5-4b
+  temperature: 0.7
+  max_frames: 4
+  script_token_budget: 400
+  dialogue_token_budget: 250
+  request_interval: 0.1
+annotation:
+  n_runs: 3
+  modalities: [video, script, dialogue]
+  few_shot_examples: 2
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+mock: false
