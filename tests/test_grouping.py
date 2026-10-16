@@ -69,3 +69,33 @@ def test_load_tag_groups(tmp_path):
     p.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     df = load_tag_groups(p)
     assert list(df.columns) == ["tag_id", "tag", "group", "tag_type", "definition"]
+
+
+def test_group_tags_via_llm_recovers_missing_tags():
+    """宽松接受 + 缺失补漏：第一批漏 1 个 tag → 补漏批返回 → 4/4 全部到位。"""
+    def _entry(group="G1", ttype="content"):
+        return {"group": group, "tag_type": ttype, "definition": "d"}
+
+    # 第一批（4 tags）只返回 3 个——合法 JSON、finish=stop，但漏 "d"（服务器实测场景）
+    partial = json.dumps({t: _entry() for t in ["a", "b", "c"]})
+    gapfill = json.dumps({"d": _entry()})
+    client = _ScriptedClient([partial, gapfill])
+    df = group_tags_via_llm(["a", "b", "c", "d"], client, cache=None,
+                            model="m", batch_size=4)
+    assert len(df) == 4 and set(df["tag"]) == {"a", "b", "c", "d"}
+    assert client.calls == 2                       # 原批 + 补漏批
+
+
+def test_group_tags_via_llm_raises_after_gapfill_exhausted():
+    """补漏 3 次尝试后仍缺 → RuntimeError（不静默丢 tag 的底线不变）。"""
+    import pytest
+
+    def _entry():
+        return {"group": "G1", "tag_type": "content", "definition": "d"}
+
+    # 每次响应都漏 "d"
+    partial = json.dumps({t: _entry() for t in ["a", "b", "c"]})
+    client = _ScriptedClient([partial, partial, partial])
+    with pytest.raises(RuntimeError, match="缺失"):
+        group_tags_via_llm(["a", "b", "c", "d"], client, cache=None,
+                           model="m", batch_size=4)
