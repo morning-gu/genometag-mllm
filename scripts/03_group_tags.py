@@ -43,10 +43,23 @@ def main(config_path: str = "configs/default.yaml", batch_size: int = 150) -> in
         rows = [{"tag_id": id_map[r["tag"]], **r}
                 for _, r in df.iterrows()]
     paths.processed.mkdir(parents=True, exist_ok=True)
-    paths.tag_groups.write_text(json.dumps(rows, ensure_ascii=False, indent=1),
+    # 大组拆分：组是 prompt 分批单位——组太大时 prompt+输出超出小上下文端点
+    # （实测：99-tag 组在 max_model_len=3072 下输出被截断，15/48 任务 parse_failed）
+    MAX_GROUP_TAGS = 60
+    split_rows, group_seq = [], {}
+    for r in rows:
+        base = r["group"]
+        n = group_seq.get(base, 0)
+        sub = n // MAX_GROUP_TAGS
+        if sub > 0:
+            r = {**r, "group": f"{base}·{sub + 1}"}
+        group_seq[base] = n + 1
+        split_rows.append(r)
+    paths.tag_groups.write_text(json.dumps(split_rows, ensure_ascii=False, indent=1),
                                 encoding="utf-8")
-    print(f"[03] tag 分组完成: {len(rows)} 个 tag, "
-          f"{len({r['group'] for r in rows})} 个组 → {paths.tag_groups}")
+    print(f"[03] tag 分组完成: {len(split_rows)} 个 tag, "
+          f"{len({r['group'] for r in split_rows})} 个组"
+          f"（大组已按 ≤{MAX_GROUP_TAGS} 拆分）→ {paths.tag_groups}")
     return 0
 
 
