@@ -28,7 +28,9 @@ def build_grouping_messages(tag_batch: list[str], known_groups: list[str]) -> li
         "与一句话定义。\n\n标签：\n"
         + "\n".join(f"- {t}" for t in tag_batch)
         + '\n\n只输出 JSON：{"标签名": {"group": "组名", "tag_type": "content|preference", '
-          '"definition": "一句话定义"}, ...}'
+          '"definition": "一句话定义"}, ...}\n'
+        "重要：JSON 的键必须与上面给出的标签原文逐字符一致——不翻译、不改写、"
+        "不去空格（人名如 \"neil gaiman\" 也保持英文原文）；group 与 definition 用中文。"
     )
     return [{"role": "system", "content": _GROUPING_SYSTEM},
             {"role": "user", "content": user}]
