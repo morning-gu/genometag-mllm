@@ -1,0 +1,19 @@
+# 并行正确性冒烟：与 vrfy 完全同构（同电影/组/预算/模型/温度）但 workers=4。
+# 必须在 tag_groups.json 重生成之前跑——全部任务命中 vrfy 的磁盘缓存，
+# 零成本验证线程池 + 行级落盘 + 计数一致性；指标应与 results/vrfy 一致。
+exp_name: vrfy-par
+data: {source: real, movie_limit: 2, seed: 42}
+model:
+  model: qwen3.7-plus
+  temperature: 0.7
+  max_frames: 4
+  script_token_budget: 400
+  dialogue_token_budget: 250
+  request_interval: 0.1
+annotation:
+  n_runs: 1
+  modalities: [video, script, dialogue]
+  few_shot_examples: 2
+  workers: 4
+protocol: {temporal_split_year: 2022, relevance_threshold: 0.5, top_k: 10}
+mock: false

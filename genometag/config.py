@@ -38,6 +38,7 @@ class AnnotationConfig:
     n_runs: int = 3
     modalities: list[str] = field(default_factory=lambda: list(VALID_MODALITIES))
     few_shot_examples: int = 2
+    workers: int = 1   # 并行线程数（1=串行）。任务相互独立，结果与串行等价（有测试钉死）
 
 
 @dataclass
@@ -137,6 +138,8 @@ def validate_config(cfg: AppConfig) -> None:
         raise ValueError("annotation.n_runs 必须 ≥ 1")
     if cfg.annotation.few_shot_examples < 0:
         raise ValueError("annotation.few_shot_examples 必须 ≥ 0")
+    if cfg.annotation.workers < 1:
+        raise ValueError("annotation.workers 必须 ≥ 1（1=串行）")
     if not 0.0 < cfg.protocol.relevance_threshold < 1.0:
         raise ValueError("protocol.relevance_threshold 必须在 (0,1) 开区间")
     if cfg.protocol.top_k < 1:

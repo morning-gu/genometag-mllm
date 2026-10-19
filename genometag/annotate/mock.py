@@ -56,6 +56,11 @@ class MockClient:
             noise = (_hash_unit(f"noise|{title}|{tag}|{run_id}") - 0.5) * 2 * self.correlation_noise
             scores[tag] = min(1.0, max(0.0, base_score(title, tag) + noise))
         content = json.dumps(scores, ensure_ascii=False)
-        return LLMResponse(content=content,
-                           usage={"prompt_tokens": 100, "completion_tokens": 50},
-                           raw={"mock": True}, ok=True)
+        usage = {"prompt_tokens": 100, "completion_tokens": 50}
+        # raw 必须是 OpenAI 信封形状：pipeline 缓存命中路径从 choices[0].message.content
+        # 还原文本（缓存测试走 cfg.mock=false + 注入 mock 的组合，信封契约在此生效）
+        return LLMResponse(content=content, usage=usage,
+                           raw={"choices": [{"message": {"content": content},
+                                             "finish_reason": "stop"}],
+                                "usage": usage, "mock": True},
+                           ok=True)

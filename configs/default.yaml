@@ -17,6 +17,7 @@ annotation:
   n_runs: 3
   modalities: [video, script, dialogue]
   few_shot_examples: 2
+  workers: 8
 protocol:
   temporal_split_year: 2015   # 数据止于 2018：≥2015 测试视图非空（~95 部），<2015 为训练参考池
   relevance_threshold: 0.5

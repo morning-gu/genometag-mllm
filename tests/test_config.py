@@ -78,6 +78,13 @@ def test_unknown_top_level_key_message_mentions_replacement(tmp_path):
         load_config(_write(tmp_path, bad))
 
 
+def test_workers_validated(tmp_path):
+    """annotation.workers 并行线程数：必须 ≥ 1。"""
+    bad = {**MINIMAL, "annotation": {"workers": 0}}
+    with pytest.raises(ValueError, match="workers"):
+        load_config(_write(tmp_path, bad))
+
+
 def test_extra_body_type_validated(tmp_path):
     """extra_body 必须是字典（端点专有参数透传，如 DashScope enable_thinking）。"""
     bad = {**MINIMAL, "model": {"extra_body": ["not", "a", "dict"]}}

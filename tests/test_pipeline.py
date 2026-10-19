@@ -112,6 +112,50 @@ def test_run_annotation_tolerates_malformed_jsonl_line(synthetic_env, capsys):
     assert "跳过损坏的 jsonl 行: 1" in out_text
 
 
+def test_run_annotation_parallel_equivalent(synthetic_env):
+    """并行（workers=2）与串行等价：行数、逐 (movie,tag,run) 分数、manifest 计数一致。"""
+    cfg, paths = synthetic_env
+    out_seq = run_annotation(cfg, paths, MockClient(), cache=None)
+    df_seq = pd.read_parquet(out_seq)
+    manifest_seq = json.loads(
+        (paths.results / "run_manifest.json").read_text(encoding="utf-8"))
+
+    cfg.annotation.workers = 2
+    paths.results = paths.results.with_name("smoke-par")
+    out_par = run_annotation(cfg, paths, MockClient(), cache=None)
+    df_par = pd.read_parquet(out_par)
+    assert len(df_par) == len(df_seq) == 5 * 24 * 2
+    merged = df_seq.merge(df_par, on=["movie_id", "tag_id", "run_id"],
+                          suffixes=("_seq", "_par"))
+    assert (merged["score_seq"] == merged["score_par"]).all()   # mock 确定性 → 逐值相等
+    manifest_par = json.loads(
+        (paths.results / "run_manifest.json").read_text(encoding="utf-8"))
+    assert manifest_par["tasks"] == manifest_seq["tasks"]
+
+
+def test_parallel_with_real_cache_all_hits(synthetic_env):
+    """并行 + 真实缓存路径（mock:false 才读写缓存）：首跑 40 任务全落盘，
+    二跑（新结果目录、同缓存）全部命中零调用——缓存读写与行级落盘的线程安全。"""
+    from genometag.annotate.cache import ResponseCache
+
+    cfg, paths = synthetic_env
+    cfg.mock = False                       # 缓存门控只看 config.mock；client 仍可注入 mock
+    cfg.annotation.workers = 3
+    cache = ResponseCache(paths.cache)
+    out = run_annotation(cfg, paths, MockClient(), cache=cache)
+    assert len(pd.read_parquet(out)) == 5 * 24 * 2
+    assert len(list(paths.cache.glob("*.json"))) == 5 * 4 * 2   # 40 任务各一缓存文件
+
+    paths.results = paths.results.with_name("smoke-par2")
+
+    class NoCallMock(MockClient):
+        def complete(self, messages, run_id):
+            raise AssertionError("缓存全命中不应有新调用")
+
+    out2 = run_annotation(cfg, paths, NoCallMock(), cache=cache)
+    assert len(pd.read_parquet(out2)) == 5 * 24 * 2
+
+
 def test_parse_failure_records_null(synthetic_env):
     """Review Focus #2：解析重试后仍失败 → null 分数 + manifest 记 parse_failed。"""
     cfg, paths = synthetic_env

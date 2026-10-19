@@ -10,5 +10,6 @@ annotation:
   n_runs: 3
   modalities: [video]
   few_shot_examples: 2
+  workers: 8
 protocol: {temporal_split_year: 2015, relevance_threshold: 0.5, top_k: 10}
 mock: false
