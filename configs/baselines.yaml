@@ -1,5 +1,5 @@
 exp_name: baselines
-data: {source: real, seed: 42}
+data: {source: real, seed: 42, movie_list: data/processed/eval_test.txt}
 protocol: {temporal_split_year: 2015, relevance_threshold: 0.5, top_k: 10}
 baselines: {run: [random, mean, genre, bert]}
 mock: false

@@ -25,6 +25,7 @@ from genometag.annotate.client import sampling_params
 from genometag.annotate.pipeline import _to_multimodal, select_few_shots
 from genometag.annotate.prompts import TagDef, build_messages, parse_scores
 from genometag.data.movienet import MovieMultimodal
+from genometag.eval.protocol import fitting_pool_ids, load_eval_movie_ids
 from genometag.tags.grouping import load_tag_groups
 
 
@@ -90,9 +91,11 @@ def run_mismatch_probe(config, paths, client, cache) -> Path:
     genome_scores = pd.read_parquet(paths.genome_scores)
     tag_groups = load_tag_groups(paths.tag_groups)
     tag_names = dict(zip(tag_groups["tag_id"], tag_groups["tag"]))
+    eval_ids = load_eval_movie_ids(config, paths)
+    fit_pool = fitting_pool_ids(config, dataset, eval_ids)
     few_shots = select_few_shots(
         dataset, genome_scores, config.annotation.few_shot_examples,
-        config.protocol.temporal_split_year, config.protocol.top_k, tag_names)
+        fit_pool, config.protocol.top_k, tag_names)
 
     pairs = sample_pairs(dataset, config.probes.n_pairs,
                          config.data.seed, config.annotation.modalities)

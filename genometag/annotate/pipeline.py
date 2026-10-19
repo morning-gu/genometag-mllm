@@ -23,6 +23,7 @@ from genometag.annotate.prompts import (
 )
 from genometag.config import AppConfig, paths_for
 from genometag.data.movienet import MovieMultimodal
+from genometag.eval.protocol import fitting_pool_ids, load_eval_movie_ids
 from genometag.tags.grouping import load_tag_groups
 
 
@@ -41,16 +42,18 @@ def build_task_matrix(movie_ids: list[int], tag_groups: pd.DataFrame,
 
 
 def select_few_shots(dataset: pd.DataFrame, genome_scores: pd.DataFrame,
-                     n: int, split_year: int, top_k: int,
+                     n: int, pool_ids, top_k: int,
                      tag_names: dict[int, str]) -> list[FewShot]:
-    """从 year < split_year 的电影中选 top-k 分数和最高的 n 部（防泄露约束）。
+    """从拟合池（pool_ids，防泄露约束）中选 top-k 分数和最高的 n 部。
 
+    池语义见 eval.protocol.fitting_pool_ids（movie_list 补集或分割年前）。
     tag_names: tag_id → tag 文本（来自 tag_groups；few-shot 展示 tag 名而非 id）。
     """
     if n <= 0:
         return []
-    train = dataset[dataset["year"] < split_year]
-    scores = genome_scores[genome_scores["movie_id"].isin(set(train["movie_id"]))]
+    pool = set(pool_ids)
+    train = dataset[dataset["movie_id"].isin(pool)]
+    scores = genome_scores[genome_scores["movie_id"].isin(pool)]
     if scores.empty:
         return []
     top_sums = (scores.groupby("movie_id")["relevance"]
@@ -90,14 +93,20 @@ def run_annotation(config: AppConfig, paths, client, cache: ResponseCache | None
     genome_scores = pd.read_parquet(paths.genome_scores)
     tag_groups = load_tag_groups(paths.tag_groups)
 
-    movie_ids = sorted(dataset["movie_id"].tolist())
-    if config.data.movie_limit is not None and config.data.movie_limit < len(movie_ids):
-        movie_ids = random.Random(config.data.seed).sample(movie_ids, config.data.movie_limit)
+    # 评估集：显式清单（协议 v3 电影级留出）优先，否则全集（可 movie_limit 抽样）
+    eval_ids = load_eval_movie_ids(config, paths)
+    fit_pool = fitting_pool_ids(config, dataset, eval_ids)   # 同时校验清单 id ⊆ dataset
+    if eval_ids is not None:
+        movie_ids = list(eval_ids)
+    else:
+        movie_ids = sorted(dataset["movie_id"].tolist())
+        if config.data.movie_limit is not None and config.data.movie_limit < len(movie_ids):
+            movie_ids = random.Random(config.data.seed).sample(movie_ids, config.data.movie_limit)
 
     tag_names = dict(zip(tag_groups["tag_id"], tag_groups["tag"]))
     few_shots = select_few_shots(
         dataset, genome_scores, config.annotation.few_shot_examples,
-        config.protocol.temporal_split_year, config.protocol.top_k, tag_names)
+        fit_pool, config.protocol.top_k, tag_names)
 
     tasks = build_task_matrix(movie_ids, tag_groups, config.annotation.n_runs)
     # 记忆探针 1（spec 2026-10-16 修订）：modalities=[] 是显式的 title-only 臂

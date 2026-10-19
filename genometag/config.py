@@ -17,6 +17,7 @@ VALID_SOURCES = ("real", "synthetic")
 class DataConfig:
     source: str = "real"            # real | synthetic
     movie_limit: int | None = None  # None = 全量
+    movie_list: str | None = None   # 显式评估集清单（相对项目根，每行一个 movie_id；协议 v3 电影级留出）
     seed: int = 42
 
 
@@ -144,6 +145,8 @@ def validate_config(cfg: AppConfig) -> None:
         raise ValueError("protocol.relevance_threshold 必须在 (0,1) 开区间")
     if cfg.protocol.top_k < 1:
         raise ValueError("protocol.top_k 必须 ≥ 1")
+    if cfg.data.movie_limit is not None and cfg.data.movie_list is not None:
+        raise ValueError("data.movie_limit 与 data.movie_list 互斥：显式清单已确定评估集")
     if cfg.data.movie_limit is not None and cfg.data.movie_limit < 1:
         raise ValueError("data.movie_limit 为 None 或 ≥ 1")
     if not isinstance(cfg.model.extra_body, dict):

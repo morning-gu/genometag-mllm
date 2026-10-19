@@ -1,5 +1,5 @@
-exp_name: ablation-full
-data: {source: real, seed: 42}
+exp_name: v3-full
+data: {source: real, seed: 42, movie_list: data/processed/eval_test.txt}
 model:
   model: qwen3.7-plus
   temperature: 0.7

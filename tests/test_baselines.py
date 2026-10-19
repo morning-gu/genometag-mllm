@@ -50,6 +50,42 @@ def test_genre_baseline_hand_computed():
     assert got[6] == pytest.approx(1.6 / 3)             # 无 genre → 全局均值
 
 
+def test_run_baselines_movie_list_pool(tmp_path):
+    """协议 v3：movie_list 模式下拟合池 = 评估集补集（时序分割不参与），
+    预测仍覆盖全集，防泄露自检（拟合 ∩ 评估 = ∅）通过。"""
+    from genometag.config import AppConfig, Paths
+    from genometag.data.align import build_dataset
+    from genometag.data.sample import make_synthetic_dataset
+
+    make_synthetic_dataset(tmp_path)
+    paths = Paths(  # 同 tests/test_pipeline.py 的 _paths_for 模式
+        root=tmp_path,
+        movienet=tmp_path / "raw" / "movienet",
+        movielens=tmp_path / "raw" / "movielens",
+        interim=tmp_path / "interim", processed=tmp_path / "processed",
+        cache=tmp_path / ".cache", results=tmp_path / "results" / "smoke",
+        tag_groups=tmp_path / "processed" / "tag_groups.json",
+        dataset=tmp_path / "processed" / "dataset.parquet",
+        genome_scores=tmp_path / "processed" / "genome_scores.parquet",
+        genome_tags=tmp_path / "processed" / "genome_tags.parquet",
+        aligned=tmp_path / "interim" / "aligned.parquet")
+    build_dataset(paths)
+    ds = pd.read_parquet(paths.dataset)
+    eval_ids = sorted(ds["movie_id"].tolist())[:2]
+    (tmp_path / "eval.txt").write_text(
+        "\n".join(str(i) for i in eval_ids) + "\n", encoding="utf-8")
+
+    cfg = AppConfig()
+    cfg.data.movie_list = "eval.txt"           # 拟合池 = 5-2 = 3 部（时序分割不参与）
+    cfg.baselines.run = ["mean", "genre"]
+
+    script_05 = importlib.import_module("scripts.05_run_baselines")
+    df, report = script_05.run_baselines(cfg, paths)
+
+    assert report["train_movies"] == len(ds) - 2        # 拟合池 = 补集
+    assert set(df["movie_id"]) == set(ds["movie_id"])   # 预测覆盖全集
+
+
 @pytest.mark.skipif(importlib.util.find_spec("torch") is not None,
                     reason="torch 存在时（无论能否加载）'缺 torch 优雅跳过'路径无法测试")
 def test_bert_branch_skips_gracefully_without_torch(tmp_path):

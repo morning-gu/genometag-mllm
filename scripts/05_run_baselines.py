@@ -1,4 +1,4 @@
-"""05 · 运行基线。mean/genre 只在时序训练参考集上拟合（防泄露）。"""
+"""05 · 运行基线。拟合池 = movie_list 补集（协议 v3）或分割年前（时序模式），防泄露。"""
 from __future__ import annotations
 
 import argparse
@@ -19,8 +19,15 @@ from genometag.config import load_config, paths_for  # noqa: E402
 def run_baselines(config, paths) -> tuple[pd.DataFrame, dict]:
     dataset = pd.read_parquet(paths.dataset)
     scores = pd.read_parquet(paths.genome_scores)
-    from genometag.eval.protocol import temporal_split
-    train_ids, test_ids = temporal_split(dataset, config.protocol.temporal_split_year)
+    from genometag.eval.protocol import (
+        fitting_pool_ids, load_eval_movie_ids, temporal_split,
+    )
+    eval_ids = load_eval_movie_ids(config, paths)
+    train_ids = fitting_pool_ids(config, dataset, eval_ids)
+    if eval_ids is not None:
+        test_ids = eval_ids
+    else:
+        _, test_ids = temporal_split(dataset, config.protocol.temporal_split_year)
     train_scores = scores[scores["movie_id"].isin(set(train_ids))]
     tag_ids = sorted(scores["tag_id"].unique())
     movie_ids = sorted(dataset["movie_id"].tolist())

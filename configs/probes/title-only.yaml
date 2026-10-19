@@ -1,6 +1,7 @@
-# 记忆探针 1：无内容盲测——prompt 仅含标题+年份（spec 2026-10-16 修订）
-exp_name: probe-title-only
-data: {source: real, seed: 42}
+# 记忆探针 1：无内容盲测——prompt 仅含标题+年份（spec 2026-10-16 修订）。
+# 协议 v3：与其他 5 臂共用 eval_test.txt 测试集（同构消融矩阵 + 主表）。
+exp_name: v3-title-only
+data: {source: real, seed: 42, movie_list: data/processed/eval_test.txt}
 model:
   model: qwen3.7-plus
   temperature: 0.7

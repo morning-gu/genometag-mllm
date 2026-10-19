@@ -49,18 +49,18 @@ def test_build_task_matrix():
     assert {t.run_id for t in tasks} == {"run-0", "run-1"}
 
 
-def test_select_few_shots_train_only():
-    """Review Focus #4：few-shot 只能来自分割年之前。"""
+def test_select_few_shots_pool_only():
+    """防泄露：few-shot 只能来自拟合池（池外电影即便分数最高也绝不入选）。"""
     dataset = pd.DataFrame({"movie_id": [1, 2, 3], "title": ["A", "B", "C"],
                             "year": [2020, 2021, 2023]})
     scores = pd.DataFrame({"movie_id": [1, 2, 3, 1, 2, 3],
                            "tag_id": [7, 7, 7, 8, 8, 8],
                            "relevance": [0.9, 0.1, 0.99, 0.8, 0.2, 0.98]})
-    shots = select_few_shots(dataset, scores, n=2, split_year=2022, top_k=2,
+    shots = select_few_shots(dataset, scores, n=2, pool_ids={1, 2}, top_k=2,
                              tag_names={7: "t7", 8: "t8"})
     assert len(shots) <= 2
-    assert all(s.year < 2022 for s in shots)   # 2023 的电影绝不能进 few-shot
-    assert shots[0].title == "A"               # top-k 分数和：A(1.7) > B(0.3)
+    assert all(s.year < 2023 for s in shots)     # 池外电影（3）绝不能进 few-shot
+    assert shots[0].title == "A"                 # top-k 分数和：A(1.7) > B(0.3)
     assert set(shots[0].scores) <= {"t7", "t8"}  # 键是 tag 文本而非 id
 
 
@@ -110,6 +110,21 @@ def test_run_annotation_tolerates_malformed_jsonl_line(synthetic_env, capsys):
     assert len(df) == 5 * 24 * 2            # 坏行未影响结果完整性
     out_text = capsys.readouterr().out
     assert "跳过损坏的 jsonl 行: 1" in out_text
+
+
+def test_movie_list_defines_eval_set(synthetic_env):
+    """协议 v3：data.movie_list 显式评估集——只标注清单内电影，拟合池=补集。"""
+    cfg, paths = synthetic_env
+    dataset = pd.read_parquet(paths.dataset)
+    eval_ids = sorted(dataset["movie_id"].tolist())[:2]
+    (paths.root / "eval.txt").write_text(
+        "\n".join(str(i) for i in eval_ids) + "\n", encoding="utf-8")
+    cfg.data.movie_list = "eval.txt"           # 相对项目根（= tmp_path）
+
+    out = run_annotation(cfg, paths, MockClient(), cache=None)
+    df = pd.read_parquet(out)
+    assert set(df["movie_id"]) == set(eval_ids)
+    assert len(df) == 2 * 24 * 2               # 2 电影 × 24 tag × 2 轮
 
 
 def test_run_annotation_parallel_equivalent(synthetic_env):

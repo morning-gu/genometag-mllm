@@ -8,6 +8,7 @@ data/interim/
 data/synthetic/
 data/processed/*
 !data/processed/tag_groups.json
+!data/processed/eval_test.txt
 results/
 .cache/
 notebooks/.ipynb_checkpoints/

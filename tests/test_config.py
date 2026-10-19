@@ -78,6 +78,14 @@ def test_unknown_top_level_key_message_mentions_replacement(tmp_path):
         load_config(_write(tmp_path, bad))
 
 
+def test_movie_list_and_limit_mutually_exclusive(tmp_path):
+    """协议 v3：显式评估集清单与随机抽样互斥。"""
+    bad = {**MINIMAL, "data": {"source": "synthetic", "movie_list": "eval.txt",
+                               "movie_limit": 10}}
+    with pytest.raises(ValueError, match="互斥"):
+        load_config(_write(tmp_path, bad))
+
+
 def test_workers_validated(tmp_path):
     """annotation.workers 并行线程数：必须 ≥ 1。"""
     bad = {**MINIMAL, "annotation": {"workers": 0}}
