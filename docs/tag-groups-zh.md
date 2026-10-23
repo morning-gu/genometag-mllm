@@ -1,0 +1,1231 @@
+# Genome 标签分类清单（中文）
+
+> qwen3.8-max 语义分组（2026-10-20 重生成，33 组）· 1,128 tags · content 990 / preference 138
+> 每条：英文原 tag（prompt 契约键，逐字使用）— 中文定义；标注「偏好」者为 preference 型（表达观众好恶），其余为 content 型
+
+## 风格语气与氛围（60 tags，偏好 1）
+
+- **absurd** — 呈现荒诞、反常或不合逻辑的风格。
+- **affectionate** — 整体语气温情、亲切或充满爱意。
+- **allegory** — 通过象征或隐喻传达深层寓意。
+- **art** — 以艺术、艺术作品或艺术创作为题材。
+- **art house** — 具有艺术电影或小众文艺片气质。
+- **artistic** — 影片呈现较强艺术追求或审美表达。
+- **artsy** — 风格文艺化、注重形式感或艺术气息。
+- **atmospheric** — 营造强烈氛围感或沉浸式环境情绪。
+- **biting** — 风格尖锐讽刺。
+- **bittersweet** — 情感基调苦乐参半。
+- **bizarre** — 风格怪异奇特。
+- **black comedy** — 黑色喜剧风格。
+- **blaxploitation** — 黑人剥削片类型风格。
+- **bleak** — 氛围阴郁绝望。
+- **blood** — 包含血腥画面。
+- **bloody** — 血腥暴力程度较高。
+- **british comedy** — 英式喜剧风格。
+- **brutal** — 呈现残酷或暴力感。
+- **brutality** — 展现暴力残酷。
+- **buddy movie** — 以伙伴搭档互动为核心的类型。
+- **camp** — 夸张做作的坎普风格。
+- **campy** — 具有坎普式夸张趣味。
+- **cathartic** 「偏好」— 带来情感宣泄体验。
+- **cerebral** — 需要智力思考的烧脑风格。
+- **chick flick** — 面向女性观众、以情感关系为主的轻松爱情或剧情片类型。
+- **claustrophobic** — 营造幽闭、压抑或逼仄的空间氛围。
+- **comedy** — 具有喜剧类型或幽默基调。
+- **compassionate** — 影片基调富有同情心与温情。
+- **complex** — 叙事、结构或主题较为复杂。
+- **confrontational** — 语气或叙事具有挑衅性、冲突感。
+- **crazy** — 风格疯狂、夸张或失控。
+- **creepy** — 营造令人毛骨悚然或不安的氛围。
+- **crude humor** — 包含粗俗或重口味的幽默。
+- **cult** — 具有邪典趣味、反主流或粉丝文化气质。
+- **cynical** — 基调愤世嫉俗或冷嘲。
+- **dark** — 整体基调黑暗、阴郁或沉重。
+- **dark comedy** — 以黑暗主题呈现喜剧效果。
+- **dark humor** — 以黑色幽默处理严肃或禁忌话题。
+- **deadpan** — 以面无表情或冷静克制的方式制造幽默。
+- **disturbing** — 影片内容或氛围令人不安。
+- **downbeat** — 整体基调低沉、阴郁或悲观。
+- **dramatic** — 具有强烈戏剧性和冲突感。
+- **dreamlike** — 呈现如梦似幻的视觉或叙事气质。
+- **earnest** — 语气真诚、恳切。
+- **eerie** — 氛围怪异、阴森或令人不安。
+- **emotional** — 情感表达浓烈或易引发共鸣。
+- **enigmatic** — 影片气质神秘且难以捉摸。
+- **epic** — 具有宏大叙事和史诗气质。
+- **fast paced** — 叙事节奏快速。
+- **forceful** — 影片风格或情绪强烈、有冲击力。
+- **foul language** — 包含粗口或脏话。
+- **frightening** — 具有惊吓、恐怖或不安的氛围。
+- **funny** — 具有幽默、滑稽或喜剧效果。
+- **goofy** — 风格傻气、滑稽或无厘头。
+- **gore** — 包含血腥或血肉模糊的场面。
+- **goretastic** — 血腥程度极高，带有强烈血浆片特征。
+- **gory** — 画面血腥。
+- **goth** — 包含哥特亚文化或哥特审美。
+- **gothic** — 具有哥特式风格或氛围。
+- **grim** — 基调阴郁、残酷或沉重。
+
+## 地理与地域文化（60 tags）
+
+- **africa** — 故事背景、题材或景观与非洲相关。
+- **alaska** — 故事背景或拍摄地与阿拉斯加相关。
+- **alcatraz** — 涉及恶魔岛监狱或其地标意象。
+- **antarctica** — 故事背景或场景与南极相关。
+- **argentina** — 故事背景、题材或文化与阿根廷相关。
+- **australia** — 故事背景、题材或景观与澳大利亚相关。
+- **australian** — 具有澳大利亚电影、文化或地域属性。
+- **berlin** — 故事发生地或制作地与柏林相关。
+- **bollywood** — 具有宝莱坞或印度电影文化特征。
+- **boston** — 与波士顿相关。
+- **brazil** — 与巴西相关。
+- **british** — 具有英国属性。
+- **broadway** — 与百老汇或纽约戏剧文化相关。
+- **california** — 与加州相关。
+- **canada** — 与加拿大相关。
+- **chicago** — 与芝加哥相关。
+- **china** — 故事背景、文化或角色与中国相关。
+- **cuba** — 故事背景、文化或角色与古巴相关。
+- **desert** — 以沙漠或荒漠环境为背景。
+- **egypt** — 涉及埃及地理、文化或历史背景。
+- **england** — 涉及英格兰或英国文化背景。
+- **finnish** — 与芬兰文化、语言或地域相关。
+- **foreign** — 具有外国/外语电影特征。
+- **france** — 与法国地理、文化或制作相关。
+- **french** — 与法语、法国人或法国文化相关。
+- **german** — 与德语、德国人或德国文化相关。
+- **germany** — 与德国地理、历史或制作相关。
+- **hawaii** — 与夏威夷地理或文化相关。
+- **high school** — 故事主要发生在高中校园或围绕高中生活展开。
+- **hong kong** — 影片与香港地区、文化或电影风格相关。
+- **hotel** — 影片主要场景发生在酒店或与酒店空间相关。
+- **india** — 影片与印度国家、文化或社会背景相关。
+- **indians** — 影片涉及印第安人、原住民或相关族群形象。
+- **iran** — 影片与伊朗国家、文化或社会背景相关。
+- **iraq** — 影片与伊拉克国家、文化或战争背景相关。
+- **ireland** — 影片与爱尔兰国家、文化或社会背景相关。
+- **irish** — 影片涉及爱尔兰人、爱尔兰文化或身份。
+- **irish accent** — 影片角色使用爱尔兰口音或突出该语言特征。
+- **island** — 影片主要场景发生在岛屿或与孤岛环境相关。
+- **israel** — 影片与以色列国家、文化或社会背景相关。
+- **italian** — 影片涉及意大利人、意大利文化或身份。
+- **italy** — 影片与意大利国家、文化或社会背景相关。
+- **japan** — 影片与日本国家、文化或社会背景相关。
+- **japanese** — 影片涉及日本人、日本文化或身份。
+- **jungle** — 影片主要场景发生在丛林或热带荒野环境。
+- **las vegas** — 影片与拉斯维加斯城市、赌场或赌城文化相关。
+- **latin america** — 影片与拉丁美洲地区、文化或社会背景相关。
+- **london** — 伦敦是影片的故事地点或文化背景。
+- **los angeles** — 洛杉矶是影片的故事地点或文化背景。
+- **mexico** — 墨西哥是影片的故事地点或文化背景。
+- **middle east** — 中东是影片的故事地点或文化背景。
+- **minnesota** — 明尼苏达是影片的故事地点或地域背景。
+- **native americans** — 影片涉及美洲原住民人群或文化。
+- **nature** — 影片表现自然环境或自然主题。
+- **new jersey** — 故事发生地或地域文化涉及新泽西。
+- **new orleans** — 故事发生地或地域文化涉及新奥尔良。
+- **new york** — 故事发生地或地域文化涉及纽约。
+- **new york city** — 故事发生地或地域文化涉及纽约市。
+- **new zealand** — 故事发生地、拍摄地或地域文化涉及新西兰。
+- **ocean** — 故事涉及海洋环境或海上场景。
+
+## 科幻与超自然（60 tags）
+
+- **afterlife** — 涉及死后世界、来世或灵魂归宿。
+- **alien** — 涉及外星生命或外星存在。
+- **alien invasion** — 以外星生物入侵地球为核心冲突。
+- **aliens** — 包含外星人角色或外星文明。
+- **alternate endings** — 包含不同结局版本或结局分支。
+- **alternate history** — 重构历史走向的架空历史设定。
+- **alternate reality** — 呈现与现实不同的平行现实。
+- **alternate universe** — 涉及平行宇宙或多重宇宙设定。
+- **android(s)/cyborg(s)** — 包含仿生人、机器人或赛博格角色。
+- **androids** — 涉及仿生人或人形机器人。
+- **apocalypse** — 描绘世界末日、灾难性毁灭或末世情境。
+- **artificial intelligence** — 涉及人工智能、智能机器或相关伦理。
+- **clones** — 涉及克隆人角色或克隆体设定。
+- **cloning** — 以克隆技术及其伦理问题为核心。
+- **cyberpunk** — 具有赛博朋克风格或未来科技反乌托邦设定。
+- **cyborgs** — 涉及半机械人或人机融合角色。
+- **dark fantasy** — 具有黑暗奇幻或哥特幻想元素。
+- **demons** — 出现恶魔、邪灵或超自然反派。
+- **devil** — 涉及魔鬼、恶魔或邪恶超自然形象。
+- **distopia** — 描绘反乌托邦社会，是 dystopia 的变体拼写。
+- **dragon** — 包含龙或传说生物。
+- **dragons** — 以多条龙或龙族奇幻设定为内容。
+- **dystopia** — 描绘压迫性或崩坏的反乌托邦社会。
+- **dystopic future** — 设定在未来的反乌托邦社会。
+- **end of the world** — 涉及世界末日或末日危机。
+- **fantasy** — 包含奇幻设定或超自然想象。
+- **fantasy world** — 构建架空奇幻世界。
+- **first contact** — 涉及人类与外星文明首次接触。
+- **fountain of youth** — 涉及不老泉或青春源泉等奇幻设定。
+- **ghosts** — 包含鬼魂或亡灵元素。
+- **ghosts/afterlife** — 涉及鬼魂、死亡或来世设定。
+- **giant robots** — 包含巨型机器人或机甲元素。
+- **haunted house** — 包含闹鬼房屋或灵异空间。
+- **high fantasy** — 影片属于宏大架空世界的高奇幻题材。
+- **imaginary friend** — 影片出现幻想朋友或虚构伙伴设定。
+- **immortality** — 影片涉及永生、长生不老或不死设定。
+- **intelligent sci-fi** — 影片是具有思辨性和智力品质的科幻作品。
+- **magic** — 影片包含魔法或超自然能力。
+- **magic realism** — 影片以魔幻现实主义方式呈现现实世界。
+- **man versus machine** — 影片表现人类与机器或人工智能的冲突。
+- **mars** — 火星是影片的科幻背景或地点。
+- **modern fantasy** — 影片以现代背景呈现奇幻设定。
+- **monster** — 影片包含怪物或怪异生物。
+- **monsters** — 影片以多个怪物或怪兽形象为特色。
+- **moon** — 月球是影片的科幻背景或意象。
+- **mummy** — 影片包含木乃伊或相关超自然怪物。
+- **mutants** — 影片包含变异人或突变生物。
+- **parallel universe** — 涉及平行宇宙设定。
+- **robot** — 出现机器人角色或主题。
+- **robots** — 以机器人群体或机器人世界为元素。
+- **sci fi** — 科幻类型标签。
+- **sci-fi** — 科幻类型标签。
+- **science fiction** — 科学幻想题材。
+- **scifi** — 科幻类型标签。
+- **scifi cult** — 具有邪典气质的科幻作品。
+- **space** — 以太空为重要场景或主题。
+- **space opera** — 属于太空歌剧式科幻叙事。
+- **space program** — 涉及航天计划或太空探索机构。
+- **space travel** — 描绘太空旅行过程。
+- **steampunk** — 具有蒸汽朋克科幻设定。
+
+## 角色与人物状态（60 tags）
+
+- **alone in the world** — 角色处于孤立无援或独自面对世界的状态。
+- **alter ego** — 涉及第二自我、分身或人格替代。
+- **amnesia** — 角色患有失忆症或剧情围绕记忆缺失展开。
+- **anti-hero** — 主角或重要角色具有反英雄特质。
+- **betrayal** — 涉及背叛或出卖关系。
+- **blindness** — 涉及失明或视觉障碍。
+- **brothers** — 涉及兄弟关系。
+- **character study** — 聚焦人物心理与性格研究。
+- **cheating** — 涉及欺骗或出轨。
+- **childhood** — 描绘童年阶段的人物经历或记忆。
+- **children** — 儿童作为主要角色或重要叙事对象。
+- **clowns** — 小丑角色或马戏团小丑形象重要。
+- **coming of age** — 描绘人物从青少年走向成熟的成长过程。
+- **coming-of-age** — 描绘人物从青少年走向成熟的成长过程。
+- **complex characters** — 角色性格复杂、多面或立体。
+- **courage** — 人物在困境中展现勇气。
+- **cross dressing** — 角色有异装或性别装扮表现。
+- **dark hero** — 主角具有黑暗、反英雄特质。
+- **dysfunctional family** — 描绘功能失调的家庭关系。
+- **eccentricity** — 人物行为或性格古怪离奇。
+- **family bonds** — 强调家庭成员之间的情感纽带。
+- **father daughter relationship** — 描绘父亲与女儿的关系。
+- **father son relationship** — 描绘父亲与儿子的关系。
+- **father-son relationship** — 描绘父亲与儿子的关系。
+- **friendship** — 以友谊或朋友关系为核心。
+- **gay character** — 包含同性恋角色。
+- **geek** — 包含极客或书呆子型角色。
+- **geeks** — 包含多个极客或书呆子型角色。
+- **genius** — 包含天才型角色或天才特质。
+- **gypsy accent** — 角色带有吉普赛或罗姆人风格口音。
+- **hannibal lecter** — 包含汉尼拔·莱克特这一角色。
+- **heroine** — 以女性英雄或女主角为核心。
+- **lone hero** — 影片塑造独自行动的英雄角色。
+- **loneliness** — 角色经历孤独或疏离状态。
+- **mad scientist** — 影片包含疯狂科学家式角色。
+- **memory loss** — 角色经历失忆或记忆缺失。
+- **mentor** — 影片包含导师型角色或师徒关系。
+- **mother daughter relationship** — 影片刻画母女关系。
+- **mother-son relationship** — 影片刻画母子关系。
+- **nerds** — 角色或人物具有书呆子、极客或技术宅特征。
+- **obsession** — 角色表现出强烈执念或痴迷状态。
+- **orphans** — 角色包含孤儿或孤儿身份设定。
+- **paranoia** — 角色表现出偏执或多疑心理。
+- **paranoid** — 角色处于偏执或疑神疑鬼状态。
+- **peter pan** — 涉及彼得·潘角色或童话形象。
+- **pregnancy** — 涉及怀孕的人物状态或情节。
+- **runaway** — 人物处于逃亡或出走状态。
+- **schizophrenia** — 表现精神分裂症相关状态。
+- **short-term memory loss** — 角色患有短期记忆丧失。
+- **single father** — 以单身父亲为主要角色。
+- **sisters** — 以姐妹关系为角色核心。
+- **skinhead** — 涉及光头党或相关亚文化角色。
+- **slackers** — 以懒散无为的青年角色为主。
+- **spock** — 包含或关联斯波克这一角色。
+- **teen** — 聚焦青少年角色或青少年状态。
+- **teenager** — 以青少年角色为核心。
+- **teenagers** — 描绘多组青少年角色。
+- **teens** — 以青少年群体为主要对象。
+- **transformation** — 角色经历身体、身份或心理转变。
+- **underdog** — 聚焦处于劣势但奋力抗争的角色。
+
+## 正面观众评价（60 tags，偏好 60）
+
+- **amazing cinematography** 「偏好」— 观众称赞影片摄影极为出色。
+- **amazing photography** 「偏好」— 观众称赞影片画面或摄影非常惊艳。
+- **awesome** 「偏好」— 观众认为影片非常精彩或令人赞叹。
+- **awesome soundtrack** 「偏好」— 观众认为影片配乐或原声非常出色。
+- **beautiful** 「偏好」— 称赞影片很美。
+- **beautifully filmed** 「偏好」— 称赞影片拍摄画面优美。
+- **better than expected** 「偏好」— 观感超出预期。
+- **better than the american version** 「偏好」— 认为优于美国版本。
+- **breathtaking** 「偏好」— 称赞影片令人惊叹。
+- **brilliant** 「偏好」— 称赞影片出色。
+- **clever** 「偏好」— 观众认为影片机智巧妙。
+- **cool** 「偏好」— 观众认为影片很酷或有风格。
+- **creativity** 「偏好」— 观众赞赏影片富有创造力。
+- **cute** 「偏好」— 观众觉得影片可爱讨喜。
+- **cute!** 「偏好」— 观众强烈觉得影片可爱讨喜。
+- **dumb but funny** 「偏好」— 观众认为影片虽显愚蠢但有趣。
+- **entertaining** 「偏好」— 观众认为影片具有娱乐性。
+- **excellent** 「偏好」— 观众认为影片非常出色。
+- **excellent script** 「偏好」— 观众称赞剧本出色。
+- **exceptional acting** 「偏好」— 观众称赞表演非常出色。
+- **exciting** 「偏好」— 观众认为影片刺激好看。
+- **feel good movie** 「偏好」— 观众认为影片让人感到温暖愉悦。
+- **feel-good** 「偏好」— 影片令人心情愉快。
+- **fun** 「偏好」— 观众认为影片有趣、娱乐性强。
+- **fun movie** 「偏好」— 观众认为这是一部好玩或有趣的电影。
+- **funny as hell** 「偏好」— 观众认为影片非常好笑。
+- **good** 「偏好」— 观众认为影片整体好看。
+- **good acting** 「偏好」— 观众称赞表演出色。
+- **good action** 「偏好」— 观众认为动作场面精彩。
+- **good dialogue** 「偏好」— 观众称赞对白精彩。
+- **good music** 「偏好」— 观众认为音乐出色。
+- **good romantic comedies** 「偏好」— 观众认为浪漫喜剧质量佳。
+- **good sequel** 「偏好」— 观众认为续集拍得好。
+- **good soundtrack** 「偏好」— 观众称赞原声或配乐出色。
+- **good story** 「偏好」— 观众认为故事优秀。
+- **great** 「偏好」— 观众认为影片非常出色。
+- **great acting** 「偏好」— 观众高度认可表演。
+- **great cinematography** 「偏好」— 观众称赞摄影出色。
+- **great dialogue** 「偏好」— 观众高度认可对白。
+- **great ending** 「偏好」— 观众认为结尾精彩。
+- **great movie** 「偏好」— 观众认为这是一部优秀电影。
+- **great music** 「偏好」— 观众高度认可音乐。
+- **great soundtrack** 「偏好」— 观众高度认可原声或配乐。
+- **guilty pleasure** 「偏好」— 观众虽觉品味不高但仍然喜欢。
+- **highly quotable** 「偏好」— 观众认为影片台词精彩且适合引用。
+- **hilarious** 「偏好」— 观众认为影片非常搞笑。
+- **hillarious** 「偏好」— 观众认为影片极其搞笑。
+- **honest** 「偏好」— 观众认为影片表达真诚、真实或坦率。
+- **inspirational** 「偏好」— 观众认为影片具有鼓舞人心的力量。
+- **inspiring** 「偏好」— 观众认为影片励志且能激发积极情绪。
+- **intellectual** 「偏好」— 观众认为影片富有智性、思辨或知识趣味。
+- **intelligent** 「偏好」— 观众认为影片聪明、机智或剧本有智力。
+- **interesting** 「偏好」— 观众认为影片有趣且吸引人。
+- **moving** 「偏好」— 观众认为影片感人至深。
+- **notable soundtrack** 「偏好」— 观众认为影片原声音乐值得称道。
+- **perfect** 「偏好」— 观众认为影片非常完美。
+- **poignant** 「偏好」— 观众觉得影片感人至深。
+- **powerful ending** 「偏好」— 结尾被认为震撼有力。
+- **quotable** 「偏好」— 台词精彩、值得引用。
+- **sad but good** 「偏好」— 虽然悲伤但整体好看。
+
+## 职业与专业题材（60 tags）
+
+- **archaeology** — 涉及考古发现、考古工作或考古学家。
+- **artist** — 包含艺术家角色或围绕艺术创作展开。
+- **astronauts** — 包含宇航员角色或太空任务情节。
+- **ballet** — 以芭蕾舞蹈为题材或重要元素。
+- **baseball** — 以棒球运动为题材。
+- **basketball** — 以篮球运动为题材。
+- **bowling** — 以保龄球为题材。
+- **boxing** — 以拳击为题材。
+- **business** — 以商业或企业经营为题材。
+- **casino** — 以赌场或博彩业为背景。
+- **cheerleading** — 以啦啦队为题材。
+- **chess** — 以国际象棋为题材。
+- **chocolate** — 涉及巧克力、甜点或美食相关元素。
+- **circus** — 以马戏团、杂技表演或相关行业为题材。
+- **classical music** — 涉及古典音乐、音乐家或相关艺术题材。
+- **college** — 以大学校园、教育或学术生活为题材。
+- **computer game** — 涉及电子游戏、游戏文化或游戏题材。
+- **computers** — 涉及计算机、程序员或信息技术题材。
+- **cooking** — 涉及烹饪、厨师或美食制作。
+- **court** — 涉及法庭、法官或司法场景。
+- **courtroom** — 以法庭空间或庭审过程为核心。
+- **courtroom drama** — 以法庭辩论和司法程序推动剧情。
+- **dance** — 涉及舞蹈、舞者或舞蹈表演。
+- **dancing** — 包含舞蹈场面或以舞蹈为核心。
+- **doctors** — 以医生或医疗行业为题材。
+- **fashion** — 以时尚行业或服饰文化为主题。
+- **figure skating** — 以花样滑冰运动为主题。
+- **food** — 以食物、烹饪或餐饮为主题。
+- **football** — 以足球运动为主题。
+- **genetics** — 涉及遗传学、基因科学或相关技术。
+- **golf** — 以高尔夫运动为主题或重要元素。
+- **graphic design** — 涉及平面设计或视觉设计专业。
+- **hospital** — 影片以医院或医疗职业环境为主要背景。
+- **journalism** — 影片涉及新闻业、记者职业或媒体报道。
+- **lawyer** — 影片以律师为主要角色或围绕法律事务展开。
+- **lawyers** — 影片涉及多名律师或法律职业群像。
+- **math** — 影片涉及数学主题或数学工作者。
+- **mathematics** — 影片以数学知识或数学研究为内容。
+- **military** — 影片涉及军队生活或军事职业。
+- **mining** — 影片涉及采矿行业或矿工工作。
+- **movie business** — 影片涉及电影行业或制片业务。
+- **music** — 影片以音乐创作、表演或音乐人为题材。
+- **music business** — 影片涉及音乐产业或唱片行业。
+- **musicians** — 影片以音乐人角色或乐队生活为核心。
+- **nasa** — 影片涉及美国宇航局或航天专业工作。
+- **office** — 故事主要发生在办公室或涉及职场环境。
+- **olympics** — 涉及奥运会或竞技体育题材。
+- **photographer** — 影片涉及摄影师职业或摄影角色。
+- **poker** — 影片涉及扑克牌局或赌博题材。
+- **police** — 影片涉及警察职业或警方角色。
+- **private detective** — 以私家侦探为职业主角。
+- **psychiatrist** — 出现精神科医生角色。
+- **psychiatry** — 涉及精神病学或心理治疗领域。
+- **psychology** — 涉及心理学主题或人物心理分析。
+- **samurai** — 以武士为角色或题材。
+- **science** — 涉及科学主题或科研内容。
+- **soccer** — 以足球运动为主题。
+- **spelling bee** — 以拼字比赛为主题。
+- **sports** — 以体育运动为题材。
+- **stage magic** — 以舞台魔术为专业主题。
+
+## 社会议题（60 tags）
+
+- **bdsm** — 涉及BDSM性关系或亚文化。
+- **beauty pageant** — 涉及选美比赛或选美文化。
+- **beer** — 涉及啤酒或饮酒文化。
+- **boarding school** — 以寄宿学校为背景或教育环境。
+- **brainwashing** — 涉及洗脑或思想控制。
+- **bullying** — 涉及霸凌。
+- **cannibalism** — 涉及食人题材。
+- **child abuse** — 涉及虐待儿童的社会议题。
+- **controversial** — 涉及具有公众争议性的话题。
+- **corporate america** — 描绘美国企业体制或职场文化。
+- **corruption** — 描绘权力、制度或道德腐败。
+- **culture clash** — 描绘不同文化、价值观之间的冲突。
+- **death penalty** — 涉及死刑制度或相关伦理争议。
+- **disability** — 涉及残障人士或残障相关社会议题。
+- **divorce** — 涉及离婚或婚姻解体议题。
+- **drinking** — 涉及饮酒或酗酒问题。
+- **drug abuse** — 涉及药物滥用议题。
+- **drug addiction** — 涉及药物成瘾议题。
+- **drugs** — 涉及毒品或药物相关情节。
+- **ecology** — 涉及生态或环境保护议题。
+- **environment** — 涉及自然环境或环境保护议题。
+- **environmental** — 强调环境议题或生态关怀。
+- **fighting the system** — 人物对抗体制或权力结构。
+- **freedom** — 围绕自由、解放或个体权利展开。
+- **gay** — 涉及同性恋主题或身份。
+- **glbt** — 涉及同性恋、双性恋、跨性别等多元性别议题。
+- **global warming** — 涉及全球变暖或气候变化议题。
+- **homeless** — 影片涉及无家可归者或流浪生活议题。
+- **homophobia** — 影片表现对同性恋者的歧视、恐惧或压迫。
+- **homosexuality** — 影片表现同性恋情感、关系或身份。
+- **immigrants** — 影片涉及移民经历、移民身份或移民社群。
+- **incest** — 影片涉及近亲乱伦关系或相关禁忌议题。
+- **infidelity** — 影片表现婚外情、出轨或感情背叛。
+- **internet** — 影片涉及互联网、网络文化或线上生活。
+- **interracial romance** — 影片表现不同种族或族裔之间的恋爱关系。
+- **justice** — 影片探讨正义、法律公正或道德审判。
+- **lesbian** — 影片表现女同性恋情感、关系或身份。
+- **marijuana** — 影片涉及大麻使用或相关社会话题。
+- **marriage** — 影片探讨婚姻关系与亲密关系议题。
+- **mental hospital** — 影片涉及精神病院或精神卫生机构。
+- **mental illness** — 影片呈现精神疾病相关议题。
+- **money** — 影片围绕金钱、财富或经济压力展开。
+- **parenthood** — 探讨育儿、亲子关系或家庭责任。
+- **poverty** — 表现贫困生活与经济困境。
+- **prejudice** — 表现偏见与歧视现象。
+- **prostitution** — 涉及性交易与卖淫议题。
+- **queer** — 涉及酷儿或LGBTQ主题。
+- **race** — 涉及种族身份或族群关系。
+- **race issues** — 直接表现种族问题与矛盾。
+- **racism** — 表现种族歧视与压迫。
+- **rape** — 涉及性侵暴力议题。
+- **school** — 以学校或教育环境为重要场景与议题。
+- **segregation** — 表现种族隔离或社会隔离。
+- **sex** — 涉及性行为或性主题。
+- **sexual** — 包含性相关主题或氛围。
+- **sexual abuse** — 描绘性虐待或性侵害问题。
+- **sexuality** — 探讨性取向或性身份议题。
+- **sexualized violence** — 呈现与性化相关的暴力内容。
+- **shopping** — 涉及购物行为或消费文化。
+- **social commentary** — 包含对社会问题的评论或批判。
+
+## 类型与形式（60 tags）
+
+- **disaster** — 以灾难事件为核心情节或类型。
+- **documentary** — 具有纪录片或纪实形式。
+- **drama** — 属于剧情片类型。
+- **educational** — 具有教育、科普或知识传播性质。
+- **erotic** — 包含情色或成人欲望题材。
+- **factual** — 强调事实性、真实信息或纪实内容。
+- **fake documentary** — 采用伪纪录片形式。
+- **family** — 属于家庭片或合家欢类型。
+- **family drama** — 以家庭关系为核心的剧情片。
+- **farce** — 采用夸张、荒诞的闹剧形式。
+- **film noir** — 具有黑色电影风格。
+- **girlie movie** — 被归类为女性向或女性化商业片。
+- **grindhouse** — 具有磨坊影院或剥削片风格。
+- **hip hop** — 影片涉及嘻哈音乐或嘻哈文化。
+- **holiday** — 影片以节日或假日为背景、主题或氛围。
+- **horror** — 影片属于恐怖片类型，以惊吓和恐惧体验为核心。
+- **jazz** — 影片涉及爵士乐、爵士音乐人或爵士文化氛围。
+- **kids** — 影片面向儿童观众或包含儿童题材。
+- **kids and family** — 影片适合儿童与家庭共同观看。
+- **love** — 爱情是影片的核心主题。
+- **love story** — 影片以爱情故事为主要叙事类型。
+- **mockumentary** — 影片采用伪纪录片形式进行虚构表达。
+- **musical** — 影片为音乐剧或包含大量歌舞段落。
+- **mystery** — 影片具有悬疑解谜类型特征。
+- **natural disaster** — 影片以自然灾害为核心事件。
+- **neo-noir** — 影片具有新黑色电影的类型风格。
+- **noir thriller** — 属于黑色电影与惊悚类型结合。
+- **off-beat comedy** — 属于非传统或怪诞风格的喜剧。
+- **opera** — 涉及歌剧形式或歌剧题材。
+- **parody** — 采用戏仿或恶搞的表现形式。
+- **poetry** — 影片涉及诗歌元素或诗性表达。
+- **pornography** — 以色情内容为主要表现形式的影片类型。
+- **psychological** — 强调心理层面或心理惊悚效果。
+- **reality tv** — 涉及真人秀或电视纪实娱乐形式。
+- **road movie** — 公路片类型，以旅途为叙事框架。
+- **road trip** — 以公路旅行推动情节。
+- **romance** — 以爱情故事为核心。
+- **romantic comedy** — 浪漫喜剧类型。
+- **screwball** — 神经喜剧风格。
+- **screwball comedy** — 神经喜剧类型。
+- **sex comedy** — 以性喜剧为主要类型。
+- **short** — 片长较短或为短片形式。
+- **slapstick** — 采用夸张肢体搞笑的闹剧手法。
+- **slasher** — 属于砍杀恐怖片类型。
+- **spaghetti western** — 具有意大利式西部片风格。
+- **splatter** — 以血腥喷溅效果为卖点。
+- **spoof** — 以恶搞戏仿为喜剧形式。
+- **stand-up comedy** — 以单口喜剧为表演形式。
+- **stoner movie** — 以大麻文化或瘾君子为主角的喜剧。
+- **super hero** — 以超级英雄为题材。
+- **super-hero** — 以超级英雄为题材。
+- **superhero** — 以超级英雄为题材。
+- **superheroes** — 以多位超级英雄为题材。
+- **teen movie** — 面向或描绘青少年群体的影片类型。
+- **thriller** — 以悬疑、紧张和刺激为主的惊悚类型。
+- **toys** — 以玩具为重要题材或视觉元素。
+- **tragedy** — 具有悲剧性结局或命运主题。
+- **war movie** — 以战争为背景或主题的影片类型。
+- **western** — 具有西部片类型特征，常涉及边疆、牛仔或西部法则。
+- **wuxia** — 具有武侠类型特征，包含江湖、武功与侠义精神。
+
+## 风格语气与氛围·2（60 tags，偏好 1）
+
+- **gritty** — 风格粗粝、写实或硬核。
+- **gross-out** — 以恶心、低俗或重口味笑料为特色。
+- **gruesome** — 场面骇人、血腥或令人不适。
+- **hallucinatory** — 具有幻觉般、迷幻或超现实氛围。
+- **harsh** — 风格或情绪尖锐、残酷、严厉。
+- **heartbreaking** — 情感上令人心碎或悲伤。
+- **heartwarming** — 情感上温暖、治愈。
+- **humor** — 影片包含幽默元素或喜剧性表达。
+- **humorous** — 影片整体风格诙谐有趣。
+- **imagination** — 影片强调奇想、想象力或创造性构思。
+- **intense** — 影片节奏、情绪或冲突强烈紧张。
+- **intimate** — 影片呈现亲密关系、私密情感或贴近人物的氛围。
+- **ironic** — 影片采用讽刺、反讽或出人意料的态度表达。
+- **irreverent** — 影片风格不敬权威、颠覆传统或带有戏谑态度。
+- **light** — 影片呈现轻松明亮或轻盈的氛围。
+- **lyrical** — 影片具有抒情诗意的表达。
+- **macabre** — 影片带有阴森怪诞的氛围。
+- **meditative** — 影片节奏沉静且具有冥想感。
+- **melancholic** — 影片整体带有忧郁气质。
+- **melancholy** — 影片营造忧伤或惆怅的情绪。
+- **moody** — 影片情绪化或氛围感强烈。
+- **nocturnal** — 影片呈现明显的夜间、黑暗或夜晚活动氛围。
+- **noir** — 具有黑色电影的风格特征。
+- **nostalgia** — 影片带有怀旧情绪或回忆主题。
+- **nostalgic** — 影片营造怀旧的情感氛围。
+- **ominous** — 影片营造不祥或紧张的氛围。
+- **over the top** 「偏好」— 观众认为表现夸张或过火。
+- **passionate** — 影片情感表达热烈或强烈。
+- **psychedelic** — 具有迷幻感与致幻视觉氛围。
+- **pulp** — 具有低俗杂志式夸张娱乐风格。
+- **punk** — 体现朋克文化或反叛音乐气质。
+- **quirky** — 风格古怪俏皮、带有独特趣味。
+- **realistic** — 呈现写实、贴近现实的质感。
+- **reflective** — 影片带有沉思、内省的气质。
+- **rock and roll** — 体现摇滚乐文化或音乐气质。
+- **romantic** — 具有浪漫情感氛围。
+- **sad** — 影片基调伤感或令人悲伤。
+- **sarcasm** — 语气带有讽刺挖苦。
+- **satire** — 以讽刺手法批判社会或人性。
+- **satirical** — 具有讽刺意味。
+- **scary** — 具有恐怖惊悚的观感。
+- **sentimental** — 情感表达偏感伤或煽情。
+- **sexy** — 影片呈现性感或诱惑的风格。
+- **silly** — 影片风格滑稽傻气。
+- **simple** — 叙事或风格简单朴素。
+- **slow** — 影片节奏缓慢。
+- **slow paced** — 叙事节奏缓慢。
+- **special** — 影片具有特别或独特的气质。
+- **strange** — 影片风格怪异奇特。
+- **stylish** — 影片视觉或整体风格时尚有型。
+- **stylized** — 采用程式化或风格化表现。
+- **surreal** — 呈现超现实风格。
+- **surrealism** — 采用超现实主义手法。
+- **suspense** — 营造悬念紧张感。
+- **suspenseful** — 影片充满悬念和紧张感。
+- **sweet** — 具有温柔、甜美或暖心的情绪基调。
+- **talky** — 对白密集、以谈话推进影片。
+- **tear jerker** — 具有催泪或煽情效果。
+- **tense** — 营造紧张、压迫的情绪氛围。
+- **understated** — 表达克制、低调或不夸张。
+
+## 犯罪与谍战（52 tags）
+
+- **arms dealer** — 涉及军火商或武器交易角色。
+- **assassin** — 包含刺客或职业杀手角色。
+- **assassination** — 涉及暗杀行动或政治刺杀事件。
+- **assassins** — 包含多名刺客或杀手角色。
+- **bank robbery** — 涉及银行抢劫情节。
+- **caper** — 以盗窃或骗局为核心的情节。
+- **cia** — 涉及中央情报局、间谍或情报活动。
+- **con artists** — 以骗子或诈骗犯为主要角色。
+- **con men** — 以男性骗子或诈骗团伙为主要角色。
+- **conspiracy** — 涉及阴谋、秘密组织或策划活动。
+- **conspiracy theory** — 涉及阴谋论或秘密解释框架。
+- **crime** — 以犯罪行为或案件为核心。
+- **crime gone awry** — 犯罪计划失控或走向意外后果。
+- **detective** — 以侦探破案或调查为核心。
+- **espionage** — 涉及间谍活动或情报战。
+- **fbi** — 涉及美国联邦调查局或相关调查题材。
+- **gambling** — 涉及赌博活动或赌场题材。
+- **gangs** — 涉及帮派组织或帮派冲突。
+- **gangster** — 以黑帮或匪徒为核心。
+- **gangsters** — 包含多名黑帮或匪徒角色。
+- **hackers** — 包含黑客角色。
+- **hacking** — 涉及电脑入侵或网络攻击。
+- **heist** — 涉及抢劫、盗窃或团伙作案。
+- **heroin** — 涉及海洛因毒品或毒品犯罪。
+- **hit men** — 影片涉及多名职业杀手或受雇杀人者。
+- **hitman** — 影片以职业杀手为主要角色或情节核心。
+- **hostage** — 影片包含人质劫持、营救或谈判情节。
+- **investigation** — 影片围绕调查、侦查或追查真相展开。
+- **kidnapping** — 影片包含绑架、拐骗或解救被绑架者情节。
+- **mafia** — 影片涉及黑手党组织或黑帮犯罪。
+- **mob** — 影片涉及黑帮或有组织犯罪集团。
+- **murder** — 影片涉及谋杀案件或杀人行为。
+- **murder mystery** — 影片围绕谋杀谜案展开调查。
+- **organized crime** — 涉及有组织犯罪活动。
+- **police corruption** — 影片涉及警察腐败或执法系统腐败。
+- **police investigation** — 影片涉及警方调查过程。
+- **prison** — 以监狱为主要场景或题材。
+- **prison escape** — 包含越狱行动与计划。
+- **robbery** — 涉及抢劫案件。
+- **secret service** — 涉及特勤或情报机构。
+- **serial killer** — 以连环杀手为核心犯罪元素。
+- **spies** — 以间谍角色或谍战情节为主。
+- **spy** — 以间谍为核心角色或情节。
+- **spying** — 描绘间谍活动或情报行动。
+- **surveillance** — 涉及监控或监视行为。
+- **torture** — 包含酷刑或逼供等暴力情节。
+- **undercover cop** — 涉及卧底警察或潜入犯罪组织。
+- **vengeance** — 以复仇为动机或主线。
+- **vigilante** — 包含私刑正义或义警角色。
+- **vigilantism** — 描绘绕过法律的私刑正义行为。
+- **violence** — 包含暴力行为或暴力主题。
+- **violent** — 影片呈现强烈暴力内容。
+
+## 负面观众评价（48 tags，偏好 48）
+
+- **awful** 「偏好」— 观众认为影片质量很差。
+- **bad** 「偏好」— 观众给出负面评价，认为影片糟糕。
+- **bad acting** 「偏好」— 观众认为表演或演技不佳。
+- **bad cgi** 「偏好」— 观众认为CG特效质量差。
+- **bad ending** 「偏好」— 观众认为结局处理糟糕。
+- **bad plot** 「偏好」— 观众认为剧情薄弱或逻辑不佳。
+- **bad science** 「偏好」— 认为影片的科学设定不可信或错误。
+- **bad script** 「偏好」— 认为剧本质量差。
+- **bad sequel** 「偏好」— 认为续集质量不佳。
+- **book was better** 「偏好」— 认为原著优于电影。
+- **boring** 「偏好」— 认为影片无聊。
+- **boring!** 「偏好」— 强烈认为影片无聊。
+- **bullshit history** 「偏好」— 认为历史呈现虚假或胡扯。
+- **cheesy** 「偏好」— 被认为俗气或做作。
+- **complicated** 「偏好」— 观众觉得影片复杂难懂。
+- **complicated plot** 「偏好」— 观众认为剧情复杂、难以理解。
+- **confusing** 「偏好」— 观众认为影片令人困惑。
+- **corny** 「偏好」— 观众认为影片俗气或老套。
+- **crappy sequel** 「偏好」— 观众认为续集质量低劣。
+- **depressing** 「偏好」— 观众觉得影片令人沮丧。
+- **disappointing** 「偏好」— 观众认为影片令人失望。
+- **dumb** 「偏好」— 观众认为影片愚蠢或低智。
+- **gratuitous violence** 「偏好」— 观众认为暴力场面过度或缺乏必要。
+- **hard to watch** 「偏好」— 观众认为影片沉重、刺激或不适而难以观看。
+- **horrible** 「偏好」— 观众认为影片质量很差或观感糟糕。
+- **idiotic** 「偏好」— 观众认为影片愚蠢或不合理。
+- **lame** 「偏好」— 观众认为影片乏味、拙劣或不吸引人。
+- **no plot** 「偏好」— 观众认为影片缺乏情节推进。
+- **not as good as the first** 「偏好」— 观众认为影片不如系列第一部。
+- **not funny** 「偏好」— 观众认为影片不搞笑。
+- **overrated** 「偏好」— 观众认为影片评价过高。
+- **plot holes** 「偏好」— 观众认为影片存在情节漏洞。
+- **pointless** 「偏好」— 观众认为影片缺乏意义或目的。
+- **predictable** 「偏好」— 情节发展容易被提前猜出。
+- **pretentious** 「偏好」— 被认为故作深沉或卖弄。
+- **ridiculous** 「偏好」— 被认为荒唐可笑。
+- **sappy** 「偏好」— 被认为过于煽情或矫情。
+- **shallow** 「偏好」— 观众认为影片肤浅缺乏深度。
+- **stupid** 「偏好」— 观众认为影片愚蠢低智。
+- **stupid as hell** 「偏好」— 观众强烈认为影片极其愚蠢。
+- **stupidity** 「偏好」— 观众批评影片充满愚蠢内容。
+- **too long** 「偏好」— 被认为片长过长。
+- **too short** 「偏好」— 被认为片长过短。
+- **unfunny** 「偏好」— 被认为不好笑或缺乏幽默效果。
+- **unintentionally funny** 「偏好」— 因非故意因素显得可笑。
+- **unlikeable characters** 「偏好」— 角色被认为难以令人喜欢。
+- **unrealistic** 「偏好」— 被认为情节或表现不真实。
+- **waste of time** 「偏好」— 被认为不值得观看。
+
+## 历史与政治议题（45 tags）
+
+- **9/11** — 涉及九一一恐怖袭击及其后续影响。
+- **american civil war** — 以美国南北战争为历史背景或主题。
+- **anti-semitism** — 涉及反犹太主义或相关歧视迫害。
+- **anti-war** — 表达反战立场或反思战争残酷。
+- **capitalism** — 探讨资本主义制度或经济问题。
+- **censorship** — 涉及审查制度或言论管控。
+- **civil war** — 涉及内战背景、战争或政治分裂。
+- **cold war** — 以冷战时期或冷战政治为背景。
+- **colonialism** — 涉及殖民主义、殖民历史或后殖民议题。
+- **communism** — 涉及共产主义、社会主义阵营或相关政治语境。
+- **east germany** — 涉及东德或冷战时期德国政治历史背景。
+- **ethnic conflict** — 涉及族群矛盾或民族冲突。
+- **fascism** — 涉及法西斯主义或极权政治议题。
+- **free speech** — 涉及言论自由或表达权利议题。
+- **genocide** — 涉及种族灭绝或大屠杀历史。
+- **gulf war** — 涉及海湾战争背景或议题。
+- **history** — 影片聚焦历史事件、人物或历史叙述。
+- **holocaust** — 影片表现纳粹大屠杀及相关历史创伤。
+- **iraq war** — 影片以伊拉克战争为背景或直接表现该战争。
+- **nazi** — 影片涉及纳粹或纳粹主义。
+- **nazis** — 影片表现纳粹组织或纳粹人物。
+- **neo-nazis** — 影片涉及新纳粹组织或相关意识形态。
+- **nuclear** — 涉及核能、核武器或相关政治议题。
+- **nuclear bomb** — 涉及核炸弹或核武器威胁。
+- **nuclear war** — 涉及核战争或核冲突。
+- **oil** — 涉及石油资源、产业或相关议题。
+- **political** — 影片具有政治主题或政治背景。
+- **political corruption** — 影片涉及政治腐败或权力腐败。
+- **politics** — 影片涉及政治活动或政治议题。
+- **president** — 涉及总统或国家政治领袖。
+- **propaganda** — 带有政治宣传或意识形态传播色彩。
+- **rebellion** — 表现反抗权威或叛乱。
+- **revolution** — 表现革命或社会变革。
+- **slavery** — 描绘奴隶制及其历史社会影响。
+- **spanish civil war** — 以西班牙内战为历史背景。
+- **terrorism** — 涉及恐怖主义或恐怖袭击议题。
+- **united nations** — 涉及联合国或国际政治事务。
+- **us history** — 涉及美国历史事件或历史语境。
+- **vietnam war** — 涉及越南战争及相关历史。
+- **war** — 描绘战争事件或战争状态。
+- **wartime** — 故事发生在战争时期或受战争影响。
+- **world politics** — 涉及国际关系、全球政治或地缘权力议题。
+- **world war i** — 以第一次世界大战为背景或核心事件。
+- **world war ii** — 以第二次世界大战为背景或核心事件。
+- **wwii** — 以第二次世界大战为背景或相关历史叙事。
+
+## 信仰与人生困境（44 tags）
+
+- **biblical** — 涉及圣经故事或宗教典故。
+- **cancer** — 涉及癌症或重病困境。
+- **catholicism** — 涉及天主教信仰。
+- **christian** — 涉及基督徒身份或基督教信仰。
+- **christianity** — 涉及基督教信仰、文化或宗教议题。
+- **death** — 涉及死亡、临终或生命终结议题。
+- **depression** — 描绘抑郁症、情绪低谷或心理困境。
+- **destiny** — 涉及命运、宿命或人生使命。
+- **dreams** — 通过梦境探索内心、记忆或人生困惑。
+- **evolution** — 探讨生命演化、人类起源或存在意义。
+- **existentialism** — 探讨存在主义或人生意义困境。
+- **god** — 涉及上帝、神性或宗教信仰。
+- **greed** — 围绕贪婪、欲望或人性弱点展开。
+- **guilt** — 围绕内疚、罪责或道德负担展开。
+- **humanity** — 影片探讨人性、人类命运或普遍人文关怀。
+- **idealism** — 影片表现理想主义信念或对理想的追求。
+- **identity** — 影片探讨自我认同、身份归属或角色身份危机。
+- **innocence lost** — 影片表现天真丧失或成长中的纯真幻灭。
+- **insanity** — 影片表现精神失常、疯狂状态或心理困境。
+- **islam** — 影片涉及伊斯兰教、穆斯林文化或宗教信仰。
+- **isolation** — 影片表现人物孤立、隔绝或疏离的人生状态。
+- **jesus** — 影片表现耶稣形象、基督教叙事或相关宗教主题。
+- **jewish** — 影片涉及犹太身份、犹太文化或宗教传统。
+- **jews** — 影片表现犹太人群体、历史遭遇或文化身份。
+- **judaism** — 影片涉及犹太教信仰、仪式或宗教文化。
+- **life** — 影片探讨人生、生命意义或生活状态。
+- **life & death** — 影片围绕生死议题或生命终结展开。
+- **life philosophy** — 影片探讨人生哲理与价值选择。
+- **metaphysics** — 影片探讨形而上学或存在本质问题。
+- **midlife crisis** — 影片表现中年危机与人生困惑。
+- **mission from god** — 角色承担来自神或宗教意义上的使命。
+- **moral ambiguity** — 影片呈现道德模糊或伦理困境。
+- **morality** — 影片探讨道德观念与价值判断。
+- **philosophical** — 影片探讨哲学命题或人生思考。
+- **philosophy** — 影片涉及哲学主题。
+- **redemption** — 围绕赎罪与自我救赎展开。
+- **relationships** — 聚焦人际关系与情感联结。
+- **religion** — 涉及宗教信仰与仪式。
+- **sacrifice** — 表现牺牲与奉献抉择。
+- **self discovery** — 讲述自我发现与成长。
+- **solitude** — 探讨孤独或独处的人生状态。
+- **suicide** — 涉及自杀主题。
+- **suicide attempt** — 描绘自杀未遂情节。
+- **terminal illness** — 围绕绝症带来的生命困境。
+
+## 改编来源（39 tags）
+
+- **adaptation** — 改编自既有作品或真实素材。
+- **adapted from:book** — 改编自书籍、小说或文字作品。
+- **adapted from:comic** — 改编自漫画或图像小说。
+- **adapted from:game** — 改编自电子游戏、桌游或其他游戏作品。
+- **based on a book** — 改编自书籍。
+- **based on a comic** — 改编自漫画。
+- **based on a play** — 改编自戏剧。
+- **based on a true story** — 基于真实事件改编。
+- **based on a tv show** — 改编自电视节目。
+- **based on a video game** — 改编自电子游戏。
+- **based on book** — 改编自书籍。
+- **based on comic** — 改编自漫画。
+- **based on true story** — 基于真实事件改编。
+- **biographical** — 传记题材，基于真实人物。
+- **biography** — 传记题材。
+- **biopic** — 传记电影。
+- **book** — 与书籍或文学文本相关。
+- **books** — 与书籍或文学文本相关。
+- **comic** — 与漫画、漫画书或漫画式叙事相关。
+- **comic book** — 改编自漫画书或以漫画书为素材。
+- **comic book adaption** — 明确标注为漫画书改编。
+- **comics** — 与漫画、连环画或漫画文本相关。
+- **dr. seuss** — 改编自苏斯博士作品或与其创作密切相关。
+- **fairy tale** — 借鉴或改编自童话故事。
+- **fairy tales** — 涉及多个童话故事或童话母题。
+- **graphic novel** — 改编自图像小说或漫画小说。
+- **jane austen** — 影片改编自简·奥斯汀作品或与其文学传统相关。
+- **king arthur** — 影片改编或借用亚瑟王传说及相关人物。
+- **literary adaptation** — 影片改编自文学作品。
+- **literature** — 影片与文学创作或文学题材密切相关。
+- **mythology** — 影片取材于神话传说或神话体系。
+- **original** — 故事或设定具有原创性，非明显改编。
+- **original plot** — 剧情为原创而非改编自既有作品。
+- **philip k. dick** — 影片与菲利普·K·迪克的作品改编或关联相关。
+- **remade** — 标记作品存在重拍版本或为重拍版本。
+- **remake** — 对旧片的翻拍版本。
+- **shakespeare** — 与莎士比亚作品改编或引用相关。
+- **true story** — 根据真实事件或人物改编。
+- **video game adaptation** — 改编自电子游戏作品。
+
+## 创作者与演职人员（39 tags）
+
+- **almodovar** — 与导演佩德罗·阿莫多瓦或其作品风格相关。
+- **amy smart** — 包含演员艾米·斯马特或与她相关。
+- **arnold** — 与阿诺德相关的演员、角色或动作明星形象。
+- **author:alan moore** — 改编自或关联作者艾伦·摩尔的原著作品。
+- **author:neil gaiman** — 改编自或关联作者尼尔·盖曼的原著作品。
+- **beatles** — 与披头士乐队或其成员相关。
+- **c.s. lewis** — 与作家C.S.刘易斯相关。
+- **carrie-anne moss** — 涉及演员凯瑞-安·莫斯。
+- **chris tucker** — 与演员克里斯·塔克出演或其表演相关。
+- **coen bros** — 与科恩兄弟的创作、导演或编剧相关。
+- **coen brothers** — 与科恩兄弟的创作、导演或编剧相关。
+- **depp & burton** — 与约翰尼·德普和蒂姆·伯顿的合作相关。
+- **directorial debut** — 这是导演的长片首作或首次执导作品。
+- **emma watson** — 演员艾玛·沃森参与演出。
+- **ennio morricone** — 作曲家恩尼奥·莫里科内参与配乐。
+- **ensemble cast** — 采用群像演员阵容。
+- **francis ford copolla** — 与弗朗西斯·福特·科波拉相关。
+- **george orwell** — 与作家乔治·奥威尔或其改编作品相关。
+- **gilliam** — 与导演或创作者特瑞·吉列姆相关。
+- **hitchcock** — 影片与导演阿尔弗雷德·希区柯克或其风格相关。
+- **kubrick** — 影片与导演斯坦利·库布里克或其风格相关。
+- **kurosawa** — 影片与导演黑泽明或其风格相关。
+- **liv tyler** — 丽芙·泰勒参与出演影片。
+- **lynch** — 与大卫·林奇或林奇式创作相关。
+- **marx brothers** — 与马克思兄弟喜剧团队相关。
+- **miyazaki** — 与宫崎骏或其创作风格相关。
+- **monty python** — 与蒙提·派森喜剧团队相关。
+- **mozart** — 影片与莫扎特或其音乐相关。
+- **neil gaiman** — 与尼尔·盖曼或其作品相关。
+- **roald dahl** — 与罗尔德·达尔创作或改编相关。
+- **robert downey jr** — 涉及演员小罗伯特·唐尼。
+- **robert ludlum** — 与作家罗伯特·陆德伦相关。
+- **script** — 关注剧本或编剧表现。
+- **sophia coppola** — 与索菲亚·科波拉相关。
+- **spielberg** — 与史蒂文·斯皮尔伯格相关。
+- **tarantino** — 与昆汀·塔伦蒂诺相关或具其创作风格。
+- **tolkien** — 与J.R.R.托尔金及其创作相关。
+- **tom clancy** — 与汤姆·克兰西及其作品相关。
+- **truman capote** — 与杜鲁门·卡波特及其作品相关。
+
+## 叙事与结构（34 tags）
+
+- **dialogue** — 对白是影片的重要表达方式。
+- **dialogue driven** — 情节推进主要依靠人物对白。
+- **entirely dialogue** — 影片几乎完全由对白构成。
+- **flashbacks** — 使用闪回方式推进叙事。
+- **good versus evil** — 围绕正义与邪恶的对抗展开。
+- **happy ending** — 结局圆满或积极。
+- **love triangles** — 三角恋关系推动剧情发展。
+- **manipulation** — 剧情围绕欺骗、操控或心理操纵展开。
+- **maze** — 影片包含迷宫式空间或复杂叙事结构。
+- **memory** — 记忆是推动叙事的重要线索。
+- **mindfuck** — 影片以烧脑或颠覆认知的方式叙事。
+- **mistaken identity** — 身份误认是推动剧情的关键机制。
+- **multiple storylines** — 影片采用多条故事线并行叙事。
+- **narrated** — 影片使用旁白或叙述者推进故事。
+- **no dialogue** — 影片基本没有对白或极少使用对白。
+- **non-hollywood ending** — 结局不同于传统好莱坞式收尾。
+- **non-linear** — 采用非线性叙事结构。
+- **nonlinear** — 采用非线性叙事结构。
+- **plot** — 影片强调情节推进。
+- **plot twist** — 影片包含剧情反转。
+- **rags to riches** — 讲述从贫穷到富有的逆袭历程。
+- **revenge** — 以复仇为核心情节动力。
+- **secrets** — 秘密构成情节悬念。
+- **story** — 强调故事情节本身。
+- **storytelling** — 强调叙事方式或讲故事过程。
+- **surprise ending** — 结局出人意料。
+- **switching places** — 以身份互换或位置对调推动情节。
+- **time** — 时间是影片的重要主题或叙事要素。
+- **time loop** — 采用时间循环的叙事结构。
+- **tricky** — 情节或叙事方式巧妙、狡黠。
+- **twist** — 情节包含出人意料的发展。
+- **twist ending** — 结尾出现反转。
+- **twists & turns** — 情节多次反转或波折。
+- **unusual plot structure** — 采用非常规的情节结构。
+
+## 视觉与技术规格（33 tags，偏好 3）
+
+- **3d** — 采用3D立体影像技术呈现。
+- **70mm** — 采用70毫米胶片或大画幅规格拍摄或放映。
+- **beautiful scenery** — 展现优美自然或景观画面。
+- **big budget** — 高预算大制作。
+- **black and white** — 黑白影像。
+- **cgi** — 使用电脑生成图像。
+- **cinematography** — 强调摄影、镜头语言或影像表现。
+- **colourful** — 色彩丰富或视觉色调鲜明。
+- **dynamic cgi action** — 包含动感强烈的 CGI 动作场面。
+- **effects** — 强调视觉特效或技术手段。
+- **handycam** — 使用手持摄像机或家用DV风格拍摄。
+- **heroine in tight suit** — 影片突出女主角穿着紧身服装的视觉造型。
+- **long** — 影片片长较长。
+- **low budget** — 影片为低预算制作。
+- **male nudity** — 影片包含男性裸露画面。
+- **notable nudity** — 包含较为显著的裸露画面。
+- **nudity** — 包含裸露画面。
+- **nudity (full frontal - brief)** — 包含短暂的正面全裸画面。
+- **nudity (full frontal - notable)** — 包含显著的正面全裸画面。
+- **nudity (full frontal)** — 包含正面全裸画面。
+- **nudity (rear)** — 包含背面裸露画面。
+- **nudity (topless - brief)** — 包含短暂的上身裸露画面。
+- **nudity (topless - notable)** — 包含显著的上身裸露画面。
+- **nudity (topless)** — 包含上身裸露画面。
+- **photography** — 影片摄影或影像表现突出。
+- **scenic** 「偏好」— 画面或自然风景优美。
+- **silent** — 影片为无声或极少对白形式。
+- **special effects** — 使用特效或强调视觉效果。
+- **underwater** — 包含水下场景或水下摄影。
+- **visual** — 强调视觉表达或视觉风格。
+- **visually appealing** 「偏好」— 画面被认为美观悦目。
+- **visually stunning** 「偏好」— 视觉效果被认为震撼出色。
+- **visuals** — 影片的视觉画面或影像表现。
+
+## 榜单与荣誉（33 tags，偏好 12）
+
+- **afi 100** — 与美国电影学会百年百大电影榜单相关。
+- **afi 100 (laughs)** — 入选美国电影学会百年百大喜剧电影榜单。
+- **afi 100 (movie quotes)** — 入选美国电影学会百年百大电影台词榜单。
+- **best of 2005** 「偏好」— 被视为2005年佳作之一。
+- **best war films** 「偏好」— 被列为优秀战争片之一。
+- **classic** 「偏好」— 观众认为影片具有经典地位或长久价值。
+- **cult classic** 「偏好」— 被观众视为具有邪典经典地位。
+- **cult film** 「偏好」— 被视为邪典电影或小众经典。
+- **funniest movies** 「偏好」— 被视为最搞笑电影之一或喜剧榜单标签。
+- **golden palm** — 与戛纳金棕榈奖相关。
+- **imdb top 250** 「偏好」— 影片进入 IMDb Top 250 榜单。
+- **masterpiece** 「偏好」— 影片被观众视为杰出作品。
+- **movielens top pick** 「偏好」— 影片被MovieLens推荐为精选作品。
+- **oscar** — 与奥斯卡奖相关。
+- **oscar (best actor)** — 与奥斯卡最佳男主角奖相关。
+- **oscar (best actress)** — 与奥斯卡最佳女主角奖相关。
+- **oscar (best animated feature)** — 与奥斯卡最佳动画长片奖相关。
+- **oscar (best cinematography)** — 与奥斯卡最佳摄影奖相关。
+- **oscar (best directing)** — 与奥斯卡最佳导演奖相关。
+- **oscar (best editing)** — 与奥斯卡最佳剪辑奖相关。
+- **oscar (best effects - visual effects)** — 与奥斯卡最佳视觉效果奖相关。
+- **oscar (best foreign language film)** — 与奥斯卡最佳外语片奖相关。
+- **oscar (best music - original score)** — 与奥斯卡最佳原创配乐奖相关。
+- **oscar (best music - original song)** — 与奥斯卡最佳原创歌曲奖相关。
+- **oscar (best picture)** — 与奥斯卡最佳影片奖相关。
+- **oscar (best sound)** — 与奥斯卡最佳音效奖相关。
+- **oscar (best supporting actor)** — 与奥斯卡最佳男配角奖相关。
+- **oscar (best supporting actress)** — 与奥斯卡最佳女配角奖相关。
+- **oscar (best writing - screenplay written directly for the screen)** — 与奥斯卡最佳原创剧本奖相关。
+- **oscar winner** — 影片为奥斯卡获奖作品。
+- **potential oscar nom** 「偏好」— 被认为具有奥斯卡提名潜力。
+- **saturn award (best science fiction film)** 「偏好」— 获得或提名土星奖最佳科幻片。
+- **saturn award (best special effects)** 「偏好」— 获得或提名土星奖最佳特效。
+
+## 动作与冒险（32 tags）
+
+- **action** — 以动作场面为核心类型特征。
+- **action packed** — 包含密集且高强度的动作场面。
+- **adventure** — 以冒险旅程或探索经历为核心。
+- **bombs** — 涉及爆炸或炸弹场面。
+- **car chase** — 包含汽车追逐场面。
+- **catastrophe** — 涉及灾难事件。
+- **chase** — 包含追逐情节。
+- **competition** — 围绕比赛、竞赛或挑战展开。
+- **enormously long battle scene** — 包含篇幅很长的战斗场面。
+- **explosions** — 包含爆炸场面。
+- **fight scenes** — 包含打斗场面。
+- **fighting** — 包含搏斗或战斗情节。
+- **gunfight** — 包含枪战或交火场面。
+- **guns** — 包含枪支或枪械元素。
+- **hunting** — 影片包含狩猎、追猎或野外捕猎情节。
+- **kick-butt women** — 影片展现女性角色强势打斗或动作英雄形象。
+- **kung fu** — 影片包含功夫、武术打斗或武侠动作元素。
+- **martial arts** — 影片包含武术格斗或功夫动作。
+- **motorcycle** — 影片包含摩托车骑行或相关动作场面。
+- **mountain climbing** — 影片涉及登山或攀岩冒险。
+- **ninja** — 包含忍者相关的动作、打斗或冒险元素。
+- **pirates** — 影片涉及海盗或海上冒险题材。
+- **realistic action** — 动作场面追求真实可信。
+- **stranded** — 角色被困于孤立环境。
+- **survival** — 以生存求生为核心情节。
+- **swashbuckler** — 以剑客冒险和华丽打斗为特征的影片。
+- **sword fight** — 包含剑术打斗场面。
+- **sword fighting** — 以剑术打斗为主要动作元素。
+- **travel** — 以旅行或迁徙推动冒险与情节。
+- **treasure** — 宝藏是核心目标或动机。
+- **treasure hunt** — 以寻宝冒险为主要情节。
+- **weapons** — 涉及枪械、刀剑等武器及暴力冲突元素。
+
+## 系列与品牌（29 tags）
+
+- **007** — 与007詹姆斯·邦德间谍系列相关的电影。
+- **007 (series)** — 明确属于007电影系列。
+- **aardman** — 与阿德曼动画公司或其标志性定格动画风格相关。
+- **aardman studios** — 由阿德曼工作室制作或带有其品牌特征。
+- **batman** — 属于蝙蝠侠角色或系列。
+- **bond** — 属于007或詹姆斯·邦德系列。
+- **criterion** — 与标准收藏版或 Criterion 品牌相关。
+- **dc comics** — 与 DC 漫画品牌、角色或改编作品相关。
+- **disney** — 与迪士尼品牌或迪士尼作品相关。
+- **dreamworks** — 与梦工厂品牌或梦工厂作品相关。
+- **easily confused with other movie(s) (title)** — 片名或身份容易与其他电影混淆。
+- **franchise** — 属于系列电影或商业系列品牌。
+- **harry potter** — 属于哈利·波特系列或相关品牌。
+- **indiana jones** — 影片属于《夺宝奇兵》系列或与该品牌角色相关。
+- **james bond** — 影片属于007系列或与詹姆斯·邦德角色相关。
+- **jay and silent bob** — 影片与杰和沉默鲍勃角色或凯文·史密斯作品宇宙相关。
+- **marvel** — 影片属于漫威品牌或相关改编体系。
+- **muppets** — 影片属于布偶系列或相关品牌。
+- **pixar** — 影片与皮克斯品牌或工作室相关。
+- **prequel** — 作为系列前传补充此前故事。
+- **saturday night live** — 与《周六夜现场》品牌或衍生相关。
+- **sequel** — 电影是续集作品。
+- **sequels** — 电影属于多部续集序列。
+- **series** — 电影属于系列作品或具有系列化特征。
+- **star trek** — 属于或关联《星际迷航》系列。
+- **star wars** — 属于或关联《星球大战》系列。
+- **studio ghibli** — 与吉卜力工作室品牌相关。
+- **trilogy** — 属于三部曲或具有三部曲结构。
+- **view askew** — 与View Askew制片品牌或创作团队相关。
+
+## 地理与地域文化·2（22 tags）
+
+- **palestine** — 故事发生地或地域文化涉及巴勒斯坦。
+- **paris** — 故事发生地或地域文化涉及巴黎。
+- **poland** — 故事发生地或地域文化涉及波兰。
+- **rio de janeiro** — 故事发生地或文化背景为里约热内卢。
+- **rome** — 故事发生地或文化背景为罗马。
+- **russia** — 涉及俄罗斯地域背景。
+- **russian** — 涉及俄罗斯人、语言或文化。
+- **san francisco** — 故事发生地为旧金山。
+- **scotland** — 故事发生地或文化背景为苏格兰。
+- **small town** — 故事发生在小镇环境。
+- **south africa** — 故事背景或主题涉及南非。
+- **south america** — 故事背景或主题涉及南美。
+- **southern theme** — 具有南方地域文化主题。
+- **spain** — 故事背景或主题涉及西班牙。
+- **spanish** — 涉及西班牙语或西班牙文化。
+- **suburbia** — 以郊区生活为背景。
+- **swedish** — 与瑞典国家、语言或文化相关。
+- **texas** — 故事发生地或文化背景在得克萨斯。
+- **tokyo** — 故事发生地或文化背景在东京。
+- **vienna** — 故事发生地或文化背景在维也纳。
+- **vietnam** — 涉及越南国家、地域或文化。
+- **wilderness** — 以荒野、丛林、山地等自然环境为主要场景。
+
+## 时代背景（20 tags）
+
+- **18th century** — 故事背景或历史氛围设定在18世纪。
+- **1920s** — 故事背景或时代氛围设定在1920年代。
+- **1930s** — 故事背景或时代氛围设定在1930年代。
+- **1950s** — 故事背景或时代氛围设定在1950年代。
+- **1960s** — 故事背景或时代氛围设定在1960年代。
+- **1970s** — 故事背景或时代氛围设定在1970年代。
+- **1980s** — 故事背景或时代氛围设定在1980年代。
+- **19th century** — 故事背景或历史氛围设定在19世纪。
+- **80s** — 指具有1980年代背景、风格或怀旧元素。
+- **christmas** — 以圣诞节或圣诞季为背景。
+- **costume drama** — 以特定历史年代的服饰与场景为特色。
+- **future** — 故事设定在未来时代。
+- **futuristic** — 具有未来主义的时代设定或美学。
+- **halloween** — 以万圣节为时间或节日背景。
+- **historical** — 影片以过去历史时期为背景或具有时代复原感。
+- **medieval** — 影片以中世纪为时代背景。
+- **period piece** — 影片属于特定历史时期的时代剧。
+- **post apocalyptic** — 故事发生在灾难后文明崩塌的末世背景。
+- **post-apocalyptic** — 以灾后末世为故事背景。
+- **prohibition** — 涉及禁酒令时期的历史背景。
+
+## 动物题材（20 tags）
+
+- **animal movie** — 以动物为核心题材或主要叙事对象。
+- **animals** — 包含动物角色、动物主题或动物元素。
+- **birds** — 涉及鸟类。
+- **dinosaurs** — 包含恐龙或史前生物题材。
+- **dog** — 包含狗作为重要动物角色或题材。
+- **dogs** — 以多只狗或犬类题材为内容。
+- **dolphins** — 包含海豚相关题材。
+- **firefly** — 涉及萤火虫或发光昆虫相关意象。
+- **fish** — 包含鱼类或水生生物题材。
+- **horses** — 影片以马匹或马术相关题材为重要内容。
+- **lions** — 狮子是影片的重要动物元素。
+- **monkey** — 猴子是影片的重要动物元素。
+- **penguins** — 影片涉及企鹅或企鹅题材。
+- **pigs** — 影片涉及猪或猪题材。
+- **rabbits** — 兔子作为重要动物元素。
+- **rats** — 老鼠作为重要动物元素。
+- **shark** — 以鲨鱼为重要动物或威胁元素。
+- **snakes** — 以蛇为重要动物或威胁元素。
+- **spiders** — 以蜘蛛为重要动物或威胁元素。
+- **talking animals** — 出现会说话的动物角色。
+
+## 科幻与超自然·2（18 tags）
+
+- **supernatural** — 包含超自然现象或力量。
+- **technology** — 以科技、技术或未来科技为主题。
+- **teleportation** — 涉及瞬间移动或空间传输能力。
+- **time travel** — 涉及穿越时间的设定或情节。
+- **utopia** — 描绘理想社会或乌托邦设定。
+- **vampire** — 包含吸血鬼角色或设定。
+- **vampire human love** — 描绘吸血鬼与人类的爱情关系。
+- **vampires** — 以吸血鬼群体为核心。
+- **virtual reality** — 涉及虚拟现实或虚拟世界设定。
+- **virus** — 以病毒、感染或疫情为关键设定。
+- **voodoo** — 涉及巫毒信仰或超自然仪式。
+- **werewolf** — 包含狼人等变形怪物或超自然生物。
+- **werewolves** — 包含狼人群体或狼人相关的超自然设定。
+- **witch** — 包含女巫、巫术或相关超自然力量。
+- **witches** — 包含女巫群体或巫术相关的超自然内容。
+- **wizards** — 包含巫师、法师或魔法角色。
+- **zombie** — 包含僵尸、丧尸或相关恐怖超自然设定。
+- **zombies** — 包含僵尸群体或丧尸灾难相关的超自然内容。
+
+## 发行与媒介（15 tags）
+
+- **free to download** — 影片可通过网络免费下载获取。
+- **hollywood** — 影片涉及好莱坞电影工业、片厂体系或电影产业背景。
+- **independent film** — 影片具有独立电影制作或发行属性。
+- **indie** — 影片具有独立制作、独立审美或独立电影气质。
+- **made for tv** — 影片为电视制作或电视播出形式。
+- **mtv** — 影片与MTV媒体渠道或电视音乐文化相关。
+- **pg** — 影片为PG分级。
+- **pg-13** — 影片为PG-13分级。
+- **product placement** — 影片中出现明显的广告植入。
+- **radio** — 涉及广播媒介或电台题材。
+- **television** — 涉及电视媒介或与电视相关。
+- **video game** — 涉及电子游戏媒介或游戏文化。
+- **video games** — 涉及多款电子游戏或游戏文化。
+- **videogame** — 涉及电子游戏媒介或游戏元素。
+- **watch the credits** — 提示片尾字幕后仍有内容或彩蛋。
+
+## 正面观众评价·2（13 tags，偏好 13）
+
+- **silly fun** 「偏好」— 观众认为影片傻气但有趣。
+- **so bad it's funny** 「偏好」— 观众认为影片烂得有趣。
+- **so bad it's good** 「偏好」— 观众认为影片因质量差反而好看。
+- **stunning** 「偏好」— 观众认为影片令人惊艳。
+- **suprisingly clever** 「偏好」— 观众认为影片出乎意料地聪明。
+- **thought-provoking** 「偏好」— 被认为能引发思考。
+- **touching** 「偏好」— 被认为感人或打动人心。
+- **underrated** 「偏好」— 被认为被低估、值得更多认可。
+- **unique** 「偏好」— 被认为风格独特、与众不同。
+- **very funny** 「偏好」— 被认为非常好笑。
+- **very good** 「偏好」— 被认为整体质量很高。
+- **very interesting** 「偏好」— 被认为非常有趣或吸引人。
+- **witty** 「偏好」— 观众认为影片机智巧妙、对白或情节有趣。
+
+## 动画形式（11 tags）
+
+- **animated** — 影片以动画形式制作呈现。
+- **animation** — 属于动画类型或突出动画技法。
+- **anime** — 具有日本动漫风格或属于日本动画。
+- **cartoon** — 卡通或动画形式。
+- **claymation** — 采用黏土定格动画形式。
+- **computer animation** — 采用计算机生成动画形式。
+- **disney animated feature** — 属于迪士尼动画长片。
+- **pixar animation** — 影片体现皮克斯动画风格或制作形式。
+- **puppets** — 使用木偶或偶戏形式。
+- **stop motion** — 使用定格动画制作。
+- **stop-motion** — 使用定格动画制作。
+
+## 社会议题、信仰与人生困境（10 tags）
+
+- **abortion** — 涉及堕胎议题、选择或相关情节。
+- **addiction** — 描绘成瘾问题及其影响。
+- **adolescence** — 聚焦青春期成长经历。
+- **adoption** — 涉及收养、领养关系或身世议题。
+- **adultery** — 涉及婚外情或通奸关系。
+- **aging** — 关注衰老、老龄化或年龄变化。
+- **aids** — 涉及艾滋病疫情、患者或相关社会议题。
+- **alcoholism** — 描绘酗酒或酒精依赖问题。
+- **atheism** — 涉及无神论、信仰缺失或对宗教的质疑。
+- **autism** — 涉及自闭症谱系角色或相关议题。
+
+## 交通与航空（10 tags）
+
+- **airplane** — 包含飞机、飞行旅程或机舱场景。
+- **airport** — 包含机场场景或航空出行情节。
+- **aviation** — 围绕航空、飞行器或飞行事业展开。
+- **boat** — 涉及船只或水上交通。
+- **cars** — 涉及汽车。
+- **classic car** — 出现或聚焦经典汽车。
+- **racing** — 以赛车或竞速为核心内容。
+- **submarine** — 以潜艇为重要场景或载具。
+- **train** — 火车是重要场景或交通工具。
+- **trains** — 出现多列火车或铁路元素。
+
+## 社会议题·2（8 tags）
+
+- **stereotypes** — 涉及刻板印象或社会成见。
+- **transgender** — 涉及跨性别身份或相关议题。
+- **virginity** — 涉及童贞、性经验或成长议题。
+- **voyeurism** — 涉及窥视行为或观看伦理。
+- **wedding** — 以婚礼、婚姻或相关人际关系为重要情节元素。
+- **weed** — 涉及大麻、毒品或相关亚文化与社会争议。
+- **wine** — 涉及葡萄酒、饮酒或酒桌社交等生活文化元素。
+- **working class** — 表现工人阶级、劳动阶层及其生活处境。
+
+## 职业与专业题材·2（7 tags）
+
+- **strippers** — 以脱衣舞娘为角色或题材。
+- **surfing** — 以冲浪运动为主题。
+- **teacher** — 以教师职业或教学环境为核心。
+- **workplace** — 以职场、办公室或职业环境为主要场景。
+- **writer's life** — 聚焦作家或写作者的职业经历与人生状态。
+- **writers** — 以作家、编剧等写作者为重要角色或题材。
+- **writing** — 涉及写作、创作过程或文学表达。
+
+## 风格语气与氛围·3（4 tags）
+
+- **visceral** — 具有强烈感官冲击或生猛质感。
+- **weird** — 影片呈现怪异、奇异或反常的整体气质。
+- **whimsical** — 影片风格俏皮奇幻、充满异想天开的趣味。
+- **wistful** — 影片带有惆怅、怀旧或淡淡忧伤的情绪。
+
+## 角色与人物状态·2（2 tags）
+
+- **unlikely friendships** — 描绘差异巨大者之间建立的友谊。
+- **women** — 以女性角色、女性关系或女性处境为重要内容。
