@@ -8,12 +8,15 @@
 - 预测移向 B 的真值（corr_B 上升 / corr_A 下降）→ 内容被真实使用
 同类型对照控制"B 内容恰好通用"的混淆；跨类型条件下内容差异最大，迁移信号应最强。
 
-单轮调用（探针无需多轮平均，成本 ~n_pairs × 组数）。
+任务级并行（annotation.workers）+ 宽松解析（与 04 一致——全有或全无会静默丢整对）；
+缓存键含消息与 run_id，崩溃重跑经缓存回放近零成本（07 无 jsonl，缓存即续跑）。
 """
 from __future__ import annotations
 
 import json
 import random
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -23,7 +26,7 @@ import pandas as pd
 from genometag.annotate.cache import cache_key
 from genometag.annotate.client import sampling_params
 from genometag.annotate.pipeline import _to_multimodal, select_few_shots
-from genometag.annotate.prompts import TagDef, build_messages, parse_scores
+from genometag.annotate.prompts import TagDef, build_messages, parse_scores_lenient
 from genometag.data.movienet import MovieMultimodal
 from genometag.eval.protocol import fitting_pool_ids, load_eval_movie_ids
 from genometag.tags.grouping import load_tag_groups
@@ -103,39 +106,71 @@ def run_mismatch_probe(config, paths, client, cache) -> Path:
     rows = {int(r["movie_id"]): r for _, r in dataset.iterrows()}  # Series 行：_to_multimodal 需要
 
     paths.results.mkdir(parents=True, exist_ok=True)
-    pred_rows: list[dict] = []
+    # hybrid 每对只构建一次（原实现嵌套循环内重复读取内容文件 33 次/对）
+    hybrids = {}
     for pair in pairs:
         mm_a = _to_multimodal(rows[pair.movie_a], paths.movienet)
         mm_b = _to_multimodal(rows[pair.movie_b], paths.movienet)
-        hybrid = _hybrid(mm_a, mm_b)
-        for group, gdf in groups_df.items():
-            tag_defs = [TagDef(int(r.tag_id), r.tag, r.definition)
-                        for r in gdf.itertuples()]
-            messages = build_messages(hybrid, tag_defs,
-                                      config.annotation.modalities,
-                                      few_shots, config.model)
-            run_id = f"mismatch-{pair.pair_id}"
-            content = None
+        hybrids[pair.pair_id] = _hybrid(mm_a, mm_b)
+
+    tasks = [(pair, group) for pair in pairs for group in groups_df]
+    total = len(tasks)
+    n_workers = max(1, config.annotation.workers)
+    if total:
+        print(f"[07] 待跑 {total} 个任务（{len(pairs)} 对 × {len(groups_df)} 组），"
+              f"workers={n_workers}", flush=True)
+
+    pred_rows: list[dict] = []
+    nulls = 0
+    lock = threading.Lock()
+    progress = {"n": 0}
+
+    def process(task) -> None:
+        """单任务（对 × 组）：构建错配 prompt → 调用（缓存优先）→ 宽松解析。"""
+        nonlocal nulls
+        pair, group = task
+        tag_defs = [TagDef(int(r.tag_id), r.tag, r.definition)
+                    for r in groups_df[group].itertuples()]
+        messages = build_messages(hybrids[pair.pair_id], tag_defs,
+                                  config.annotation.modalities,
+                                  few_shots, config.model)
+        run_id = f"mismatch-{pair.pair_id}"
+        content = None
+        if cache is not None and not config.mock:
+            key = cache_key(messages, config.model.model,
+                            sampling_params(config.model), run_id)
+            raw = cache.get(key)
+            if raw is not None:          # 缓存命中：从原始响应信封提取
+                content = raw.get("choices", [{}])[0].get(
+                    "message", {}).get("content", "")
+        if content is None:              # 新调用：直接取 resp.content（mock 同）
+            resp = client.complete(messages, run_id=run_id)
             if cache is not None and not config.mock:
-                key = cache_key(messages, config.model.model,
-                                sampling_params(config.model), run_id)
-                raw = cache.get(key)
-                if raw is not None:          # 缓存命中：从原始响应信封提取
-                    content = raw.get("choices", [{}])[0].get(
-                        "message", {}).get("content", "")
-            if content is None:              # 新调用：直接取 resp.content（mock 同）
-                resp = client.complete(messages, run_id=run_id)
-                if cache is not None and not config.mock:
-                    cache.put(key, resp.raw)
-                content = resp.content
-            scores = parse_scores(content, [t.tag for t in tag_defs])
-            if scores is None:
-                continue
-            for td in tag_defs:
-                pred_rows.append({"pair_id": pair.pair_id,
-                                  "movie_a": pair.movie_a, "movie_b": pair.movie_b,
-                                  "condition": pair.condition, "tag_id": td.tag_id,
-                                  "score": scores[td.tag]})
+                cache.put(key, resp.raw)
+            content = resp.content
+        # 宽松解析（与 04 一致）：合法条目全收，缺失记 null——
+        # 全有或全无会静默丢整对（严格解析在真实输出下不可接受）
+        scores = parse_scores_lenient(content, [t.tag for t in tag_defs])
+        out = [{"pair_id": pair.pair_id, "movie_a": pair.movie_a,
+                "movie_b": pair.movie_b, "condition": pair.condition,
+                "tag_id": td.tag_id, "score": scores[td.tag]}
+               for td in tag_defs if td.tag in scores]
+        with lock:
+            pred_rows.extend(out)
+            nulls += len(tag_defs) - len(scores)
+            progress["n"] += 1
+            if progress["n"] % 50 == 0 or progress["n"] == total:
+                print(f"[07] 进度 {progress['n']}/{total}"
+                      f"（null {nulls}）", flush=True)
+
+    if n_workers == 1:
+        for t in tasks:
+            process(t)
+    else:
+        with ThreadPoolExecutor(max_workers=n_workers) as pool:
+            futures = [pool.submit(process, t) for t in tasks]
+            for f in futures:
+                f.result()
 
     out = paths.results / "mismatch.parquet"
     pd.DataFrame(pred_rows, columns=["pair_id", "movie_a", "movie_b",
@@ -170,6 +205,8 @@ def run_mismatch_probe(config, paths, client, cache) -> Path:
             "mean_corr_a": float(g.corr_a.mean()), "mean_corr_b": float(g.corr_b.mean()),
             "mean_shift": float((g.corr_b - g.corr_a).mean()),
         }
+    summary["null_scores"] = int(nulls)
+    summary["total_tasks"] = int(total)
     summary["interpretation"] = (
         "corr_A 高且 shift≈0 → 记忆主导（预测钉住 A 的真值标签）；"
         "corr_B 上升/corr_A 下降 → 内容被真实使用（预测随内容迁移）")

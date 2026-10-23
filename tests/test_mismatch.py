@@ -53,6 +53,29 @@ def test_sample_pairs_conditions(synthetic_env):
         assert p.movie_a != p.movie_b
 
 
+def test_run_mismatch_probe_parallel_equivalent(synthetic_env):
+    """并行（workers=3）与串行等价：行集与 corr 汇总一致（mock 确定性）。"""
+    cfg, paths = synthetic_env
+    cfg.probes.n_pairs = 2
+    out_seq = run_mismatch_probe(cfg, paths, MockClient(), cache=None)
+    df_seq = pd.read_parquet(out_seq)
+    s_seq = json.loads((paths.results / "mismatch_summary.json").read_text(encoding="utf-8"))
+
+    paths.results = paths.results.with_name("smoke-par")
+    cfg.annotation.workers = 3
+    out_par = run_mismatch_probe(cfg, paths, MockClient(), cache=None)
+    df_par = pd.read_parquet(out_par)
+    s_par = json.loads((paths.results / "mismatch_summary.json").read_text(encoding="utf-8"))
+
+    key = ["pair_id", "tag_id"]
+    pd.testing.assert_frame_equal(
+        df_seq.sort_values(key).reset_index(drop=True),
+        df_par.sort_values(key).reset_index(drop=True))
+    for cond in ("same_genre", "cross_genre"):
+        assert s_par[cond]["mean_corr_a"] == pytest.approx(s_seq[cond]["mean_corr_a"])
+        assert s_par[cond]["mean_corr_b"] == pytest.approx(s_seq[cond]["mean_corr_b"])
+
+
 def test_run_mismatch_probe_mock_detects_memorization(synthetic_env):
     """端到端：mock 打分仅由（A 的）标题驱动 → 预测与 truth_A 相关、与 truth_B 无关，
     即 mock 表现为"记忆者"——探针的判别方向必须检出这一点。"""
