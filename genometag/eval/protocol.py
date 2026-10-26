@@ -5,6 +5,7 @@
 """
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 
 
@@ -73,7 +74,7 @@ def select_newfilm_ids(dataset: pd.DataFrame, genome_scores: pd.DataFrame,
     if eval_ids is None:
         raise ValueError("eval_ids 未提供：防泄露排除需要 eval_test 清单")
     n_frames = dataset["keyframes"].apply(
-        lambda k: len(k) if isinstance(k, (list, tuple)) else 0)
+        lambda k: len(k) if isinstance(k, (list, tuple, np.ndarray)) else 0)
     covered = set(genome_scores["movie_id"])
     mask = ((dataset["year"] >= year_min) & (n_frames > 0)
             & dataset["subtitles_path"].notna()

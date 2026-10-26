@@ -2,6 +2,7 @@
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import pytest
 
@@ -63,6 +64,14 @@ def test_select_output_sorted_and_deduped():
     genome = _genome([2, 3, 8])
     ids = select_newfilm_ids(ds, genome, eval_ids=[])
     assert ids == sorted(set(ids))
+
+
+def test_select_accepts_ndarray_keyframes():
+    """服务器 parquet 读回的 keyframes 是 numpy.ndarray（本地测试用 list 会漏）。"""
+    ds = _dataset(_rows())
+    ds["keyframes"] = ds["keyframes"].apply(
+        lambda k: np.array(k) if isinstance(k, list) else k)
+    assert select_newfilm_ids(ds, _genome([2, 3, 8]), eval_ids=[7]) == [2, 3, 8]
 
 
 def test_select_missing_genome_column_not_required():
