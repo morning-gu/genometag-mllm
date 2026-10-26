@@ -1,0 +1,15 @@
+exp_name: newfilm-full
+data: {source: real, seed: 42, movie_list: data/processed/newfilm2015.txt}
+model:
+  model: qwen3.7-plus
+  temperature: 0.7
+  max_frames: 12
+  script_token_budget: 4000
+  dialogue_token_budget: 3000
+annotation:
+  n_runs: 3
+  modalities: [video, dialogue]   # 新片 95 部无剧本：双模态 full
+  few_shot_examples: 2
+  workers: 8
+protocol: {temporal_split_year: 2015, relevance_threshold: 0.5, top_k: 10}
+mock: false
