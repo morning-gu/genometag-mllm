@@ -63,3 +63,31 @@ def assert_no_leakage(fit_movie_ids, test_movie_ids) -> None:
         raise ValueError(
             f"拟合池与测试集重叠（数据泄露）: {sorted(leak)[:5]}... "
             "拟合组件只允许使用评估集之外的数据（movie_list 补集或 temporal_split_year 之前）")
+
+
+def select_newfilm_ids(dataset: pd.DataFrame, genome_scores: pd.DataFrame,
+                       eval_ids: list[int] | None,
+                       year_min: int = 2015) -> list[int]:
+    """新片评估集：year ≥ year_min 且帧+字幕可用（剧本不要求），须有 genome 覆盖，
+    并强制排除既有评估集（防泄露）。eval_ids 传 None 视为调用方未加载清单——拒绝。"""
+    if eval_ids is None:
+        raise ValueError("eval_ids 未提供：防泄露排除需要 eval_test 清单")
+    n_frames = dataset["keyframes"].apply(
+        lambda k: len(k) if isinstance(k, (list, tuple)) else 0)
+    covered = set(genome_scores["movie_id"])
+    mask = ((dataset["year"] >= year_min) & (n_frames > 0)
+            & dataset["subtitles_path"].notna()
+            & dataset["movie_id"].isin(covered)
+            & ~dataset["movie_id"].isin(set(eval_ids)))
+    return sorted(set(dataset.loc[mask, "movie_id"].astype(int)))
+
+
+def write_movie_list(path, ids: list[int]) -> str:
+    """清单落盘（升序去重，每行一个 movie_id）。已存在则跳过（幂等），
+    返回 "written" / "exists"。"""
+    if path.exists():
+        return "exists"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = sorted({int(i) for i in ids})
+    path.write_text("\n".join(str(i) for i in lines) + "\n", encoding="utf-8")
+    return "written"
