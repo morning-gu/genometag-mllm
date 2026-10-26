@@ -69,25 +69,29 @@ def dose_stats(df: pd.DataFrame, n_boot: int = 10000,
     ci_low, ci_high = np.percentile(boot_mean, [2.5, 97.5])
     p_delta = float((boot_mean <= 0).mean())
 
-    slope = float(np.cov(x, y, ddof=1)[0, 1] / np.var(x, ddof=1))
-    boot_b = _boot_slope(x, y, idx)
-    finite = boot_b[np.isfinite(boot_b)]   # 零方差自抽样（并列先验）产生 NaN/±inf，剔除
-    if len(finite) == 0:
-        return {"n": n, "mean_delta": float(d.mean()),
-                "ci_low": float(ci_low), "ci_high": float(ci_high),
-                "p_delta": p_delta, "slope": slope,
-                "slope_ci_low": float("nan"), "slope_ci_high": float("nan"),
-                "slope_p_vs_1": float("nan"), "spearman_rho": rho, "bins": bins}
-    sb_low, sb_high = np.percentile(finite, [2.5, 97.5])
-    p_b1 = float(2 * min((finite >= 1).mean(), (finite <= 1).mean()))
+    x_const = bool(np.ptp(x) == 0) or len(x) < 2   # 先验无变异：斜率/相关/分箱均无定义
+    slope = float("nan") if x_const else float(
+        np.cov(x, y, ddof=1)[0, 1] / np.var(x, ddof=1))
 
-    rho = float(pd.Series(d).corr(pd.Series(x), method="spearman"))
+    rho = float("nan") if x_const else float(
+        pd.Series(d).corr(pd.Series(x), method="spearman"))
     # 逐片 NDCG 并列值多：重复分位边界降级为更少档位（Q1..Qk）
-    codes = pd.qcut(x, 4, labels=False, duplicates="drop").astype(int)
-    k = int(codes.max()) + 1
+    if x_const:
+        k = 0
+    else:
+        codes = pd.qcut(x, 4, labels=False, duplicates="drop").astype(int)
+        k = int(codes.max()) + 1
     bins = [{"quartile": f"Q{i + 1}", "n": int((codes == i).sum()),
              "mean_delta": float(d[codes == i].mean())}
             for i in range(k)]
+
+    boot_b = _boot_slope(x, y, idx)
+    finite = boot_b[np.isfinite(boot_b)]   # 零方差自抽样（并列先验）产生 NaN/±inf，剔除
+    if len(finite) == 0:                   # x 恒定：斜率检验无定义
+        sb_low = sb_high = p_b1 = float("nan")
+    else:
+        sb_low, sb_high = np.percentile(finite, [2.5, 97.5])
+        p_b1 = float(2 * min((finite >= 1).mean(), (finite <= 1).mean()))
 
     return {"n": n, "mean_delta": float(d.mean()),
             "ci_low": float(ci_low), "ci_high": float(ci_high),
