@@ -13,7 +13,8 @@ def per_movie_ndcg(pred_df: pd.DataFrame, truth_df: pd.DataFrame,
                    top_k: int, threshold: float) -> pd.DataFrame:
     """列 movie_id, ndcg_all, ndcg_content, ndcg_preference；某类型无（有真值的）
     标签时该列为 NaN；truth 缺失的标签经 inner-join 自然剔除。"""
-    pred = pred_df.groupby(["movie_id", "tag_id"], as_index=False)["score"].mean()
+    pred = pred_df.dropna(subset=["score"]).groupby(
+        ["movie_id", "tag_id"], as_index=False)["score"].mean()
     joined = pred.merge(truth_df, on=["movie_id", "tag_id"])
     type_of = dict(zip(tag_groups_df["tag_id"], tag_groups_df["tag_type"]))
     joined["tag_type"] = joined["tag_id"].map(type_of)
@@ -26,7 +27,9 @@ def per_movie_ndcg(pred_df: pd.DataFrame, truth_df: pd.DataFrame,
             if len(gg) == 0:
                 row[name] = np.nan
                 continue
-            o = gg.sort_values("score", ascending=False)
+            # 与 report._evaluate_method 同序：pivot 列序 = tag_id 升序。
+            # 按分数排序会在并列分数下与官方路径的不稳定 argsort 产生不同 tie-break
+            o = gg.sort_values("tag_id")
             row[name] = ndcg_at_k(o["score"].to_numpy(), o["relevance"].to_numpy(),
                                   top_k, threshold)
         rows.append(row)

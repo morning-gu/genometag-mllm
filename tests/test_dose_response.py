@@ -44,6 +44,39 @@ def test_per_movie_matches_report():
     assert pm["ndcg_all"].mean() == pytest.approx(expected["ndcg@k"].iloc[0])
 
 
+def test_per_movie_matches_report_tied_scores():
+    """并列分数（LLM 输出 0.1 网格常态）：逐片口径必须与 06 官方评估逐位一致——
+    官方路径喂给 ndcg_at_k 的是 tag_id 升序向量（pivot 列序），非分数降序。"""
+    rng = np.random.default_rng(0)
+    tags = list(range(10, 40))                      # 30 个标签
+    groups = pd.DataFrame({"tag_id": tags,
+                           "tag_type": ["content" if t % 2 else "preference" for t in tags]})
+    rows_p, rows_t = [], []
+    for movie in range(1, 21):
+        for t in tags:
+            score = float(rng.choice([0.0, 0.05, 0.1, 0.15]))   # 重度并列
+            for r in range(2):
+                rows_p.append((movie, t, f"r{r}", score))
+            rows_t.append((movie, t, float(rng.uniform(0, 1))))
+    pred, truth = _pred(rows_p), _truth(rows_t)
+    pm = per_movie_ndcg(pred, truth, groups, CFG.top_k, CFG.relevance_threshold)
+    pred_mean = pred.groupby(["movie_id", "tag_id"], as_index=False)["score"].mean()
+    expected = metrics_table({"m": pred_mean}, truth,
+                             pd.DataFrame({"movie_id": []}), CFG, groups)
+    assert pm["ndcg_all"].mean() == pytest.approx(expected["ndcg@k"].iloc[0])
+
+
+def test_all_nan_runs_dropped_like_report():
+    """某标签全部轮次失败（score 全 NaN）：必须与 06 一样先剔除，
+    不得让 NaN 伪装成最低分进入 top-k 污染该片指标。"""
+    rows = [(1, 10, "r1", 0.5), (1, 10, "r2", 0.5),            # 有效标签
+            (1, 11, "r1", np.nan), (1, 11, "r2", np.nan)]      # 全失败标签
+    pred, truth = _pred(rows), _truth([(1, 10, 0.0), (1, 11, 1.0)])
+    pm = per_movie_ndcg(pred, truth, _groups(), top_k=2, threshold=0.5)
+    # 06 语义：NaN 行剔除 → 只剩 tag10 → dcg=0（rel 0.0）、idcg=min(2,1)=1 → 0.0
+    assert pm.loc[0, "ndcg_all"] == pytest.approx(0.0)
+
+
 def test_nan_truth_tag_dropped_movie_kept():
     """movie 1 的 tag 11 无真值 → 剔除该标签，movie 1 仍有分数（content 上算）。"""
     pred = _pred([(1, 10, "r1", 0.8), (1, 11, "r1", 0.2)])
