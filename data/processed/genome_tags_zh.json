@@ -1,0 +1,7898 @@
+[
+ {
+  "tag_id": 1,
+  "tag": "007",
+  "tag_zh": "007",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 2,
+  "tag": "007 (series)",
+  "tag_zh": "007系列",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 3,
+  "tag": "18th century",
+  "tag_zh": "18世纪",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 4,
+  "tag": "1920s",
+  "tag_zh": "1920年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 5,
+  "tag": "1930s",
+  "tag_zh": "1930年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 6,
+  "tag": "1950s",
+  "tag_zh": "1950年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 7,
+  "tag": "1960s",
+  "tag_zh": "1960年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 8,
+  "tag": "1970s",
+  "tag_zh": "1970年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 9,
+  "tag": "1980s",
+  "tag_zh": "1980年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 10,
+  "tag": "19th century",
+  "tag_zh": "19世纪",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 11,
+  "tag": "3d",
+  "tag_zh": "3D",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 12,
+  "tag": "70mm",
+  "tag_zh": "70毫米胶片",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 13,
+  "tag": "80s",
+  "tag_zh": "80年代",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 14,
+  "tag": "9/11",
+  "tag_zh": "9·11事件",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 15,
+  "tag": "aardman",
+  "tag_zh": "阿德曼动画",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 16,
+  "tag": "aardman studios",
+  "tag_zh": "阿德曼工作室",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 17,
+  "tag": "abortion",
+  "tag_zh": "堕胎",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 18,
+  "tag": "absurd",
+  "tag_zh": "荒诞",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 19,
+  "tag": "action",
+  "tag_zh": "动作",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 20,
+  "tag": "action packed",
+  "tag_zh": "动作火爆",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 21,
+  "tag": "adaptation",
+  "tag_zh": "改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 22,
+  "tag": "adapted from:book",
+  "tag_zh": "改编自书籍",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 23,
+  "tag": "adapted from:comic",
+  "tag_zh": "改编自漫画",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 24,
+  "tag": "adapted from:game",
+  "tag_zh": "改编自游戏",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 25,
+  "tag": "addiction",
+  "tag_zh": "成瘾",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 26,
+  "tag": "adolescence",
+  "tag_zh": "青春期",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 27,
+  "tag": "adoption",
+  "tag_zh": "收养",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 28,
+  "tag": "adultery",
+  "tag_zh": "婚外情",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 29,
+  "tag": "adventure",
+  "tag_zh": "冒险",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 30,
+  "tag": "affectionate",
+  "tag_zh": "温情",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 31,
+  "tag": "afi 100",
+  "tag_zh": "AFI百年百大",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 32,
+  "tag": "afi 100 (laughs)",
+  "tag_zh": "AFI百年百大喜剧",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 33,
+  "tag": "afi 100 (movie quotes)",
+  "tag_zh": "AFI百年百大台词",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 34,
+  "tag": "africa",
+  "tag_zh": "非洲",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 35,
+  "tag": "afterlife",
+  "tag_zh": "来世",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 36,
+  "tag": "aging",
+  "tag_zh": "衰老",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 37,
+  "tag": "aids",
+  "tag_zh": "艾滋病",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 38,
+  "tag": "airplane",
+  "tag_zh": "飞机",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 39,
+  "tag": "airport",
+  "tag_zh": "机场",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 40,
+  "tag": "alaska",
+  "tag_zh": "阿拉斯加",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 41,
+  "tag": "alcatraz",
+  "tag_zh": "恶魔岛",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 42,
+  "tag": "alcoholism",
+  "tag_zh": "酗酒",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 43,
+  "tag": "alien",
+  "tag_zh": "外星生命",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 44,
+  "tag": "alien invasion",
+  "tag_zh": "外星入侵",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 45,
+  "tag": "aliens",
+  "tag_zh": "外星人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 46,
+  "tag": "allegory",
+  "tag_zh": "寓言",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 47,
+  "tag": "almodovar",
+  "tag_zh": "阿莫多瓦",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 48,
+  "tag": "alone in the world",
+  "tag_zh": "孤身一人",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 49,
+  "tag": "alter ego",
+  "tag_zh": "第二自我",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 50,
+  "tag": "alternate endings",
+  "tag_zh": "多重结局",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 51,
+  "tag": "alternate history",
+  "tag_zh": "架空历史",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 52,
+  "tag": "alternate reality",
+  "tag_zh": "平行现实",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 53,
+  "tag": "alternate universe",
+  "tag_zh": "多重宇宙",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 54,
+  "tag": "amazing cinematography",
+  "tag_zh": "摄影绝佳",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 55,
+  "tag": "amazing photography",
+  "tag_zh": "画面绝美",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 56,
+  "tag": "american civil war",
+  "tag_zh": "美国南北战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 57,
+  "tag": "amnesia",
+  "tag_zh": "失忆",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 58,
+  "tag": "amy smart",
+  "tag_zh": "艾米·斯马特",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 59,
+  "tag": "android(s)/cyborg(s)",
+  "tag_zh": "仿生人与赛博格",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 60,
+  "tag": "androids",
+  "tag_zh": "仿生人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 61,
+  "tag": "animal movie",
+  "tag_zh": "动物电影",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 62,
+  "tag": "animals",
+  "tag_zh": "动物",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 63,
+  "tag": "animated",
+  "tag_zh": "动画片",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 64,
+  "tag": "animation",
+  "tag_zh": "动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 65,
+  "tag": "anime",
+  "tag_zh": "日本动漫",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 66,
+  "tag": "antarctica",
+  "tag_zh": "南极",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 67,
+  "tag": "anti-hero",
+  "tag_zh": "反英雄",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 68,
+  "tag": "anti-semitism",
+  "tag_zh": "反犹太主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 69,
+  "tag": "anti-war",
+  "tag_zh": "反战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 70,
+  "tag": "apocalypse",
+  "tag_zh": "末日浩劫",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 71,
+  "tag": "archaeology",
+  "tag_zh": "考古",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 72,
+  "tag": "argentina",
+  "tag_zh": "阿根廷",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 73,
+  "tag": "arms dealer",
+  "tag_zh": "军火商",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 74,
+  "tag": "arnold",
+  "tag_zh": "阿诺德",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 75,
+  "tag": "art",
+  "tag_zh": "艺术",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 76,
+  "tag": "art house",
+  "tag_zh": "艺术电影",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 77,
+  "tag": "artificial intelligence",
+  "tag_zh": "人工智能",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 78,
+  "tag": "artist",
+  "tag_zh": "艺术家",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 79,
+  "tag": "artistic",
+  "tag_zh": "艺术性",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 80,
+  "tag": "artsy",
+  "tag_zh": "文艺范",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 81,
+  "tag": "assassin",
+  "tag_zh": "刺客",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 82,
+  "tag": "assassination",
+  "tag_zh": "暗杀",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 83,
+  "tag": "assassins",
+  "tag_zh": "杀手群像",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 84,
+  "tag": "astronauts",
+  "tag_zh": "宇航员",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 85,
+  "tag": "atheism",
+  "tag_zh": "无神论",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 86,
+  "tag": "atmospheric",
+  "tag_zh": "氛围浓厚",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 87,
+  "tag": "australia",
+  "tag_zh": "澳大利亚",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 88,
+  "tag": "australian",
+  "tag_zh": "澳式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 89,
+  "tag": "author:alan moore",
+  "tag_zh": "作者：艾伦·摩尔",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 90,
+  "tag": "author:neil gaiman",
+  "tag_zh": "作者：尼尔·盖曼",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 91,
+  "tag": "autism",
+  "tag_zh": "自闭症",
+  "group": "社会议题、信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 92,
+  "tag": "aviation",
+  "tag_zh": "航空",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 93,
+  "tag": "awesome",
+  "tag_zh": "超赞",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 94,
+  "tag": "awesome soundtrack",
+  "tag_zh": "配乐超赞",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 95,
+  "tag": "awful",
+  "tag_zh": "差劲",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 96,
+  "tag": "bad",
+  "tag_zh": "糟糕",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 97,
+  "tag": "bad acting",
+  "tag_zh": "演技差",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 98,
+  "tag": "bad cgi",
+  "tag_zh": "CG特效差",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 99,
+  "tag": "bad ending",
+  "tag_zh": "结局差",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 100,
+  "tag": "bad plot",
+  "tag_zh": "剧情差",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 101,
+  "tag": "bad science",
+  "tag_zh": "科学硬伤",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 102,
+  "tag": "bad script",
+  "tag_zh": "剧本差",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 103,
+  "tag": "bad sequel",
+  "tag_zh": "烂续集",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 104,
+  "tag": "ballet",
+  "tag_zh": "芭蕾",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 105,
+  "tag": "bank robbery",
+  "tag_zh": "银行抢劫",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 106,
+  "tag": "baseball",
+  "tag_zh": "棒球",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 107,
+  "tag": "based on a book",
+  "tag_zh": "据书籍改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 108,
+  "tag": "based on a comic",
+  "tag_zh": "据漫画改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 109,
+  "tag": "based on a play",
+  "tag_zh": "改编自戏剧",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 110,
+  "tag": "based on a true story",
+  "tag_zh": "据真实故事改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 111,
+  "tag": "based on a tv show",
+  "tag_zh": "改编自电视节目",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 112,
+  "tag": "based on a video game",
+  "tag_zh": "据电子游戏改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 113,
+  "tag": "based on book",
+  "tag_zh": "据书改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 114,
+  "tag": "based on comic",
+  "tag_zh": "据漫画书改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 115,
+  "tag": "based on true story",
+  "tag_zh": "据真事改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 116,
+  "tag": "basketball",
+  "tag_zh": "篮球",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 117,
+  "tag": "batman",
+  "tag_zh": "蝙蝠侠",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 118,
+  "tag": "bdsm",
+  "tag_zh": "BDSM",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 119,
+  "tag": "beatles",
+  "tag_zh": "披头士",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 120,
+  "tag": "beautiful",
+  "tag_zh": "美丽",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 121,
+  "tag": "beautiful scenery",
+  "tag_zh": "风景优美",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 122,
+  "tag": "beautifully filmed",
+  "tag_zh": "拍得唯美",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 123,
+  "tag": "beauty pageant",
+  "tag_zh": "选美",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 124,
+  "tag": "beer",
+  "tag_zh": "啤酒",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 125,
+  "tag": "berlin",
+  "tag_zh": "柏林",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 126,
+  "tag": "best of 2005",
+  "tag_zh": "2005年度佳片",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 127,
+  "tag": "best war films",
+  "tag_zh": "最佳战争片",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 128,
+  "tag": "betrayal",
+  "tag_zh": "背叛",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 129,
+  "tag": "better than expected",
+  "tag_zh": "超出预期",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 130,
+  "tag": "better than the american version",
+  "tag_zh": "优于美国版",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 131,
+  "tag": "biblical",
+  "tag_zh": "圣经题材",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 132,
+  "tag": "big budget",
+  "tag_zh": "大制作",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 133,
+  "tag": "biographical",
+  "tag_zh": "传记题材",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 134,
+  "tag": "biography",
+  "tag_zh": "传记",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 135,
+  "tag": "biopic",
+  "tag_zh": "传记片",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 136,
+  "tag": "birds",
+  "tag_zh": "鸟类",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 137,
+  "tag": "biting",
+  "tag_zh": "尖锐讽刺",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 138,
+  "tag": "bittersweet",
+  "tag_zh": "苦乐参半",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 139,
+  "tag": "bizarre",
+  "tag_zh": "怪异",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 140,
+  "tag": "black and white",
+  "tag_zh": "黑白",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 141,
+  "tag": "black comedy",
+  "tag_zh": "黑色喜剧",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 142,
+  "tag": "blaxploitation",
+  "tag_zh": "黑人剥削片",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 143,
+  "tag": "bleak",
+  "tag_zh": "苍凉",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 144,
+  "tag": "blindness",
+  "tag_zh": "失明",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 145,
+  "tag": "blood",
+  "tag_zh": "血腥画面",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 146,
+  "tag": "bloody",
+  "tag_zh": "血腥",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 147,
+  "tag": "boarding school",
+  "tag_zh": "寄宿学校",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 148,
+  "tag": "boat",
+  "tag_zh": "船只",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 149,
+  "tag": "bollywood",
+  "tag_zh": "宝莱坞",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 150,
+  "tag": "bombs",
+  "tag_zh": "炸弹",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 151,
+  "tag": "bond",
+  "tag_zh": "邦德",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 152,
+  "tag": "book",
+  "tag_zh": "书籍",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 153,
+  "tag": "book was better",
+  "tag_zh": "原著更好",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 154,
+  "tag": "books",
+  "tag_zh": "文学原著",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 155,
+  "tag": "boring",
+  "tag_zh": "无聊",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 156,
+  "tag": "boring!",
+  "tag_zh": "无聊透顶",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 157,
+  "tag": "boston",
+  "tag_zh": "波士顿",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 158,
+  "tag": "bowling",
+  "tag_zh": "保龄球",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 159,
+  "tag": "boxing",
+  "tag_zh": "拳击",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 160,
+  "tag": "brainwashing",
+  "tag_zh": "洗脑",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 161,
+  "tag": "brazil",
+  "tag_zh": "巴西",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 162,
+  "tag": "breathtaking",
+  "tag_zh": "叹为观止",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 163,
+  "tag": "brilliant",
+  "tag_zh": "精彩",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 164,
+  "tag": "british",
+  "tag_zh": "英式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 165,
+  "tag": "british comedy",
+  "tag_zh": "英式喜剧",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 166,
+  "tag": "broadway",
+  "tag_zh": "百老汇",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 167,
+  "tag": "brothers",
+  "tag_zh": "兄弟",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 168,
+  "tag": "brutal",
+  "tag_zh": "残酷",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 169,
+  "tag": "brutality",
+  "tag_zh": "暴力残酷",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 170,
+  "tag": "buddy movie",
+  "tag_zh": "搭档片",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 171,
+  "tag": "bullshit history",
+  "tag_zh": "胡扯历史",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 172,
+  "tag": "bullying",
+  "tag_zh": "霸凌",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 173,
+  "tag": "business",
+  "tag_zh": "商业",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 174,
+  "tag": "c.s. lewis",
+  "tag_zh": "C.S.刘易斯",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 175,
+  "tag": "california",
+  "tag_zh": "加利福尼亚",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 176,
+  "tag": "camp",
+  "tag_zh": "坎普",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 177,
+  "tag": "campy",
+  "tag_zh": "坎普风",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 178,
+  "tag": "canada",
+  "tag_zh": "加拿大",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 179,
+  "tag": "cancer",
+  "tag_zh": "癌症",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 180,
+  "tag": "cannibalism",
+  "tag_zh": "食人",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 181,
+  "tag": "caper",
+  "tag_zh": "盗窃骗局",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 182,
+  "tag": "capitalism",
+  "tag_zh": "资本主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 183,
+  "tag": "car chase",
+  "tag_zh": "汽车追逐",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 184,
+  "tag": "carrie-anne moss",
+  "tag_zh": "凯瑞-安·莫斯",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 185,
+  "tag": "cars",
+  "tag_zh": "汽车",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 186,
+  "tag": "cartoon",
+  "tag_zh": "卡通",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 187,
+  "tag": "casino",
+  "tag_zh": "赌场",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 188,
+  "tag": "catastrophe",
+  "tag_zh": "灾难事件",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 189,
+  "tag": "cathartic",
+  "tag_zh": "宣泄",
+  "group": "风格语气与氛围",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 190,
+  "tag": "catholicism",
+  "tag_zh": "天主教",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 191,
+  "tag": "censorship",
+  "tag_zh": "审查制度",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 192,
+  "tag": "cerebral",
+  "tag_zh": "思辨烧脑",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 193,
+  "tag": "cgi",
+  "tag_zh": "CG特效",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 194,
+  "tag": "character study",
+  "tag_zh": "人物研究",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 195,
+  "tag": "chase",
+  "tag_zh": "追逐",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 196,
+  "tag": "cheating",
+  "tag_zh": "出轨",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 197,
+  "tag": "cheerleading",
+  "tag_zh": "啦啦队",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 198,
+  "tag": "cheesy",
+  "tag_zh": "俗气",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 199,
+  "tag": "chess",
+  "tag_zh": "国际象棋",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 200,
+  "tag": "chicago",
+  "tag_zh": "芝加哥",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 201,
+  "tag": "chick flick",
+  "tag_zh": "女性向爱情片",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 202,
+  "tag": "child abuse",
+  "tag_zh": "虐童",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 203,
+  "tag": "childhood",
+  "tag_zh": "童年",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 204,
+  "tag": "children",
+  "tag_zh": "儿童",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 205,
+  "tag": "china",
+  "tag_zh": "中国",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 206,
+  "tag": "chocolate",
+  "tag_zh": "巧克力",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 207,
+  "tag": "chris tucker",
+  "tag_zh": "克里斯·塔克",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 208,
+  "tag": "christian",
+  "tag_zh": "基督徒",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 209,
+  "tag": "christianity",
+  "tag_zh": "基督教",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 210,
+  "tag": "christmas",
+  "tag_zh": "圣诞节",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 211,
+  "tag": "cia",
+  "tag_zh": "中情局",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 212,
+  "tag": "cinematography",
+  "tag_zh": "摄影",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 213,
+  "tag": "circus",
+  "tag_zh": "马戏团",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 214,
+  "tag": "civil war",
+  "tag_zh": "内战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 215,
+  "tag": "classic",
+  "tag_zh": "经典",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 216,
+  "tag": "classic car",
+  "tag_zh": "老爷车",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 217,
+  "tag": "classical music",
+  "tag_zh": "古典音乐",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 218,
+  "tag": "claustrophobic",
+  "tag_zh": "幽闭压抑",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 219,
+  "tag": "claymation",
+  "tag_zh": "黏土动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 220,
+  "tag": "clever",
+  "tag_zh": "机智",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 221,
+  "tag": "clones",
+  "tag_zh": "克隆人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 222,
+  "tag": "cloning",
+  "tag_zh": "克隆技术",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 223,
+  "tag": "clowns",
+  "tag_zh": "小丑",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 224,
+  "tag": "coen bros",
+  "tag_zh": "科恩兄弟",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 225,
+  "tag": "coen brothers",
+  "tag_zh": "科恩兄弟",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 226,
+  "tag": "cold war",
+  "tag_zh": "冷战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 227,
+  "tag": "college",
+  "tag_zh": "大学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 228,
+  "tag": "colonialism",
+  "tag_zh": "殖民主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 229,
+  "tag": "colourful",
+  "tag_zh": "色彩缤纷",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 230,
+  "tag": "comedy",
+  "tag_zh": "喜剧",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 231,
+  "tag": "comic",
+  "tag_zh": "漫画",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 232,
+  "tag": "comic book",
+  "tag_zh": "漫画书",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 233,
+  "tag": "comic book adaption",
+  "tag_zh": "漫画书改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 234,
+  "tag": "comics",
+  "tag_zh": "连环画",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 235,
+  "tag": "coming of age",
+  "tag_zh": "青春成长",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 236,
+  "tag": "coming-of-age",
+  "tag_zh": "青春成长",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 237,
+  "tag": "communism",
+  "tag_zh": "共产主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 238,
+  "tag": "compassionate",
+  "tag_zh": "富有同情",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 239,
+  "tag": "competition",
+  "tag_zh": "竞赛",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 240,
+  "tag": "complex",
+  "tag_zh": "复杂",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 241,
+  "tag": "complex characters",
+  "tag_zh": "复杂人物",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 242,
+  "tag": "complicated",
+  "tag_zh": "难懂",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 243,
+  "tag": "complicated plot",
+  "tag_zh": "剧情难懂",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 244,
+  "tag": "computer animation",
+  "tag_zh": "电脑动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 245,
+  "tag": "computer game",
+  "tag_zh": "电脑游戏",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 246,
+  "tag": "computers",
+  "tag_zh": "计算机",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 247,
+  "tag": "con artists",
+  "tag_zh": "诈骗犯",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 248,
+  "tag": "con men",
+  "tag_zh": "骗子",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 249,
+  "tag": "confrontational",
+  "tag_zh": "挑衅对抗",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 250,
+  "tag": "confusing",
+  "tag_zh": "令人困惑",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 251,
+  "tag": "conspiracy",
+  "tag_zh": "阴谋",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 252,
+  "tag": "conspiracy theory",
+  "tag_zh": "阴谋论",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 253,
+  "tag": "controversial",
+  "tag_zh": "争议话题",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 254,
+  "tag": "cooking",
+  "tag_zh": "烹饪",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 255,
+  "tag": "cool",
+  "tag_zh": "酷",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 256,
+  "tag": "corny",
+  "tag_zh": "老套",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 257,
+  "tag": "corporate america",
+  "tag_zh": "美国企业界",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 258,
+  "tag": "corruption",
+  "tag_zh": "腐败",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 259,
+  "tag": "costume drama",
+  "tag_zh": "古装剧",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 260,
+  "tag": "courage",
+  "tag_zh": "勇气",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 261,
+  "tag": "court",
+  "tag_zh": "法庭",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 262,
+  "tag": "courtroom",
+  "tag_zh": "庭审",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 263,
+  "tag": "courtroom drama",
+  "tag_zh": "法庭戏",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 264,
+  "tag": "crappy sequel",
+  "tag_zh": "垃圾续集",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 265,
+  "tag": "crazy",
+  "tag_zh": "疯狂",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 266,
+  "tag": "creativity",
+  "tag_zh": "创造力",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 267,
+  "tag": "creepy",
+  "tag_zh": "瘆人",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 268,
+  "tag": "crime",
+  "tag_zh": "犯罪",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 269,
+  "tag": "crime gone awry",
+  "tag_zh": "犯罪失控",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 270,
+  "tag": "criterion",
+  "tag_zh": "标准收藏",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 271,
+  "tag": "cross dressing",
+  "tag_zh": "异装",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 272,
+  "tag": "crude humor",
+  "tag_zh": "粗俗幽默",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 273,
+  "tag": "cuba",
+  "tag_zh": "古巴",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 274,
+  "tag": "cult",
+  "tag_zh": "邪典",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 275,
+  "tag": "cult classic",
+  "tag_zh": "邪典经典",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 276,
+  "tag": "cult film",
+  "tag_zh": "邪典电影",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 277,
+  "tag": "culture clash",
+  "tag_zh": "文化冲突",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 278,
+  "tag": "cute",
+  "tag_zh": "可爱",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 279,
+  "tag": "cute!",
+  "tag_zh": "超可爱",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 280,
+  "tag": "cyberpunk",
+  "tag_zh": "赛博朋克",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 281,
+  "tag": "cyborgs",
+  "tag_zh": "赛博格",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 282,
+  "tag": "cynical",
+  "tag_zh": "愤世嫉俗",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 283,
+  "tag": "dance",
+  "tag_zh": "舞蹈",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 284,
+  "tag": "dancing",
+  "tag_zh": "舞蹈场面",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 285,
+  "tag": "dark",
+  "tag_zh": "黑暗",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 286,
+  "tag": "dark comedy",
+  "tag_zh": "暗黑喜剧",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 287,
+  "tag": "dark fantasy",
+  "tag_zh": "黑暗奇幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 288,
+  "tag": "dark hero",
+  "tag_zh": "黑暗英雄",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 289,
+  "tag": "dark humor",
+  "tag_zh": "黑色幽默",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 290,
+  "tag": "dc comics",
+  "tag_zh": "DC漫画",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 291,
+  "tag": "deadpan",
+  "tag_zh": "冷面笑匠",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 292,
+  "tag": "death",
+  "tag_zh": "死亡",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 293,
+  "tag": "death penalty",
+  "tag_zh": "死刑",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 294,
+  "tag": "demons",
+  "tag_zh": "恶魔",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 295,
+  "tag": "depp & burton",
+  "tag_zh": "德普与伯顿",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 296,
+  "tag": "depressing",
+  "tag_zh": "令人沮丧",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 297,
+  "tag": "depression",
+  "tag_zh": "抑郁症",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 298,
+  "tag": "desert",
+  "tag_zh": "沙漠",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 299,
+  "tag": "destiny",
+  "tag_zh": "宿命",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 300,
+  "tag": "detective",
+  "tag_zh": "侦探",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 301,
+  "tag": "devil",
+  "tag_zh": "魔鬼",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 302,
+  "tag": "dialogue",
+  "tag_zh": "对白",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 303,
+  "tag": "dialogue driven",
+  "tag_zh": "对白驱动",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 304,
+  "tag": "dinosaurs",
+  "tag_zh": "恐龙",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 305,
+  "tag": "directorial debut",
+  "tag_zh": "导演处女作",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 306,
+  "tag": "disability",
+  "tag_zh": "残障",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 307,
+  "tag": "disappointing",
+  "tag_zh": "令人失望",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 308,
+  "tag": "disaster",
+  "tag_zh": "灾难片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 309,
+  "tag": "disney",
+  "tag_zh": "迪士尼",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 310,
+  "tag": "disney animated feature",
+  "tag_zh": "迪士尼动画长片",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 311,
+  "tag": "distopia",
+  "tag_zh": "反乌托邦",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 312,
+  "tag": "disturbing",
+  "tag_zh": "令人不安",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 313,
+  "tag": "divorce",
+  "tag_zh": "离婚",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 314,
+  "tag": "doctors",
+  "tag_zh": "医生",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 315,
+  "tag": "documentary",
+  "tag_zh": "纪录片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 316,
+  "tag": "dog",
+  "tag_zh": "狗",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 317,
+  "tag": "dogs",
+  "tag_zh": "犬类",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 318,
+  "tag": "dolphins",
+  "tag_zh": "海豚",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 319,
+  "tag": "downbeat",
+  "tag_zh": "低沉悲观",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 320,
+  "tag": "dr. seuss",
+  "tag_zh": "苏斯博士",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 321,
+  "tag": "dragon",
+  "tag_zh": "龙",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 322,
+  "tag": "dragons",
+  "tag_zh": "龙族",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 323,
+  "tag": "drama",
+  "tag_zh": "剧情",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 324,
+  "tag": "dramatic",
+  "tag_zh": "戏剧性",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 325,
+  "tag": "dreamlike",
+  "tag_zh": "如梦似幻",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 326,
+  "tag": "dreams",
+  "tag_zh": "梦境",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 327,
+  "tag": "dreamworks",
+  "tag_zh": "梦工厂",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 328,
+  "tag": "drinking",
+  "tag_zh": "饮酒",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 329,
+  "tag": "drug abuse",
+  "tag_zh": "药物滥用",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 330,
+  "tag": "drug addiction",
+  "tag_zh": "毒瘾",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 331,
+  "tag": "drugs",
+  "tag_zh": "毒品",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 332,
+  "tag": "dumb",
+  "tag_zh": "愚蠢",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 333,
+  "tag": "dumb but funny",
+  "tag_zh": "又蠢又好笑",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 334,
+  "tag": "dynamic cgi action",
+  "tag_zh": "CG动感动作",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 335,
+  "tag": "dysfunctional family",
+  "tag_zh": "功能失调家庭",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 336,
+  "tag": "dystopia",
+  "tag_zh": "反乌托邦",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 337,
+  "tag": "dystopic future",
+  "tag_zh": "反乌托邦未来",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 338,
+  "tag": "earnest",
+  "tag_zh": "真挚",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 339,
+  "tag": "easily confused with other movie(s) (title)",
+  "tag_zh": "易与其他片名混淆",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 340,
+  "tag": "east germany",
+  "tag_zh": "东德",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 341,
+  "tag": "eccentricity",
+  "tag_zh": "古怪",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 342,
+  "tag": "ecology",
+  "tag_zh": "生态",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 343,
+  "tag": "educational",
+  "tag_zh": "教育性",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 344,
+  "tag": "eerie",
+  "tag_zh": "阴森",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 345,
+  "tag": "effects",
+  "tag_zh": "特效",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 346,
+  "tag": "egypt",
+  "tag_zh": "埃及",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 347,
+  "tag": "emma watson",
+  "tag_zh": "艾玛·沃森",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 348,
+  "tag": "emotional",
+  "tag_zh": "情感浓烈",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 349,
+  "tag": "end of the world",
+  "tag_zh": "世界末日",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 350,
+  "tag": "england",
+  "tag_zh": "英格兰",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 351,
+  "tag": "enigmatic",
+  "tag_zh": "神秘莫测",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 352,
+  "tag": "ennio morricone",
+  "tag_zh": "莫里康内",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 353,
+  "tag": "enormously long battle scene",
+  "tag_zh": "超长战斗场面",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 354,
+  "tag": "ensemble cast",
+  "tag_zh": "群星阵容",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 355,
+  "tag": "entertaining",
+  "tag_zh": "娱乐性强",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 356,
+  "tag": "entirely dialogue",
+  "tag_zh": "纯对白",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 357,
+  "tag": "environment",
+  "tag_zh": "环境",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 358,
+  "tag": "environmental",
+  "tag_zh": "环保",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 359,
+  "tag": "epic",
+  "tag_zh": "史诗",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 360,
+  "tag": "erotic",
+  "tag_zh": "情色",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 361,
+  "tag": "espionage",
+  "tag_zh": "谍报",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 362,
+  "tag": "ethnic conflict",
+  "tag_zh": "族群冲突",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 363,
+  "tag": "evolution",
+  "tag_zh": "演化",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 364,
+  "tag": "excellent",
+  "tag_zh": "极佳",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 365,
+  "tag": "excellent script",
+  "tag_zh": "剧本极佳",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 366,
+  "tag": "exceptional acting",
+  "tag_zh": "演技精湛",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 367,
+  "tag": "exciting",
+  "tag_zh": "刺激",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 368,
+  "tag": "existentialism",
+  "tag_zh": "存在主义",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 369,
+  "tag": "explosions",
+  "tag_zh": "爆炸场面",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 370,
+  "tag": "factual",
+  "tag_zh": "纪实性",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 371,
+  "tag": "fairy tale",
+  "tag_zh": "童话",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 372,
+  "tag": "fairy tales",
+  "tag_zh": "童话故事",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 373,
+  "tag": "fake documentary",
+  "tag_zh": "假纪录片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 374,
+  "tag": "family",
+  "tag_zh": "家庭",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 375,
+  "tag": "family bonds",
+  "tag_zh": "家庭羁绊",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 376,
+  "tag": "family drama",
+  "tag_zh": "家庭剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 377,
+  "tag": "fantasy",
+  "tag_zh": "奇幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 378,
+  "tag": "fantasy world",
+  "tag_zh": "奇幻世界",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 379,
+  "tag": "farce",
+  "tag_zh": "闹剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 380,
+  "tag": "fascism",
+  "tag_zh": "法西斯主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 381,
+  "tag": "fashion",
+  "tag_zh": "时尚",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 382,
+  "tag": "fast paced",
+  "tag_zh": "节奏明快",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 383,
+  "tag": "father daughter relationship",
+  "tag_zh": "父女关系",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 384,
+  "tag": "father son relationship",
+  "tag_zh": "父子关系",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 385,
+  "tag": "father-son relationship",
+  "tag_zh": "父子关系",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 386,
+  "tag": "fbi",
+  "tag_zh": "联邦调查局",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 387,
+  "tag": "feel good movie",
+  "tag_zh": "治愈系",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 388,
+  "tag": "feel-good",
+  "tag_zh": "观感愉悦",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 389,
+  "tag": "fight scenes",
+  "tag_zh": "打斗场面",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 390,
+  "tag": "fighting",
+  "tag_zh": "搏斗",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 391,
+  "tag": "fighting the system",
+  "tag_zh": "对抗体制",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 392,
+  "tag": "figure skating",
+  "tag_zh": "花样滑冰",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 393,
+  "tag": "film noir",
+  "tag_zh": "黑色电影",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 394,
+  "tag": "finnish",
+  "tag_zh": "芬兰式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 395,
+  "tag": "firefly",
+  "tag_zh": "萤火虫",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 396,
+  "tag": "first contact",
+  "tag_zh": "第一次接触",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 397,
+  "tag": "fish",
+  "tag_zh": "鱼类",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 398,
+  "tag": "flashbacks",
+  "tag_zh": "闪回",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 399,
+  "tag": "food",
+  "tag_zh": "美食",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 400,
+  "tag": "football",
+  "tag_zh": "足球",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 401,
+  "tag": "forceful",
+  "tag_zh": "冲击力强",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 402,
+  "tag": "foreign",
+  "tag_zh": "外语片",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 403,
+  "tag": "foul language",
+  "tag_zh": "粗口",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 404,
+  "tag": "fountain of youth",
+  "tag_zh": "不老泉",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 405,
+  "tag": "france",
+  "tag_zh": "法国",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 406,
+  "tag": "franchise",
+  "tag_zh": "系列电影",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 407,
+  "tag": "francis ford copolla",
+  "tag_zh": "科波拉",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 408,
+  "tag": "free speech",
+  "tag_zh": "言论自由",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 409,
+  "tag": "free to download",
+  "tag_zh": "免费下载",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 410,
+  "tag": "freedom",
+  "tag_zh": "自由",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 411,
+  "tag": "french",
+  "tag_zh": "法式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 412,
+  "tag": "friendship",
+  "tag_zh": "友谊",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 413,
+  "tag": "frightening",
+  "tag_zh": "可怕",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 414,
+  "tag": "fun",
+  "tag_zh": "有趣",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 415,
+  "tag": "fun movie",
+  "tag_zh": "好玩",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 416,
+  "tag": "funniest movies",
+  "tag_zh": "最搞笑电影",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 417,
+  "tag": "funny",
+  "tag_zh": "搞笑",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 418,
+  "tag": "funny as hell",
+  "tag_zh": "爆笑",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 419,
+  "tag": "future",
+  "tag_zh": "未来",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 420,
+  "tag": "futuristic",
+  "tag_zh": "未来主义",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 421,
+  "tag": "gambling",
+  "tag_zh": "赌博",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 422,
+  "tag": "gangs",
+  "tag_zh": "帮派",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 423,
+  "tag": "gangster",
+  "tag_zh": "黑帮",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 424,
+  "tag": "gangsters",
+  "tag_zh": "匪徒",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 425,
+  "tag": "gay",
+  "tag_zh": "同性恋",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 426,
+  "tag": "gay character",
+  "tag_zh": "同性恋角色",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 427,
+  "tag": "geek",
+  "tag_zh": "极客",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 428,
+  "tag": "geeks",
+  "tag_zh": "极客群像",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 429,
+  "tag": "genetics",
+  "tag_zh": "基因科学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 430,
+  "tag": "genius",
+  "tag_zh": "天才",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 431,
+  "tag": "genocide",
+  "tag_zh": "种族灭绝",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 432,
+  "tag": "george orwell",
+  "tag_zh": "乔治·奥威尔",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 433,
+  "tag": "german",
+  "tag_zh": "德式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 434,
+  "tag": "germany",
+  "tag_zh": "德国",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 435,
+  "tag": "ghosts",
+  "tag_zh": "鬼魂",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 436,
+  "tag": "ghosts/afterlife",
+  "tag_zh": "鬼魂与来世",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 437,
+  "tag": "giant robots",
+  "tag_zh": "巨型机器人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 438,
+  "tag": "gilliam",
+  "tag_zh": "特瑞·吉列姆",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 439,
+  "tag": "girlie movie",
+  "tag_zh": "女性化商业片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 440,
+  "tag": "glbt",
+  "tag_zh": "LGBT",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 441,
+  "tag": "global warming",
+  "tag_zh": "全球变暖",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 442,
+  "tag": "god",
+  "tag_zh": "上帝",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 443,
+  "tag": "golden palm",
+  "tag_zh": "金棕榈奖",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 444,
+  "tag": "golf",
+  "tag_zh": "高尔夫",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 445,
+  "tag": "good",
+  "tag_zh": "好看",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 446,
+  "tag": "good acting",
+  "tag_zh": "演技好",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 447,
+  "tag": "good action",
+  "tag_zh": "动作精彩",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 448,
+  "tag": "good dialogue",
+  "tag_zh": "对白精彩",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 449,
+  "tag": "good music",
+  "tag_zh": "音乐好听",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 450,
+  "tag": "good romantic comedies",
+  "tag_zh": "优质爱情喜剧",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 451,
+  "tag": "good sequel",
+  "tag_zh": "优秀续集",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 452,
+  "tag": "good soundtrack",
+  "tag_zh": "原声出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 453,
+  "tag": "good story",
+  "tag_zh": "故事好",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 454,
+  "tag": "good versus evil",
+  "tag_zh": "正邪对决",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 455,
+  "tag": "goofy",
+  "tag_zh": "无厘头",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 456,
+  "tag": "gore",
+  "tag_zh": "血肉模糊",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 457,
+  "tag": "goretastic",
+  "tag_zh": "血浆盛宴",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 458,
+  "tag": "gory",
+  "tag_zh": "血淋淋",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 459,
+  "tag": "goth",
+  "tag_zh": "哥特亚文化",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 460,
+  "tag": "gothic",
+  "tag_zh": "哥特式",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 461,
+  "tag": "graphic design",
+  "tag_zh": "平面设计",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 462,
+  "tag": "graphic novel",
+  "tag_zh": "图像小说",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 463,
+  "tag": "gratuitous violence",
+  "tag_zh": "暴力过度",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 464,
+  "tag": "great",
+  "tag_zh": "出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 465,
+  "tag": "great acting",
+  "tag_zh": "演技出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 466,
+  "tag": "great cinematography",
+  "tag_zh": "摄影出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 467,
+  "tag": "great dialogue",
+  "tag_zh": "对白出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 468,
+  "tag": "great ending",
+  "tag_zh": "结局精彩",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 469,
+  "tag": "great movie",
+  "tag_zh": "优秀电影",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 470,
+  "tag": "great music",
+  "tag_zh": "音乐出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 471,
+  "tag": "great soundtrack",
+  "tag_zh": "配乐出色",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 472,
+  "tag": "greed",
+  "tag_zh": "贪婪",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 473,
+  "tag": "grim",
+  "tag_zh": "冷峻",
+  "group": "风格语气与氛围",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 474,
+  "tag": "grindhouse",
+  "tag_zh": "磨坊电影",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 475,
+  "tag": "gritty",
+  "tag_zh": "粗粝写实",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 476,
+  "tag": "gross-out",
+  "tag_zh": "恶趣味",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 477,
+  "tag": "gruesome",
+  "tag_zh": "骇人",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 478,
+  "tag": "guilt",
+  "tag_zh": "内疚",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 479,
+  "tag": "guilty pleasure",
+  "tag_zh": "罪恶快感",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 480,
+  "tag": "gulf war",
+  "tag_zh": "海湾战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 481,
+  "tag": "gunfight",
+  "tag_zh": "枪战",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 482,
+  "tag": "guns",
+  "tag_zh": "枪械",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 483,
+  "tag": "gypsy accent",
+  "tag_zh": "吉普赛口音",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 484,
+  "tag": "hackers",
+  "tag_zh": "黑客",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 485,
+  "tag": "hacking",
+  "tag_zh": "黑客入侵",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 486,
+  "tag": "halloween",
+  "tag_zh": "万圣节",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 487,
+  "tag": "hallucinatory",
+  "tag_zh": "幻觉迷幻",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 488,
+  "tag": "handycam",
+  "tag_zh": "手持DV",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 489,
+  "tag": "hannibal lecter",
+  "tag_zh": "汉尼拔·莱克特",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 490,
+  "tag": "happy ending",
+  "tag_zh": "大团圆结局",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 491,
+  "tag": "hard to watch",
+  "tag_zh": "不忍直视",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 492,
+  "tag": "harry potter",
+  "tag_zh": "哈利·波特",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 493,
+  "tag": "harsh",
+  "tag_zh": "尖刻严酷",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 494,
+  "tag": "haunted house",
+  "tag_zh": "鬼屋",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 495,
+  "tag": "hawaii",
+  "tag_zh": "夏威夷",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 496,
+  "tag": "heartbreaking",
+  "tag_zh": "令人心碎",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 497,
+  "tag": "heartwarming",
+  "tag_zh": "温暖治愈",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 498,
+  "tag": "heist",
+  "tag_zh": "盗贼劫案",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 499,
+  "tag": "heroin",
+  "tag_zh": "海洛因",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 500,
+  "tag": "heroine",
+  "tag_zh": "女英雄",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 501,
+  "tag": "heroine in tight suit",
+  "tag_zh": "紧身衣女主",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 502,
+  "tag": "high fantasy",
+  "tag_zh": "高奇幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 503,
+  "tag": "high school",
+  "tag_zh": "高中",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 504,
+  "tag": "highly quotable",
+  "tag_zh": "台词值得引用",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 505,
+  "tag": "hilarious",
+  "tag_zh": "非常搞笑",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 506,
+  "tag": "hillarious",
+  "tag_zh": "搞笑到爆",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 507,
+  "tag": "hip hop",
+  "tag_zh": "嘻哈",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 508,
+  "tag": "historical",
+  "tag_zh": "历史感",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 509,
+  "tag": "history",
+  "tag_zh": "历史",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 510,
+  "tag": "hit men",
+  "tag_zh": "雇佣杀手",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 511,
+  "tag": "hitchcock",
+  "tag_zh": "希区柯克",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 512,
+  "tag": "hitman",
+  "tag_zh": "职业杀手",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 513,
+  "tag": "holiday",
+  "tag_zh": "节日",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 514,
+  "tag": "hollywood",
+  "tag_zh": "好莱坞",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 515,
+  "tag": "holocaust",
+  "tag_zh": "纳粹大屠杀",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 516,
+  "tag": "homeless",
+  "tag_zh": "无家可归",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 517,
+  "tag": "homophobia",
+  "tag_zh": "恐同",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 518,
+  "tag": "homosexuality",
+  "tag_zh": "同性恋主题",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 519,
+  "tag": "honest",
+  "tag_zh": "真诚",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 520,
+  "tag": "hong kong",
+  "tag_zh": "香港",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 521,
+  "tag": "horrible",
+  "tag_zh": "烂透了",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 522,
+  "tag": "horror",
+  "tag_zh": "恐怖",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 523,
+  "tag": "horses",
+  "tag_zh": "马",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 524,
+  "tag": "hospital",
+  "tag_zh": "医院",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 525,
+  "tag": "hostage",
+  "tag_zh": "人质",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 526,
+  "tag": "hotel",
+  "tag_zh": "酒店",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 527,
+  "tag": "humanity",
+  "tag_zh": "人性",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 528,
+  "tag": "humor",
+  "tag_zh": "幽默",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 529,
+  "tag": "humorous",
+  "tag_zh": "诙谐",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 530,
+  "tag": "hunting",
+  "tag_zh": "狩猎",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 531,
+  "tag": "idealism",
+  "tag_zh": "理想主义",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 532,
+  "tag": "identity",
+  "tag_zh": "身份认同",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 533,
+  "tag": "idiotic",
+  "tag_zh": "愚不可及",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 534,
+  "tag": "imaginary friend",
+  "tag_zh": "幻想朋友",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 535,
+  "tag": "imagination",
+  "tag_zh": "想象力",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 536,
+  "tag": "imdb top 250",
+  "tag_zh": "IMDb Top 250",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 537,
+  "tag": "immigrants",
+  "tag_zh": "移民",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 538,
+  "tag": "immortality",
+  "tag_zh": "永生",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 539,
+  "tag": "incest",
+  "tag_zh": "乱伦",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 540,
+  "tag": "independent film",
+  "tag_zh": "独立电影",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 541,
+  "tag": "india",
+  "tag_zh": "印度",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 542,
+  "tag": "indiana jones",
+  "tag_zh": "夺宝奇兵",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 543,
+  "tag": "indians",
+  "tag_zh": "印第安人",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 544,
+  "tag": "indie",
+  "tag_zh": "独立气质",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 545,
+  "tag": "infidelity",
+  "tag_zh": "不忠",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 546,
+  "tag": "innocence lost",
+  "tag_zh": "纯真不再",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 547,
+  "tag": "insanity",
+  "tag_zh": "精神失常",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 548,
+  "tag": "inspirational",
+  "tag_zh": "鼓舞人心",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 549,
+  "tag": "inspiring",
+  "tag_zh": "励志",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 550,
+  "tag": "intellectual",
+  "tag_zh": "智性",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 551,
+  "tag": "intelligent",
+  "tag_zh": "聪明",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 552,
+  "tag": "intelligent sci-fi",
+  "tag_zh": "高智科幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 553,
+  "tag": "intense",
+  "tag_zh": "强烈紧张",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 554,
+  "tag": "interesting",
+  "tag_zh": "有意思",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 555,
+  "tag": "internet",
+  "tag_zh": "互联网",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 556,
+  "tag": "interracial romance",
+  "tag_zh": "跨种族恋情",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 557,
+  "tag": "intimate",
+  "tag_zh": "亲密私密",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 558,
+  "tag": "investigation",
+  "tag_zh": "调查",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 559,
+  "tag": "iran",
+  "tag_zh": "伊朗",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 560,
+  "tag": "iraq",
+  "tag_zh": "伊拉克",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 561,
+  "tag": "iraq war",
+  "tag_zh": "伊拉克战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 562,
+  "tag": "ireland",
+  "tag_zh": "爱尔兰",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 563,
+  "tag": "irish",
+  "tag_zh": "爱尔兰式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 564,
+  "tag": "irish accent",
+  "tag_zh": "爱尔兰口音",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 565,
+  "tag": "ironic",
+  "tag_zh": "反讽",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 566,
+  "tag": "irreverent",
+  "tag_zh": "玩世不恭",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 567,
+  "tag": "islam",
+  "tag_zh": "伊斯兰教",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 568,
+  "tag": "island",
+  "tag_zh": "岛屿",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 569,
+  "tag": "isolation",
+  "tag_zh": "孤立疏离",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 570,
+  "tag": "israel",
+  "tag_zh": "以色列",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 571,
+  "tag": "italian",
+  "tag_zh": "意式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 572,
+  "tag": "italy",
+  "tag_zh": "意大利",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 573,
+  "tag": "james bond",
+  "tag_zh": "詹姆斯·邦德",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 574,
+  "tag": "jane austen",
+  "tag_zh": "简·奥斯汀",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 575,
+  "tag": "japan",
+  "tag_zh": "日本",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 576,
+  "tag": "japanese",
+  "tag_zh": "日式",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 577,
+  "tag": "jay and silent bob",
+  "tag_zh": "杰与沉默鲍勃",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 578,
+  "tag": "jazz",
+  "tag_zh": "爵士",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 579,
+  "tag": "jesus",
+  "tag_zh": "耶稣",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 580,
+  "tag": "jewish",
+  "tag_zh": "犹太",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 581,
+  "tag": "jews",
+  "tag_zh": "犹太人",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 582,
+  "tag": "journalism",
+  "tag_zh": "新闻业",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 583,
+  "tag": "judaism",
+  "tag_zh": "犹太教",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 584,
+  "tag": "jungle",
+  "tag_zh": "丛林",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 585,
+  "tag": "justice",
+  "tag_zh": "正义",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 586,
+  "tag": "kick-butt women",
+  "tag_zh": "打女",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 587,
+  "tag": "kidnapping",
+  "tag_zh": "绑架",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 588,
+  "tag": "kids",
+  "tag_zh": "儿童向",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 589,
+  "tag": "kids and family",
+  "tag_zh": "亲子合家欢",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 590,
+  "tag": "king arthur",
+  "tag_zh": "亚瑟王",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 591,
+  "tag": "kubrick",
+  "tag_zh": "库布里克",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 592,
+  "tag": "kung fu",
+  "tag_zh": "功夫",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 593,
+  "tag": "kurosawa",
+  "tag_zh": "黑泽明",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 594,
+  "tag": "lame",
+  "tag_zh": "乏味拙劣",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 595,
+  "tag": "las vegas",
+  "tag_zh": "拉斯维加斯",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 596,
+  "tag": "latin america",
+  "tag_zh": "拉丁美洲",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 597,
+  "tag": "lawyer",
+  "tag_zh": "律师",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 598,
+  "tag": "lawyers",
+  "tag_zh": "律师群像",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 599,
+  "tag": "lesbian",
+  "tag_zh": "女同性恋",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 600,
+  "tag": "life",
+  "tag_zh": "人生",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 601,
+  "tag": "life & death",
+  "tag_zh": "生死",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 602,
+  "tag": "life philosophy",
+  "tag_zh": "人生哲理",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 603,
+  "tag": "light",
+  "tag_zh": "轻松",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 604,
+  "tag": "lions",
+  "tag_zh": "狮子",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 605,
+  "tag": "literary adaptation",
+  "tag_zh": "文学改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 606,
+  "tag": "literature",
+  "tag_zh": "文学",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 607,
+  "tag": "liv tyler",
+  "tag_zh": "丽芙·泰勒",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 608,
+  "tag": "london",
+  "tag_zh": "伦敦",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 609,
+  "tag": "lone hero",
+  "tag_zh": "孤胆英雄",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 610,
+  "tag": "loneliness",
+  "tag_zh": "孤独",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 611,
+  "tag": "long",
+  "tag_zh": "片长偏长",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 612,
+  "tag": "los angeles",
+  "tag_zh": "洛杉矶",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 613,
+  "tag": "love",
+  "tag_zh": "爱情",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 614,
+  "tag": "love story",
+  "tag_zh": "爱情故事",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 615,
+  "tag": "love triangles",
+  "tag_zh": "三角恋",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 616,
+  "tag": "low budget",
+  "tag_zh": "小成本",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 617,
+  "tag": "lynch",
+  "tag_zh": "大卫·林奇",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 618,
+  "tag": "lyrical",
+  "tag_zh": "抒情",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 619,
+  "tag": "macabre",
+  "tag_zh": "怪诞阴森",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 620,
+  "tag": "mad scientist",
+  "tag_zh": "疯狂科学家",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 621,
+  "tag": "made for tv",
+  "tag_zh": "电视电影",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 622,
+  "tag": "mafia",
+  "tag_zh": "黑手党",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 623,
+  "tag": "magic",
+  "tag_zh": "魔法",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 624,
+  "tag": "magic realism",
+  "tag_zh": "魔幻现实主义",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 625,
+  "tag": "male nudity",
+  "tag_zh": "男性裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 626,
+  "tag": "man versus machine",
+  "tag_zh": "人机对抗",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 627,
+  "tag": "manipulation",
+  "tag_zh": "操控",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 628,
+  "tag": "marijuana",
+  "tag_zh": "大麻",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 629,
+  "tag": "marriage",
+  "tag_zh": "婚姻",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 630,
+  "tag": "mars",
+  "tag_zh": "火星",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 631,
+  "tag": "martial arts",
+  "tag_zh": "武术",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 632,
+  "tag": "marvel",
+  "tag_zh": "漫威",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 633,
+  "tag": "marx brothers",
+  "tag_zh": "马克斯兄弟",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 634,
+  "tag": "masterpiece",
+  "tag_zh": "杰作",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 635,
+  "tag": "math",
+  "tag_zh": "数学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 636,
+  "tag": "mathematics",
+  "tag_zh": "数理",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 637,
+  "tag": "maze",
+  "tag_zh": "迷宫",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 638,
+  "tag": "medieval",
+  "tag_zh": "中世纪",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 639,
+  "tag": "meditative",
+  "tag_zh": "沉静冥想",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 640,
+  "tag": "melancholic",
+  "tag_zh": "忧郁",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 641,
+  "tag": "melancholy",
+  "tag_zh": "忧伤",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 642,
+  "tag": "memory",
+  "tag_zh": "记忆",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 643,
+  "tag": "memory loss",
+  "tag_zh": "记忆缺失",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 644,
+  "tag": "mental hospital",
+  "tag_zh": "精神病院",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 645,
+  "tag": "mental illness",
+  "tag_zh": "精神疾病",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 646,
+  "tag": "mentor",
+  "tag_zh": "导师",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 647,
+  "tag": "metaphysics",
+  "tag_zh": "形而上学",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 648,
+  "tag": "mexico",
+  "tag_zh": "墨西哥",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 649,
+  "tag": "middle east",
+  "tag_zh": "中东",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 650,
+  "tag": "midlife crisis",
+  "tag_zh": "中年危机",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 651,
+  "tag": "military",
+  "tag_zh": "军队",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 652,
+  "tag": "mindfuck",
+  "tag_zh": "颠覆认知",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 653,
+  "tag": "mining",
+  "tag_zh": "采矿",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 654,
+  "tag": "minnesota",
+  "tag_zh": "明尼苏达",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 655,
+  "tag": "mission from god",
+  "tag_zh": "神授使命",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 656,
+  "tag": "mistaken identity",
+  "tag_zh": "身份误认",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 657,
+  "tag": "miyazaki",
+  "tag_zh": "宫崎骏",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 658,
+  "tag": "mob",
+  "tag_zh": "犯罪集团",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 659,
+  "tag": "mockumentary",
+  "tag_zh": "伪纪录片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 660,
+  "tag": "modern fantasy",
+  "tag_zh": "现代奇幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 661,
+  "tag": "money",
+  "tag_zh": "金钱",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 662,
+  "tag": "monkey",
+  "tag_zh": "猴子",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 663,
+  "tag": "monster",
+  "tag_zh": "怪物",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 664,
+  "tag": "monsters",
+  "tag_zh": "怪兽",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 665,
+  "tag": "monty python",
+  "tag_zh": "蒙提·派森",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 666,
+  "tag": "moody",
+  "tag_zh": "情绪氛围浓",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 667,
+  "tag": "moon",
+  "tag_zh": "月球",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 668,
+  "tag": "moral ambiguity",
+  "tag_zh": "道德模糊",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 669,
+  "tag": "morality",
+  "tag_zh": "道德",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 670,
+  "tag": "mother daughter relationship",
+  "tag_zh": "母女关系",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 671,
+  "tag": "mother-son relationship",
+  "tag_zh": "母子关系",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 672,
+  "tag": "motorcycle",
+  "tag_zh": "摩托车",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 673,
+  "tag": "mountain climbing",
+  "tag_zh": "登山",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 674,
+  "tag": "movie business",
+  "tag_zh": "电影行业",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 675,
+  "tag": "movielens top pick",
+  "tag_zh": "MovieLens精选",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 676,
+  "tag": "moving",
+  "tag_zh": "感人",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 677,
+  "tag": "mozart",
+  "tag_zh": "莫扎特",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 678,
+  "tag": "mtv",
+  "tag_zh": "MTV",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 679,
+  "tag": "multiple storylines",
+  "tag_zh": "多线叙事",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 680,
+  "tag": "mummy",
+  "tag_zh": "木乃伊",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 681,
+  "tag": "muppets",
+  "tag_zh": "布偶系列",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 682,
+  "tag": "murder",
+  "tag_zh": "谋杀",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 683,
+  "tag": "murder mystery",
+  "tag_zh": "谋杀谜案",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 684,
+  "tag": "music",
+  "tag_zh": "音乐",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 685,
+  "tag": "music business",
+  "tag_zh": "音乐产业",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 686,
+  "tag": "musical",
+  "tag_zh": "歌舞片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 687,
+  "tag": "musicians",
+  "tag_zh": "音乐人",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 688,
+  "tag": "mutants",
+  "tag_zh": "变种人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 689,
+  "tag": "mystery",
+  "tag_zh": "悬疑",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 690,
+  "tag": "mythology",
+  "tag_zh": "神话",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 691,
+  "tag": "narrated",
+  "tag_zh": "旁白",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 692,
+  "tag": "nasa",
+  "tag_zh": "NASA",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 693,
+  "tag": "native americans",
+  "tag_zh": "美洲原住民",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 694,
+  "tag": "natural disaster",
+  "tag_zh": "自然灾害",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 695,
+  "tag": "nature",
+  "tag_zh": "自然",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 696,
+  "tag": "nazi",
+  "tag_zh": "纳粹",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 697,
+  "tag": "nazis",
+  "tag_zh": "纳粹分子",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 698,
+  "tag": "neil gaiman",
+  "tag_zh": "尼尔·盖曼",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 699,
+  "tag": "neo-nazis",
+  "tag_zh": "新纳粹",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 700,
+  "tag": "neo-noir",
+  "tag_zh": "新黑色电影",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 701,
+  "tag": "nerds",
+  "tag_zh": "书呆子",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 702,
+  "tag": "new jersey",
+  "tag_zh": "新泽西",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 703,
+  "tag": "new orleans",
+  "tag_zh": "新奥尔良",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 704,
+  "tag": "new york",
+  "tag_zh": "纽约",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 705,
+  "tag": "new york city",
+  "tag_zh": "纽约市",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 706,
+  "tag": "new zealand",
+  "tag_zh": "新西兰",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 707,
+  "tag": "ninja",
+  "tag_zh": "忍者",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 708,
+  "tag": "no dialogue",
+  "tag_zh": "无对白",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 709,
+  "tag": "no plot",
+  "tag_zh": "没有剧情",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 710,
+  "tag": "nocturnal",
+  "tag_zh": "夜行氛围",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 711,
+  "tag": "noir",
+  "tag_zh": "黑色电影风格",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 712,
+  "tag": "noir thriller",
+  "tag_zh": "黑色惊悚",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 713,
+  "tag": "non-hollywood ending",
+  "tag_zh": "非好莱坞式结局",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 714,
+  "tag": "non-linear",
+  "tag_zh": "非线性叙事",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 715,
+  "tag": "nonlinear",
+  "tag_zh": "非线性叙事",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 716,
+  "tag": "nostalgia",
+  "tag_zh": "怀旧",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 717,
+  "tag": "nostalgic",
+  "tag_zh": "怀旧感",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 718,
+  "tag": "not as good as the first",
+  "tag_zh": "不如第一部",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 719,
+  "tag": "not funny",
+  "tag_zh": "不好笑",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 720,
+  "tag": "notable nudity",
+  "tag_zh": "显著裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 721,
+  "tag": "notable soundtrack",
+  "tag_zh": "原声亮点",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 722,
+  "tag": "nuclear",
+  "tag_zh": "核题材",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 723,
+  "tag": "nuclear bomb",
+  "tag_zh": "核弹",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 724,
+  "tag": "nuclear war",
+  "tag_zh": "核战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 725,
+  "tag": "nudity",
+  "tag_zh": "裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 726,
+  "tag": "nudity (full frontal - brief)",
+  "tag_zh": "短暂正面全裸",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 727,
+  "tag": "nudity (full frontal - notable)",
+  "tag_zh": "显著正面全裸",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 728,
+  "tag": "nudity (full frontal)",
+  "tag_zh": "正面全裸",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 729,
+  "tag": "nudity (rear)",
+  "tag_zh": "背面裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 730,
+  "tag": "nudity (topless - brief)",
+  "tag_zh": "短暂上身裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 731,
+  "tag": "nudity (topless - notable)",
+  "tag_zh": "显著上身裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 732,
+  "tag": "nudity (topless)",
+  "tag_zh": "上身裸露",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 733,
+  "tag": "obsession",
+  "tag_zh": "执念",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 734,
+  "tag": "ocean",
+  "tag_zh": "海洋",
+  "group": "地理与地域文化",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 735,
+  "tag": "off-beat comedy",
+  "tag_zh": "另类喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 736,
+  "tag": "office",
+  "tag_zh": "办公室",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 737,
+  "tag": "oil",
+  "tag_zh": "石油",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 738,
+  "tag": "olympics",
+  "tag_zh": "奥运会",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 739,
+  "tag": "ominous",
+  "tag_zh": "不祥",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 740,
+  "tag": "opera",
+  "tag_zh": "歌剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 741,
+  "tag": "organized crime",
+  "tag_zh": "有组织犯罪",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 742,
+  "tag": "original",
+  "tag_zh": "原创",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 743,
+  "tag": "original plot",
+  "tag_zh": "原创剧情",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 744,
+  "tag": "orphans",
+  "tag_zh": "孤儿",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 745,
+  "tag": "oscar",
+  "tag_zh": "奥斯卡",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 746,
+  "tag": "oscar (best actor)",
+  "tag_zh": "奥斯卡最佳男主角",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 747,
+  "tag": "oscar (best actress)",
+  "tag_zh": "奥斯卡最佳女主角",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 748,
+  "tag": "oscar (best animated feature)",
+  "tag_zh": "奥斯卡最佳动画长片",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 749,
+  "tag": "oscar (best cinematography)",
+  "tag_zh": "奥斯卡最佳摄影",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 750,
+  "tag": "oscar (best directing)",
+  "tag_zh": "奥斯卡最佳导演",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 751,
+  "tag": "oscar (best editing)",
+  "tag_zh": "奥斯卡最佳剪辑",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 752,
+  "tag": "oscar (best effects - visual effects)",
+  "tag_zh": "奥斯卡最佳视觉效果",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 753,
+  "tag": "oscar (best foreign language film)",
+  "tag_zh": "奥斯卡最佳外语片",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 754,
+  "tag": "oscar (best music - original score)",
+  "tag_zh": "奥斯卡最佳原创配乐",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 755,
+  "tag": "oscar (best music - original song)",
+  "tag_zh": "奥斯卡最佳原创歌曲",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 756,
+  "tag": "oscar (best picture)",
+  "tag_zh": "奥斯卡最佳影片",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 757,
+  "tag": "oscar (best sound)",
+  "tag_zh": "奥斯卡最佳音效",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 758,
+  "tag": "oscar (best supporting actor)",
+  "tag_zh": "奥斯卡最佳男配角",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 759,
+  "tag": "oscar (best supporting actress)",
+  "tag_zh": "奥斯卡最佳女配角",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 760,
+  "tag": "oscar (best writing - screenplay written directly for the screen)",
+  "tag_zh": "奥斯卡最佳原创剧本",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 761,
+  "tag": "oscar winner",
+  "tag_zh": "奥斯卡获奖作品",
+  "group": "榜单与荣誉",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 762,
+  "tag": "over the top",
+  "tag_zh": "夸张过火",
+  "group": "风格语气与氛围·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 763,
+  "tag": "overrated",
+  "tag_zh": "被高估",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 764,
+  "tag": "palestine",
+  "tag_zh": "巴勒斯坦",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 765,
+  "tag": "parallel universe",
+  "tag_zh": "平行宇宙",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 766,
+  "tag": "paranoia",
+  "tag_zh": "偏执",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 767,
+  "tag": "paranoid",
+  "tag_zh": "疑神疑鬼",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 768,
+  "tag": "parenthood",
+  "tag_zh": "育儿",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 769,
+  "tag": "paris",
+  "tag_zh": "巴黎",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 770,
+  "tag": "parody",
+  "tag_zh": "戏仿",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 771,
+  "tag": "passionate",
+  "tag_zh": "热烈",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 772,
+  "tag": "penguins",
+  "tag_zh": "企鹅",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 773,
+  "tag": "perfect",
+  "tag_zh": "完美",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 774,
+  "tag": "period piece",
+  "tag_zh": "时代剧",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 775,
+  "tag": "peter pan",
+  "tag_zh": "彼得·潘",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 776,
+  "tag": "pg",
+  "tag_zh": "PG级",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 777,
+  "tag": "pg-13",
+  "tag_zh": "PG-13级",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 778,
+  "tag": "philip k. dick",
+  "tag_zh": "菲利普·K·迪克",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 779,
+  "tag": "philosophical",
+  "tag_zh": "哲思",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 780,
+  "tag": "philosophy",
+  "tag_zh": "哲学",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 781,
+  "tag": "photographer",
+  "tag_zh": "摄影师",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 782,
+  "tag": "photography",
+  "tag_zh": "摄影突出",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 783,
+  "tag": "pigs",
+  "tag_zh": "猪",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 784,
+  "tag": "pirates",
+  "tag_zh": "海盗",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 785,
+  "tag": "pixar",
+  "tag_zh": "皮克斯",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 786,
+  "tag": "pixar animation",
+  "tag_zh": "皮克斯动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 787,
+  "tag": "plot",
+  "tag_zh": "情节",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 788,
+  "tag": "plot holes",
+  "tag_zh": "剧情漏洞",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 789,
+  "tag": "plot twist",
+  "tag_zh": "剧情反转",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 790,
+  "tag": "poetry",
+  "tag_zh": "诗歌",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 791,
+  "tag": "poignant",
+  "tag_zh": "动人心弦",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 792,
+  "tag": "pointless",
+  "tag_zh": "毫无意义",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 793,
+  "tag": "poker",
+  "tag_zh": "扑克",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 794,
+  "tag": "poland",
+  "tag_zh": "波兰",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 795,
+  "tag": "police",
+  "tag_zh": "警察",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 796,
+  "tag": "police corruption",
+  "tag_zh": "警界腐败",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 797,
+  "tag": "police investigation",
+  "tag_zh": "警方调查",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 798,
+  "tag": "political",
+  "tag_zh": "政治性",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 799,
+  "tag": "political corruption",
+  "tag_zh": "政治腐败",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 800,
+  "tag": "politics",
+  "tag_zh": "政治",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 801,
+  "tag": "pornography",
+  "tag_zh": "色情",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 802,
+  "tag": "post apocalyptic",
+  "tag_zh": "灾后末世",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 803,
+  "tag": "post-apocalyptic",
+  "tag_zh": "灾后末世",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 804,
+  "tag": "potential oscar nom",
+  "tag_zh": "奥斯卡提名潜质",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 805,
+  "tag": "poverty",
+  "tag_zh": "贫困",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 806,
+  "tag": "powerful ending",
+  "tag_zh": "结尾震撼",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 807,
+  "tag": "predictable",
+  "tag_zh": "可预测",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 808,
+  "tag": "pregnancy",
+  "tag_zh": "怀孕",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 809,
+  "tag": "prejudice",
+  "tag_zh": "偏见",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 810,
+  "tag": "prequel",
+  "tag_zh": "前传",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 811,
+  "tag": "president",
+  "tag_zh": "总统",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 812,
+  "tag": "pretentious",
+  "tag_zh": "故作高深",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 813,
+  "tag": "prison",
+  "tag_zh": "监狱",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 814,
+  "tag": "prison escape",
+  "tag_zh": "越狱",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 815,
+  "tag": "private detective",
+  "tag_zh": "私家侦探",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 816,
+  "tag": "product placement",
+  "tag_zh": "广告植入",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 817,
+  "tag": "prohibition",
+  "tag_zh": "禁酒令时期",
+  "group": "时代背景",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 818,
+  "tag": "propaganda",
+  "tag_zh": "宣传",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 819,
+  "tag": "prostitution",
+  "tag_zh": "性交易",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 820,
+  "tag": "psychedelic",
+  "tag_zh": "迷幻",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 821,
+  "tag": "psychiatrist",
+  "tag_zh": "精神科医生",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 822,
+  "tag": "psychiatry",
+  "tag_zh": "精神病学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 823,
+  "tag": "psychological",
+  "tag_zh": "心理向",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 824,
+  "tag": "psychology",
+  "tag_zh": "心理学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 825,
+  "tag": "pulp",
+  "tag_zh": "低俗小说风",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 826,
+  "tag": "punk",
+  "tag_zh": "朋克",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 827,
+  "tag": "puppets",
+  "tag_zh": "木偶戏",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 828,
+  "tag": "queer",
+  "tag_zh": "酷儿",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 829,
+  "tag": "quirky",
+  "tag_zh": "怪趣味",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 830,
+  "tag": "quotable",
+  "tag_zh": "金句频出",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 831,
+  "tag": "rabbits",
+  "tag_zh": "兔子",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 832,
+  "tag": "race",
+  "tag_zh": "种族",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 833,
+  "tag": "race issues",
+  "tag_zh": "种族问题",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 834,
+  "tag": "racing",
+  "tag_zh": "赛车",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 835,
+  "tag": "racism",
+  "tag_zh": "种族歧视",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 836,
+  "tag": "radio",
+  "tag_zh": "广播",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 837,
+  "tag": "rags to riches",
+  "tag_zh": "白手起家",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 838,
+  "tag": "rape",
+  "tag_zh": "性侵",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 839,
+  "tag": "rats",
+  "tag_zh": "老鼠",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 840,
+  "tag": "realistic",
+  "tag_zh": "写实",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 841,
+  "tag": "realistic action",
+  "tag_zh": "写实动作",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 842,
+  "tag": "reality tv",
+  "tag_zh": "真人秀",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 843,
+  "tag": "rebellion",
+  "tag_zh": "反叛",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 844,
+  "tag": "redemption",
+  "tag_zh": "救赎",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 845,
+  "tag": "reflective",
+  "tag_zh": "内省沉思",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 846,
+  "tag": "relationships",
+  "tag_zh": "人际关系",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 847,
+  "tag": "religion",
+  "tag_zh": "宗教",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 848,
+  "tag": "remade",
+  "tag_zh": "存在重拍版",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 849,
+  "tag": "remake",
+  "tag_zh": "翻拍",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 850,
+  "tag": "revenge",
+  "tag_zh": "复仇",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 851,
+  "tag": "revolution",
+  "tag_zh": "革命",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 852,
+  "tag": "ridiculous",
+  "tag_zh": "荒唐",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 853,
+  "tag": "rio de janeiro",
+  "tag_zh": "里约热内卢",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 854,
+  "tag": "road movie",
+  "tag_zh": "公路片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 855,
+  "tag": "road trip",
+  "tag_zh": "公路旅行",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 856,
+  "tag": "roald dahl",
+  "tag_zh": "罗尔德·达尔",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 857,
+  "tag": "robbery",
+  "tag_zh": "抢劫案",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 858,
+  "tag": "robert downey jr",
+  "tag_zh": "小罗伯特·唐尼",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 859,
+  "tag": "robert ludlum",
+  "tag_zh": "罗伯特·陆德伦",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 860,
+  "tag": "robot",
+  "tag_zh": "机器人",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 861,
+  "tag": "robots",
+  "tag_zh": "机器人世界",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 862,
+  "tag": "rock and roll",
+  "tag_zh": "摇滚",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 863,
+  "tag": "romance",
+  "tag_zh": "浪漫爱情",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 864,
+  "tag": "romantic",
+  "tag_zh": "浪漫",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 865,
+  "tag": "romantic comedy",
+  "tag_zh": "浪漫喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 866,
+  "tag": "rome",
+  "tag_zh": "罗马",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 867,
+  "tag": "runaway",
+  "tag_zh": "出逃",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 868,
+  "tag": "russia",
+  "tag_zh": "俄罗斯",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 869,
+  "tag": "russian",
+  "tag_zh": "俄式",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 870,
+  "tag": "sacrifice",
+  "tag_zh": "牺牲",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 871,
+  "tag": "sad",
+  "tag_zh": "伤感",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 872,
+  "tag": "sad but good",
+  "tag_zh": "悲伤但好看",
+  "group": "正面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 873,
+  "tag": "samurai",
+  "tag_zh": "武士",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 874,
+  "tag": "san francisco",
+  "tag_zh": "旧金山",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 875,
+  "tag": "sappy",
+  "tag_zh": "过度煽情",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 876,
+  "tag": "sarcasm",
+  "tag_zh": "挖苦",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 877,
+  "tag": "satire",
+  "tag_zh": "讽刺",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 878,
+  "tag": "satirical",
+  "tag_zh": "讽刺性",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 879,
+  "tag": "saturday night live",
+  "tag_zh": "周六夜现场",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 880,
+  "tag": "saturn award (best science fiction film)",
+  "tag_zh": "土星奖最佳科幻片",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 881,
+  "tag": "saturn award (best special effects)",
+  "tag_zh": "土星奖最佳特效",
+  "group": "榜单与荣誉",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 882,
+  "tag": "scary",
+  "tag_zh": "吓人",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 883,
+  "tag": "scenic",
+  "tag_zh": "风景如画",
+  "group": "视觉与技术规格",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 884,
+  "tag": "schizophrenia",
+  "tag_zh": "精神分裂",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 885,
+  "tag": "school",
+  "tag_zh": "学校",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 886,
+  "tag": "sci fi",
+  "tag_zh": "科幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 887,
+  "tag": "sci-fi",
+  "tag_zh": "科幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 888,
+  "tag": "science",
+  "tag_zh": "科学",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 889,
+  "tag": "science fiction",
+  "tag_zh": "科学幻想",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 890,
+  "tag": "scifi",
+  "tag_zh": "科幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 891,
+  "tag": "scifi cult",
+  "tag_zh": "邪典科幻",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 892,
+  "tag": "scotland",
+  "tag_zh": "苏格兰",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 893,
+  "tag": "screwball",
+  "tag_zh": "神经喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 894,
+  "tag": "screwball comedy",
+  "tag_zh": "神经喜剧风格",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 895,
+  "tag": "script",
+  "tag_zh": "剧本",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 896,
+  "tag": "secret service",
+  "tag_zh": "特勤局",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 897,
+  "tag": "secrets",
+  "tag_zh": "秘密",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 898,
+  "tag": "segregation",
+  "tag_zh": "种族隔离",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 899,
+  "tag": "self discovery",
+  "tag_zh": "自我发现",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 900,
+  "tag": "sentimental",
+  "tag_zh": "感伤",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 901,
+  "tag": "sequel",
+  "tag_zh": "续集",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 902,
+  "tag": "sequels",
+  "tag_zh": "系列续集",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 903,
+  "tag": "serial killer",
+  "tag_zh": "连环杀手",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 904,
+  "tag": "series",
+  "tag_zh": "系列作品",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 905,
+  "tag": "sex",
+  "tag_zh": "性",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 906,
+  "tag": "sex comedy",
+  "tag_zh": "性喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 907,
+  "tag": "sexual",
+  "tag_zh": "性主题",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 908,
+  "tag": "sexual abuse",
+  "tag_zh": "性虐待",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 909,
+  "tag": "sexuality",
+  "tag_zh": "性取向",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 910,
+  "tag": "sexualized violence",
+  "tag_zh": "性化暴力",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 911,
+  "tag": "sexy",
+  "tag_zh": "性感",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 912,
+  "tag": "shakespeare",
+  "tag_zh": "莎士比亚",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 913,
+  "tag": "shallow",
+  "tag_zh": "肤浅",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 914,
+  "tag": "shark",
+  "tag_zh": "鲨鱼",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 915,
+  "tag": "shopping",
+  "tag_zh": "购物",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 916,
+  "tag": "short",
+  "tag_zh": "短片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 917,
+  "tag": "short-term memory loss",
+  "tag_zh": "短期失忆",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 918,
+  "tag": "silent",
+  "tag_zh": "无声",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 919,
+  "tag": "silly",
+  "tag_zh": "傻气",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 920,
+  "tag": "silly fun",
+  "tag_zh": "傻乐",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 921,
+  "tag": "simple",
+  "tag_zh": "简约",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 922,
+  "tag": "single father",
+  "tag_zh": "单身父亲",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 923,
+  "tag": "sisters",
+  "tag_zh": "姐妹",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 924,
+  "tag": "skinhead",
+  "tag_zh": "光头党",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 925,
+  "tag": "slackers",
+  "tag_zh": "懒鬼",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 926,
+  "tag": "slapstick",
+  "tag_zh": "肢体喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 927,
+  "tag": "slasher",
+  "tag_zh": "砍杀片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 928,
+  "tag": "slavery",
+  "tag_zh": "奴隶制",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 929,
+  "tag": "slow",
+  "tag_zh": "节奏慢",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 930,
+  "tag": "slow paced",
+  "tag_zh": "节奏舒缓",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 931,
+  "tag": "small town",
+  "tag_zh": "小镇",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 932,
+  "tag": "snakes",
+  "tag_zh": "蛇",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 933,
+  "tag": "so bad it's funny",
+  "tag_zh": "烂得好笑",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 934,
+  "tag": "so bad it's good",
+  "tag_zh": "烂得出奇地好",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 935,
+  "tag": "soccer",
+  "tag_zh": "足球",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 936,
+  "tag": "social commentary",
+  "tag_zh": "社会评论",
+  "group": "社会议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 937,
+  "tag": "solitude",
+  "tag_zh": "独处",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 938,
+  "tag": "sophia coppola",
+  "tag_zh": "索菲亚·科波拉",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 939,
+  "tag": "south africa",
+  "tag_zh": "南非",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 940,
+  "tag": "south america",
+  "tag_zh": "南美",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 941,
+  "tag": "southern theme",
+  "tag_zh": "美国南方主题",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 942,
+  "tag": "space",
+  "tag_zh": "太空",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 943,
+  "tag": "space opera",
+  "tag_zh": "太空歌剧",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 944,
+  "tag": "space program",
+  "tag_zh": "航天计划",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 945,
+  "tag": "space travel",
+  "tag_zh": "太空旅行",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 946,
+  "tag": "spaghetti western",
+  "tag_zh": "意式西部片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 947,
+  "tag": "spain",
+  "tag_zh": "西班牙",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 948,
+  "tag": "spanish",
+  "tag_zh": "西班牙式",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 949,
+  "tag": "spanish civil war",
+  "tag_zh": "西班牙内战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 950,
+  "tag": "special",
+  "tag_zh": "独特",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 951,
+  "tag": "special effects",
+  "tag_zh": "视觉特效",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 952,
+  "tag": "spelling bee",
+  "tag_zh": "拼字比赛",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 953,
+  "tag": "spiders",
+  "tag_zh": "蜘蛛",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 954,
+  "tag": "spielberg",
+  "tag_zh": "斯皮尔伯格",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 955,
+  "tag": "spies",
+  "tag_zh": "间谍",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 956,
+  "tag": "splatter",
+  "tag_zh": "血浆片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 957,
+  "tag": "spock",
+  "tag_zh": "斯波克",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 958,
+  "tag": "spoof",
+  "tag_zh": "恶搞",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 959,
+  "tag": "sports",
+  "tag_zh": "体育",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 960,
+  "tag": "spy",
+  "tag_zh": "特工",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 961,
+  "tag": "spying",
+  "tag_zh": "间谍活动",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 962,
+  "tag": "stage magic",
+  "tag_zh": "舞台魔术",
+  "group": "职业与专业题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 963,
+  "tag": "stand-up comedy",
+  "tag_zh": "单口喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 964,
+  "tag": "star trek",
+  "tag_zh": "星际迷航",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 965,
+  "tag": "star wars",
+  "tag_zh": "星球大战",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 966,
+  "tag": "steampunk",
+  "tag_zh": "蒸汽朋克",
+  "group": "科幻与超自然",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 967,
+  "tag": "stereotypes",
+  "tag_zh": "刻板印象",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 968,
+  "tag": "stoner movie",
+  "tag_zh": "大麻喜剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 969,
+  "tag": "stop motion",
+  "tag_zh": "定格动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 970,
+  "tag": "stop-motion",
+  "tag_zh": "定格动画",
+  "group": "动画形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 971,
+  "tag": "story",
+  "tag_zh": "故事",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 972,
+  "tag": "storytelling",
+  "tag_zh": "叙事",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 973,
+  "tag": "stranded",
+  "tag_zh": "受困",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 974,
+  "tag": "strange",
+  "tag_zh": "奇异",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 975,
+  "tag": "strippers",
+  "tag_zh": "脱衣舞娘",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 976,
+  "tag": "studio ghibli",
+  "tag_zh": "吉卜力",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 977,
+  "tag": "stunning",
+  "tag_zh": "惊艳",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 978,
+  "tag": "stupid",
+  "tag_zh": "蠢",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 979,
+  "tag": "stupid as hell",
+  "tag_zh": "愚蠢至极",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 980,
+  "tag": "stupidity",
+  "tag_zh": "愚蠢内容",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 981,
+  "tag": "stylish",
+  "tag_zh": "时尚有型",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 982,
+  "tag": "stylized",
+  "tag_zh": "风格化",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 983,
+  "tag": "submarine",
+  "tag_zh": "潜艇",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 984,
+  "tag": "suburbia",
+  "tag_zh": "郊区",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 985,
+  "tag": "suicide",
+  "tag_zh": "自杀",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 986,
+  "tag": "suicide attempt",
+  "tag_zh": "自杀未遂",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 987,
+  "tag": "super hero",
+  "tag_zh": "超级英雄",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 988,
+  "tag": "super-hero",
+  "tag_zh": "超级英雄",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 989,
+  "tag": "superhero",
+  "tag_zh": "超级英雄",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 990,
+  "tag": "superheroes",
+  "tag_zh": "超级英雄",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 991,
+  "tag": "supernatural",
+  "tag_zh": "超自然",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 992,
+  "tag": "suprisingly clever",
+  "tag_zh": "意外地聪明",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 993,
+  "tag": "surfing",
+  "tag_zh": "冲浪",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 994,
+  "tag": "surprise ending",
+  "tag_zh": "意外结局",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 995,
+  "tag": "surreal",
+  "tag_zh": "超现实",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 996,
+  "tag": "surrealism",
+  "tag_zh": "超现实主义",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 997,
+  "tag": "surveillance",
+  "tag_zh": "监控",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 998,
+  "tag": "survival",
+  "tag_zh": "生存",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 999,
+  "tag": "suspense",
+  "tag_zh": "悬念",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1000,
+  "tag": "suspenseful",
+  "tag_zh": "悬疑紧张",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1001,
+  "tag": "swashbuckler",
+  "tag_zh": "剑侠冒险",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1002,
+  "tag": "swedish",
+  "tag_zh": "瑞典式",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1003,
+  "tag": "sweet",
+  "tag_zh": "甜美",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1004,
+  "tag": "switching places",
+  "tag_zh": "身份互换",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1005,
+  "tag": "sword fight",
+  "tag_zh": "剑术对决",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1006,
+  "tag": "sword fighting",
+  "tag_zh": "剑术打斗",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1007,
+  "tag": "talking animals",
+  "tag_zh": "会说话的动物",
+  "group": "动物题材",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1008,
+  "tag": "talky",
+  "tag_zh": "话痨片",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1009,
+  "tag": "tarantino",
+  "tag_zh": "塔伦蒂诺",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1010,
+  "tag": "teacher",
+  "tag_zh": "教师",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1011,
+  "tag": "tear jerker",
+  "tag_zh": "催泪弹",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1012,
+  "tag": "technology",
+  "tag_zh": "科技",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1013,
+  "tag": "teen",
+  "tag_zh": "青少年",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1014,
+  "tag": "teen movie",
+  "tag_zh": "青春片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1015,
+  "tag": "teenager",
+  "tag_zh": "少年",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1016,
+  "tag": "teenagers",
+  "tag_zh": "青少年群像",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1017,
+  "tag": "teens",
+  "tag_zh": "青少年群体",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1018,
+  "tag": "teleportation",
+  "tag_zh": "瞬间移动",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1019,
+  "tag": "television",
+  "tag_zh": "电视",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1020,
+  "tag": "tense",
+  "tag_zh": "紧张",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1021,
+  "tag": "terminal illness",
+  "tag_zh": "绝症",
+  "group": "信仰与人生困境",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1022,
+  "tag": "terrorism",
+  "tag_zh": "恐怖主义",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1023,
+  "tag": "texas",
+  "tag_zh": "得克萨斯",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1024,
+  "tag": "thought-provoking",
+  "tag_zh": "发人深省",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1025,
+  "tag": "thriller",
+  "tag_zh": "惊悚",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1026,
+  "tag": "time",
+  "tag_zh": "时间",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1027,
+  "tag": "time loop",
+  "tag_zh": "时间循环",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1028,
+  "tag": "time travel",
+  "tag_zh": "时间旅行",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1029,
+  "tag": "tokyo",
+  "tag_zh": "东京",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1030,
+  "tag": "tolkien",
+  "tag_zh": "托尔金",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1031,
+  "tag": "tom clancy",
+  "tag_zh": "汤姆·克兰西",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1032,
+  "tag": "too long",
+  "tag_zh": "片长过长",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1033,
+  "tag": "too short",
+  "tag_zh": "片长过短",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1034,
+  "tag": "torture",
+  "tag_zh": "酷刑",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1035,
+  "tag": "touching",
+  "tag_zh": "动人",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1036,
+  "tag": "toys",
+  "tag_zh": "玩具",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1037,
+  "tag": "tragedy",
+  "tag_zh": "悲剧",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1038,
+  "tag": "train",
+  "tag_zh": "火车",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1039,
+  "tag": "trains",
+  "tag_zh": "铁路",
+  "group": "交通与航空",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1040,
+  "tag": "transformation",
+  "tag_zh": "蜕变",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1041,
+  "tag": "transgender",
+  "tag_zh": "跨性别",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1042,
+  "tag": "travel",
+  "tag_zh": "旅行",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1043,
+  "tag": "treasure",
+  "tag_zh": "宝藏",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1044,
+  "tag": "treasure hunt",
+  "tag_zh": "寻宝",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1045,
+  "tag": "tricky",
+  "tag_zh": "巧妙狡黠",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1046,
+  "tag": "trilogy",
+  "tag_zh": "三部曲",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1047,
+  "tag": "true story",
+  "tag_zh": "真实故事",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1048,
+  "tag": "truman capote",
+  "tag_zh": "杜鲁门·卡波特",
+  "group": "创作者与演职人员",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1049,
+  "tag": "twist",
+  "tag_zh": "反转",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1050,
+  "tag": "twist ending",
+  "tag_zh": "反转结局",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1051,
+  "tag": "twists & turns",
+  "tag_zh": "波折不断",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1052,
+  "tag": "undercover cop",
+  "tag_zh": "卧底警察",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1053,
+  "tag": "underdog",
+  "tag_zh": "逆袭者",
+  "group": "角色与人物状态",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1054,
+  "tag": "underrated",
+  "tag_zh": "被低估",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1055,
+  "tag": "understated",
+  "tag_zh": "克制低调",
+  "group": "风格语气与氛围·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1056,
+  "tag": "underwater",
+  "tag_zh": "水下",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1057,
+  "tag": "unfunny",
+  "tag_zh": "缺乏笑点",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1058,
+  "tag": "unintentionally funny",
+  "tag_zh": "无意搞笑",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1059,
+  "tag": "unique",
+  "tag_zh": "独一无二",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1060,
+  "tag": "united nations",
+  "tag_zh": "联合国",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1061,
+  "tag": "unlikeable characters",
+  "tag_zh": "角色不讨喜",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1062,
+  "tag": "unlikely friendships",
+  "tag_zh": "奇妙友谊",
+  "group": "角色与人物状态·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1063,
+  "tag": "unrealistic",
+  "tag_zh": "不真实",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1064,
+  "tag": "unusual plot structure",
+  "tag_zh": "非常规情节结构",
+  "group": "叙事与结构",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1065,
+  "tag": "us history",
+  "tag_zh": "美国历史",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1066,
+  "tag": "utopia",
+  "tag_zh": "乌托邦",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1067,
+  "tag": "vampire",
+  "tag_zh": "吸血鬼",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1068,
+  "tag": "vampire human love",
+  "tag_zh": "吸血鬼与人类之恋",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1069,
+  "tag": "vampires",
+  "tag_zh": "吸血鬼题材",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1070,
+  "tag": "vengeance",
+  "tag_zh": "报仇",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1071,
+  "tag": "very funny",
+  "tag_zh": "非常好笑",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1072,
+  "tag": "very good",
+  "tag_zh": "非常好",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1073,
+  "tag": "very interesting",
+  "tag_zh": "非常有趣",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1074,
+  "tag": "video game",
+  "tag_zh": "电子游戏",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1075,
+  "tag": "video game adaptation",
+  "tag_zh": "游戏改编",
+  "group": "改编来源",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1076,
+  "tag": "video games",
+  "tag_zh": "电子游戏",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1077,
+  "tag": "videogame",
+  "tag_zh": "电子游戏",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1078,
+  "tag": "vienna",
+  "tag_zh": "维也纳",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1079,
+  "tag": "vietnam",
+  "tag_zh": "越南",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1080,
+  "tag": "vietnam war",
+  "tag_zh": "越南战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1081,
+  "tag": "view askew",
+  "tag_zh": "View Askew",
+  "group": "系列与品牌",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1082,
+  "tag": "vigilante",
+  "tag_zh": "义警",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1083,
+  "tag": "vigilantism",
+  "tag_zh": "私刑正义",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1084,
+  "tag": "violence",
+  "tag_zh": "暴力",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1085,
+  "tag": "violent",
+  "tag_zh": "充满暴力",
+  "group": "犯罪与谍战",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1086,
+  "tag": "virginity",
+  "tag_zh": "童贞",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1087,
+  "tag": "virtual reality",
+  "tag_zh": "虚拟现实",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1088,
+  "tag": "virus",
+  "tag_zh": "病毒",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1089,
+  "tag": "visceral",
+  "tag_zh": "生猛",
+  "group": "风格语气与氛围·3",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1090,
+  "tag": "visual",
+  "tag_zh": "视觉化",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1091,
+  "tag": "visually appealing",
+  "tag_zh": "画面悦目",
+  "group": "视觉与技术规格",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1092,
+  "tag": "visually stunning",
+  "tag_zh": "视觉震撼",
+  "group": "视觉与技术规格",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1093,
+  "tag": "visuals",
+  "tag_zh": "视觉画面",
+  "group": "视觉与技术规格",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1094,
+  "tag": "voodoo",
+  "tag_zh": "巫毒",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1095,
+  "tag": "voyeurism",
+  "tag_zh": "窥视",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1096,
+  "tag": "war",
+  "tag_zh": "战争",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1097,
+  "tag": "war movie",
+  "tag_zh": "战争片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1098,
+  "tag": "wartime",
+  "tag_zh": "战时",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1099,
+  "tag": "waste of time",
+  "tag_zh": "浪费时间",
+  "group": "负面观众评价",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1100,
+  "tag": "watch the credits",
+  "tag_zh": "片尾彩蛋",
+  "group": "发行与媒介",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1101,
+  "tag": "weapons",
+  "tag_zh": "武器",
+  "group": "动作与冒险",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1102,
+  "tag": "wedding",
+  "tag_zh": "婚礼",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1103,
+  "tag": "weed",
+  "tag_zh": "大麻文化",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1104,
+  "tag": "weird",
+  "tag_zh": "怪诞",
+  "group": "风格语气与氛围·3",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1105,
+  "tag": "werewolf",
+  "tag_zh": "狼人",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1106,
+  "tag": "werewolves",
+  "tag_zh": "狼人题材",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1107,
+  "tag": "western",
+  "tag_zh": "西部片",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1108,
+  "tag": "whimsical",
+  "tag_zh": "奇想俏皮",
+  "group": "风格语气与氛围·3",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1109,
+  "tag": "wilderness",
+  "tag_zh": "荒野",
+  "group": "地理与地域文化·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1110,
+  "tag": "wine",
+  "tag_zh": "葡萄酒",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1111,
+  "tag": "wistful",
+  "tag_zh": "惆怅",
+  "group": "风格语气与氛围·3",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1112,
+  "tag": "witch",
+  "tag_zh": "女巫",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1113,
+  "tag": "witches",
+  "tag_zh": "女巫题材",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1114,
+  "tag": "witty",
+  "tag_zh": "风趣",
+  "group": "正面观众评价·2",
+  "tag_type": "preference"
+ },
+ {
+  "tag_id": 1115,
+  "tag": "wizards",
+  "tag_zh": "巫师",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1116,
+  "tag": "women",
+  "tag_zh": "女性",
+  "group": "角色与人物状态·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1117,
+  "tag": "working class",
+  "tag_zh": "工人阶级",
+  "group": "社会议题·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1118,
+  "tag": "workplace",
+  "tag_zh": "职场",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1119,
+  "tag": "world politics",
+  "tag_zh": "国际政治",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1120,
+  "tag": "world war i",
+  "tag_zh": "第一次世界大战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1121,
+  "tag": "world war ii",
+  "tag_zh": "第二次世界大战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1122,
+  "tag": "writer's life",
+  "tag_zh": "作家人生",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1123,
+  "tag": "writers",
+  "tag_zh": "作家",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1124,
+  "tag": "writing",
+  "tag_zh": "写作",
+  "group": "职业与专业题材·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1125,
+  "tag": "wuxia",
+  "tag_zh": "武侠",
+  "group": "类型与形式",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1126,
+  "tag": "wwii",
+  "tag_zh": "二战",
+  "group": "历史与政治议题",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1127,
+  "tag": "zombie",
+  "tag_zh": "丧尸",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ },
+ {
+  "tag_id": 1128,
+  "tag": "zombies",
+  "tag_zh": "丧尸题材",
+  "group": "科幻与超自然·2",
+  "tag_type": "content"
+ }
+]
